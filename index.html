@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Analysis Dashboard - October 30, 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="dashboard-header">
+            <h1>Better World Meeting Analysis Dashboard</h1>
+            <p class="subtitle">Comprehensive Analysis: Oct 23 - Oct 30, 2025 | 3 Meetings | Complete Series View</p>
+            <p class="subtitle" style="margin-top: 0.5rem; color: var(--text-muted);">Latest Meeting: Oct 30, 2025 • Duration: 118 minutes • 8 Speakers • 14 Agenda Items</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="nav-tabs">
+            <button class="tab-button active" onclick="showTab('meeting-analysis')">Oct 30 Deep Dive</button>
+            <button class="tab-button" onclick="showTab('longitudinal')">Longitudinal Analysis</button>
+            <button class="tab-button" onclick="showTab('patterns')">Cultural Patterns</button>
+            <button class="tab-button" onclick="showTab('actions')">Actions & Outcomes</button>
+            <button class="tab-button" onclick="showTab('recommendations')">Recommendations</button>
+        </div>
+
+        <!-- Tab Content Containers (loaded dynamically) -->
+        <div id="meeting-analysis" class="tab-content active">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading content...</p>
+            </div>
+        </div>
+
+        <div id="longitudinal" class="tab-content">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading content...</p>
+            </div>
+        </div>
+
+        <div id="patterns" class="tab-content">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading content...</p>
+            </div>
+        </div>
+
+        <div id="actions" class="tab-content">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading content...</p>
+            </div>
+        </div>
+
+        <div id="recommendations" class="tab-content">
+            <div class="card" style="text-align: center; padding: 3rem;">
+                <p style="color: var(--text-secondary);">Loading content...</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Dashboard generated using Part 1 & Part 2 Analysis Frameworks</p>
+            <p style="margin-top: 0.5rem;">Analysis based on meeting transcript with full speaker differentiation and provided agenda</p>
+        </div>
+    </div>
+
+    <!-- Load scripts in order: contentLoader -> toggles -> charts (parts) -> main -->
+    <script src="js/contentLoader.js"></script>
+    <script src="js/toggles.js"></script>
+    <script src="js/charts-part1.js"></script>
+    <script src="js/charts-part2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

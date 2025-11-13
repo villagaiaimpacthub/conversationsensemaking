@@ -1,0 +1,450 @@
+﻿<div id="meeting-analysis" class="tab-content active">
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Speakers</div>
+                <div class="kpi-value">8</div>
+                <span class="kpi-status status-high">Active</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Engagement Score</div>
+                <div class="kpi-value">78<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-high">High</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Inclusion Score</div>
+                <div class="kpi-value">72<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-high">High</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Consensus Score</div>
+                <div class="kpi-value">65<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-medium">Moderate</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Agenda Coverage</div>
+                <div class="kpi-value">88<span style="font-size: 1.5rem; color: var(--text-secondary);">%</span></div>
+                <span class="kpi-status status-high">Excellent</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Decisions Made</div>
+                <div class="kpi-value">4</div>
+                <span class="kpi-status status-high">Productive</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Action Items</div>
+                <div class="kpi-value">8</div>
+                <span class="kpi-status status-high">Clear Ownership</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Knowledge or Info Gaps</div>
+                <div class="kpi-value">6</div>
+                <span class="kpi-status status-medium">Explicit</span>
+            </div>
+        </div>
+
+        <!-- Participation & Engagement -->
+        <div class="section">
+            <h2 class="section-title">Participation & Engagement</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Speaker Participation Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="participationChart"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Engagement Components</h3>
+                    <div class="chart-container">
+                        <canvas id="engagementChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker Breakdown -->
+        <div class="section">
+            <h2 class="section-title">Detailed Speaker Analysis</h2>
+            <div class="card">
+                <h3 class="card-title">Utterance Distribution</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Alex Alegria</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 42.8%;">42.8%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Farhad</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 14.4%; background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-green));">14.4%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">G (Giannandrea)</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 12.5%; background: linear-gradient(90deg, var(--pastel-green), var(--pastel-yellow));">12.5%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Sudheer</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 11.5%; background: linear-gradient(90deg, var(--pastel-orange), var(--pastel-pink));">11.5%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Chris</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 7.7%; background: linear-gradient(90deg, var(--pastel-pink), var(--pastel-purple));">7.7%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Anastasia</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 7.2%; background: linear-gradient(90deg, var(--pastel-purple), var(--pastel-blue));">7.2%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inclusivity Metrics -->
+        <div class="section">
+            <h2 class="section-title">Inclusivity Metrics</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="card-title">Pronoun Usage</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Collective (we, us, our)</span>
+                            <span class="metric-value">347</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Individual (I, me, you, my)</span>
+                            <span class="metric-value">423</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Ratio</span>
+                            <span class="metric-value">0.82</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟡 <strong>Balanced</strong> - Appropriate mix of collective identity and individual ownership
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Interruptions & Repairs</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Interruptions</span>
+                            <span class="metric-value">8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Rate per 100 utterances</span>
+                            <span class="metric-value">3.8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Repairs</span>
+                            <span class="metric-value">12</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Technical Issues</span>
+                            <span class="metric-value">15</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟢 <strong>Healthy</strong> - Low interruption rate indicates respectful dialogue
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Inclusion Language</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Acknowledgments</span>
+                            <span class="metric-value">18</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Invitations</span>
+                            <span class="metric-value">16</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Reinforcements</span>
+                            <span class="metric-value">8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Total Instances</span>
+                            <span class="metric-value">42</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟢 <strong>High Inclusion</strong> - 20.2 instances per 100 utterances
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Topics -->
+        <div class="section">
+            <h2 class="section-title">Discussion Topics</h2>
+            <div class="card">
+                <h3 class="card-title">Topic Distribution (% of Conversation)</h3>
+                <div class="chart-container">
+                    <canvas id="topicsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div class="section">
+            <h2 class="section-title">Key Takeaways & Decisions</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🔵</span>Decisions Made (4)
+                    </h3>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Adopt Hive/Symbiosis platform after 2-3 day testing period</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: G, Sudheer, Shamla</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Launch circles immediately with preliminary charters</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Alex, All Circle Leads</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Inner Circle roles assigned: Chris (Facilitator), Shamla (Secretary), G (Governance & Metrics), Sudheer (Integration)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Named individuals</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Continue weekly meetings on Tuesday (changed from Thursday)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Alex</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🟠</span>Priority Action Items (8)
+                    </h3>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Shamla to circulate rolling 6-month cash flow forecast format</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Shamla</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Farhad needs structure answers from Prakash for private equity (2-3 weeks)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Prakash → Farhad</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Chris to create internal database of entities and needs/wish lists</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Chris</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Anastasia to confirm Restate's 501c3 charter compatibility</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Anastasia</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Prakash/Sudheer to develop HR and compensation policy</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Prakash, Sudheer</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consensus Patterns -->
+        <div class="section">
+            <h2 class="section-title">Agreement & Consensus Patterns</h2>
+            <div class="card">
+                <h3 class="card-title">Topics by Consensus Level</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="consensus-item">
+                        <div class="consensus-topic">SME Timing Strategy</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Communications Priority</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">501c3 Structure</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Tool Adoption</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Circle Launch</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Meeting Structure</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                        <strong style="color: var(--pastel-green);">✓ Key Insight:</strong> All discussions reached organic consensus through dialogue. No voting required.
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        Initial disagreements (tool adoption) were resolved constructively through respectful discussion and trust in expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Knowledge or Information Gaps -->
+        <div class="section">
+            <h2 class="section-title">Critical Knowledge or Information Gaps</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🔍</span>Explicit Gaps (6)
+                    </h3>
+                    <div class="gap-card">
+                        <div class="gap-title">SME Value Proposition & Service Offering</div>
+                        <div class="gap-description">"We don't have anything clear as yet in terms of what we want to offer" - Sudheer</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    <div class="gap-card">
+                        <div class="gap-title">Private Equity Structure Details</div>
+                        <div class="gap-description">Awaiting final structure decisions on share classes and instruments from Prakash</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    <div class="gap-card">
+                        <div class="gap-title">HR & Compensation Policy Framework</div>
+                        <div class="gap-description">Need clear policy on hiring, benefits, time value capitalization</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    
+                    <!-- Hidden explicit gaps -->
+                    <div id="moreExplicitGaps" style="display: none;">
+                        <div class="gap-card">
+                            <div class="gap-title">Financial Figures & Projections</div>
+                            <div class="gap-description">"Show me the money" - Need concrete financial data for investors</div>
+                            <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                        </div>
+                        <div class="gap-card">
+                            <div class="gap-title">Internal Ecosystem Database</div>
+                            <div class="gap-description">Incomplete list of entities, resources, and needs across network</div>
+                            <span class="gap-severity severity-medium">MEDIUM SEVERITY</span>
+                        </div>
+                        <div class="gap-card">
+                            <div class="gap-title">Investor Workshop Content</div>
+                            <div class="gap-description">Workshop approach discussed but content not detailed</div>
+                            <span class="gap-severity severity-medium">MEDIUM SEVERITY</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="toggleExplicitGaps()" id="toggleExplicitGapsBtn" class="expand-btn">
+                        Show 3 more gaps ▼
+                    </button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">💡</span>Implied Gaps (4 Critical, 8 Total)
+                    </h3>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Competitive Analysis & Market Positioning</div>
+                        <div class="gap-description">Need to understand competitive landscape and unique differentiation for effective SME pitch</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Risk Assessment & Mitigation</div>
+                        <div class="gap-description">Professional investors expect clear risk framework and audit processes</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Success Metrics & KPIs for Circles</div>
+                        <div class="gap-description">Circles launching but no discussion of success measurement</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    
+                    <!-- Hidden implied gaps -->
+                    <div id="additionalGaps" style="display: none;">
+                        <div class="gap-card" style="border-left-color: var(--warning);">
+                            <div class="gap-title">Legal & Regulatory Compliance</div>
+                            <div class="gap-description">Operating across multiple jurisdictions (UAE, Switzerland, US, Malta) requires framework</div>
+                            <span class="gap-severity severity-high">CRITICAL</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Technology Infrastructure Requirements & Costs</div>
+                            <div class="gap-description">Adopting Symbiosis but no discussion of hosting, maintenance, scaling costs and budget implications</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Change Management for Tool Adoption</div>
+                            <div class="gap-description">Limited discussion of training, onboarding, support - mentioned not everyone is "tech savvy"</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Stakeholder Analysis & Engagement Strategy</div>
+                            <div class="gap-description">Multiple audiences (SMEs, investors, internal) but no systematic stakeholder mapping or engagement approach</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Villa Gaia Impact Measurement & Storytelling</div>
+                            <div class="gap-description">Chris mentioned Villa Gaia "needs to be out there" but no metrics, success stories, or media-ready content discussed</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                    </div>
+                    
+                    <button id="toggleGapsBtn" onclick="toggleAdditionalGaps()" class="expand-btn">
+                        Show 5 more gaps ▼
+                    </button>
+                        color: var(--pastel-blue);
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        font-size: 0.875rem;
+                    ">
+                        Show 4 more gaps ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Knowledge Coverage -->
+        <div class="section">

@@ -1,0 +1,450 @@
+﻿                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content">External Expectations vs. Internal Readiness</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Investors waiting, not ready with financial figures</span>
+                        </div>
+                    </div>
+                    <div id="moreConcerns" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                            <div class="takeaway-content">Private Equity Timeline Dependency</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Waiting for structure decisions, banking complexity</span>
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                            <div class="takeaway-content">Budget & Resource Constraints</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Compensation unclear, cash flow needs, sustainability</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleConcerns()" id="toggleConcernsBtn" class="expand-btn">
+                        Show 2 more triggers ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakthroughs -->
+        <div class="section">
+            <h2 class="section-title">💡 Breakthrough Moments Timeline</h2>
+            <div class="card">
+                <h3 class="card-title">Cognitive, Emotional, Relational & Behavioral Breakthroughs</h3>
+                <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                    💡 Hover over dots to see breakthrough descriptions • 10 significant transformation moments
+                </p>
+                <div class="chart-container" style="height: 400px;">
+                    <canvas id="breakthroughsTimeline"></canvas>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(168, 230, 207, 0.1), rgba(168, 216, 234, 0.1)); border-radius: 12px; border-left: 4px solid var(--pastel-green);">
+                    <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem;">
+                        Total Breakthroughs: 10 significant moments
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        High breakthrough density indicates active cognitive, emotional, and relational transformation throughout the meeting.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversation Structure -->
+        <div class="section">
+            <h2 class="section-title">🗂️ Conversation Structure & Quality</h2>
+            <div class="card">
+                <h3 class="card-title">Meeting Flow Phases</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">0-15 min</div>
+                        <div class="consensus-topic">CENTERING</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Coherence exercise, intention, check-in
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 216, 234, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">15-25 min</div>
+                        <div class="consensus-topic">INFORMATION</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Updates, context-setting
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(255, 211, 182, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">25-45 min</div>
+                        <div class="consensus-topic">DIVERGENCE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Debate, multiple perspectives
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">45-70 min</div>
+                        <div class="consensus-topic">CONVERGENCE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Consensus, decisions, alignment
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(212, 165, 245, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">70-90 min</div>
+                        <div class="consensus-topic">STRUCTURE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Role assignments, operationalizing
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(255, 179, 217, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">90-110 min</div>
+                        <div class="consensus-topic">COMPLEX TOPICS</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            HR policy, investors, budget
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">110-118 min</div>
+                        <div class="consensus-topic">INTEGRATION</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Gratitude, emotional consolidation
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        <strong style="color: var(--pastel-blue);">Pattern:</strong> Intentional arc from centering → exploration → decision → implementation → integration. V-shaped convergence pattern indicates healthy deliberative process.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Convergence/Divergence & Signal/Noise -->
+        <div class="section">
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Convergence/Divergence Timeline</h3>
+                    <div class="chart-container">
+                        <canvas id="convergenceChart"></canvas>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Healthy V-Pattern:</strong> Start high (ritual) → Dip for divergence (debate) → Rise to convergence (decisions) → Peak at close (integration)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signal vs Noise & Efficiency -->
+        <div class="section">
+            <div class="card">
+                <h3 class="card-title">Signal vs. Noise Analysis</h3>
+                <div class="chart-container">
+                    <canvas id="signalNoiseChart"></canvas>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <div style="display: flex; justify-content: space-around; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green);">85%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Signal</div>
+                        </div>
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-orange);">15%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Noise</div>
+                        </div>
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-blue);">92%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Efficiency</div>
+                        </div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Very High Quality:</strong> Noise mainly technical issues (8%) and redundant agreements (4%). Most repetition was productive iteration. Signal clusters at 95% during role assignments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch Resolution -->
+        <div class="section">
+            <div class="card" style="border-top: 4px solid var(--info);">
+                <h3 class="card-title">Conversation Branch Analysis</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Conversation forks and their outcomes
+                    </p>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">Tool Adoption Approach</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Test in one circle vs. immediate adoption → Resolved: Quick test then full rollout</div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">SME Outreach Strategy</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Pitch now vs. internal clarity first → Resolved: Internal first, personal outreach continues</div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">Meeting Structure Cadence</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Monthly governance vs. weekly tactical → Resolved: Weekly for now, revisit later</div>
+                    </div>
+                    <div id="moreBranches" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Communications Scope</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag consensus">Relevant</span>
+                                    <span class="tag decision">Resolved</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Website/narrative vs. broader media entity → Resolved: Both acknowledged as priorities</div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--text-muted);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Weather & Location Small Talk</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag" style="background: rgba(148, 163, 184, 0.2); color: var(--text-muted);">Divergent</span>
+                                    <span class="tag">N/A</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Malta, Geneva discussions → Social bonding only, no meeting goal relevance</div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Villa Gaia Impact Story</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag consensus">Relevant</span>
+                                    <span class="tag action">Deferred</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Mentioned as proof point → Deferred to business development circle</div>
+                        </div>
+                    </div>
+                    <button onclick="toggleBranches()" id="toggleBranchesBtn" class="expand-btn" style="margin-top: 0.75rem;">
+                        Show 3 more branches ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group Beliefs -->
+        <div class="section">
+            <h2 class="section-title">
+                🧠 Group Beliefs & Worldviews
+                <span class="info-icon">
+                    i
+                    <div class="info-tooltip">
+                        <strong>Logic Used for Identification:</strong>
+                        <div style="margin-top: 0.5rem;">
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">1. Pattern Recognition:</strong> Recurring phrases/themes revealing assumptions<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">2. Action-Belief Correlation:</strong> What actions/decisions reveal about values<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">3. Metaphor Analysis:</strong> "tribe", "journey", "derailing"<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">4. Resistance Points:</strong> Where hesitation occurred<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">5. Affirmation Patterns:</strong> Strong agreement vs. pushback
+                        </div>
+                    </div>
+                </span>
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Underlying assumptions and worldviews expressed through speech
+            </p>
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✨</span>Encouraging Beliefs (7)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"Work in progress is okay"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Permission to act imperfectly • Embracing emergence and learning
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"We're a tribe / not alone"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Collective identity • Mutual support system • Shared journey
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"Trust in collective intelligence"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Faith in group decision-making • Distributed wisdom valued
+                        </div>
+                    </div>
+                    <div id="moreEncouraging" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Honesty about gaps is strength"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Vulnerability as competence • "We don't know" is acceptable
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Internal clarity before external action"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Foundation before scaling • Substance over appearance
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Human connection precedes business"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Heart-brain coherence ritual • Gratitude circles • Relationships first
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Everyone has valuable expertise"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Deference to domain experts • Distributed authority respected
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleEncouraging()" id="toggleEncouragingBtn" class="expand-btn">
+                        Show 4 more beliefs ▼
+                    </button>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--warning);">
+                    <h3 class="card-title">
+                        <span class="emoji">⚠️</span>Limiting Beliefs (3)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"We need everything figured out"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Perfectionism tendency • Initial resistance to launching circles without complete clarity
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"Coordination equals complexity"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Anxiety about multiple moving pieces • "Risk of derailing" concerns
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"External validation required"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            "Show me the money" pressure • Investor expectations creating urgency
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Note:</strong> Limiting beliefs were acknowledged and actively reframed during the meeting (e.g., "work in progress is okay").
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Power Dynamics - Healthy Behaviors -->
+        <div class="section">
+            <h2 class="section-title">🛡️ Healthy Power Dynamics</h2>
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✅</span>Sympathy Positioning
+                    </h3>
+                    <div style="text-align: center; padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green); margin-bottom: 0.5rem;">
+                            6 Instances
+                        </div>
+                        <div class="kpi-status status-high" style="font-size: 0.9rem;">SUPPORTIVE, NOT CONTROLLING</div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px;">
+                        <ul style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.5; margin: 0; padding-left: 1.25rem;">
+                            <li>Offering to reduce collective burden</li>
+                            <li>Servant leadership positioning</li>
+                            <li>Genuinely taking on tasks</li>
+                            <li>Examples: Alex, Shamla, G, Anastasia, Chris</li>
+                        </ul>
+                        <p style="color: var(--pastel-green); font-size: 0.8rem; margin: 0.5rem 0 0 0; font-weight: 600;">
+                            ✓ No evidence of "rescuing" to establish control
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✅</span>Humor & Teasing for Superiority
+                    </h3>
+                    <div style="text-align: center; padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green); margin-bottom: 0.5rem;">
+                            0 Instances
+                        </div>
+                        <div class="kpi-status status-high" style="font-size: 0.9rem;">NOT DETECTED - WELL DONE!</div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px;">
+                        <ul style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.5; margin: 0; padding-left: 1.25rem;">
+                            <li>✓ Self-deprecating humor only</li>
+                            <li>✓ Light teasing about technical issues</li>
+                            <li>✓ No put-downs or sarcasm</li>
+                            <li>✓ No jokes at others' expense</li>
+                            <li>✓ Humor for bonding, not competing</li>
+                        </ul>
+                        <p style="color: var(--pastel-green); font-size: 0.8rem; margin: 0.5rem 0 0 0; font-weight: 600;">
+                            ✓ High psychological safety and respect
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overall Assessment: Part 2 -->
+        <div class="section">
+            <div class="card" style="background: linear-gradient(135deg, var(--bg-card) 0%, rgba(168, 230, 207, 0.1) 100%); border: 2px solid var(--pastel-green);">
+                <h3 class="card-title" style="font-size: 1.5rem; text-align: center; color: var(--pastel-green);">
+                    📊 Overall Assessment: Part 2
+                </h3>
+                <div class="grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--pastel-blue); margin-bottom: 1rem;">Power & Authority</h4>
+                        <ul style="list-style: none; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.8;">
+                            <li>✓ Collaborative style (42.8% low power language)</li>
+                            <li>✓ Clear expertise domains respected</li>
+                            <li>✓ No superiority-establishing behavior</li>
+                            <li>✓ Distributed power in practice</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--pastel-purple); margin-bottom: 1rem;">Relational Health</h4>
+                        <ul style="list-style: none; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.8;">
+                            <li>✓ Trust: 82% | Alignment: 84%</li>
+                            <li>✓ Care: 86% | Belonging: 86%</li>
+                            <li>✓ High empathy (22.6 per 100)</li>
+                            <li>✓ Positive sentiment (+2.9 average)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 12px;">
+                    <h4 style="color: var(--pastel-green); margin-bottom: 0.5rem;">Conversation Quality</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6;">
+                        <strong>Structure:</strong> Intentional 7-phase arc with clear transitions<br>
+                        <strong>Efficiency:</strong> 85% signal-to-noise ratio, 92% minimal redundancy<br>
+                        <strong>Breakthrough Density:</strong> 10 significant moments across cognitive, emotional, relational, and behavioral dimensions<br>
+                        <strong>Pattern:</strong> Healthy V-shaped convergence (divergence → debate → consensus)<br>
+                        <strong>Overall:</strong> Highly functional, emotionally intelligent group with strong relational foundation and efficient decision-making processes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 3: COMPARATIVE & PATTERN ANALYSIS -->
+        <div class="section" style="margin-top: 3rem; border-top: 3px solid var(--pastel-purple); padding-top: 2rem;">
+            <h1 style="text-align: center; color: var(--pastel-purple); font-size: 2rem; margin-bottom: 1rem;">
+                📊 PART 3: Comparative & Pattern Analysis
+            </h1>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                Longitudinal analysis across 3 meetings (Oct 23, 27, 30) • Evolution tracking • Cultural shifts
+            </p>
+        </div>
+
+        <!-- Longitudinal Topic Progression -->
+        <div class="section">
+            <h2 class="section-title">📈 Longitudinal Topic Progression</h2>
+            <div class="card">
+                <h3 class="card-title">Meeting Evolution: Oct 23 → Oct 27 → Oct 30</h3>

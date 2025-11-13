@@ -1,0 +1,2433 @@
+﻿<div id="meeting-analysis" class="tab-content active">
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Speakers</div>
+                <div class="kpi-value">8</div>
+                <span class="kpi-status status-high">Active</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Engagement Score</div>
+                <div class="kpi-value">78<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-high">High</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Inclusion Score</div>
+                <div class="kpi-value">72<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-high">High</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Consensus Score</div>
+                <div class="kpi-value">65<span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span></div>
+                <span class="kpi-status status-medium">Moderate</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Agenda Coverage</div>
+                <div class="kpi-value">88<span style="font-size: 1.5rem; color: var(--text-secondary);">%</span></div>
+                <span class="kpi-status status-high">Excellent</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Decisions Made</div>
+                <div class="kpi-value">4</div>
+                <span class="kpi-status status-high">Productive</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Action Items</div>
+                <div class="kpi-value">8</div>
+                <span class="kpi-status status-high">Clear Ownership</span>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Knowledge or Info Gaps</div>
+                <div class="kpi-value">6</div>
+                <span class="kpi-status status-medium">Explicit</span>
+            </div>
+        </div>
+
+        <!-- Participation & Engagement -->
+        <div class="section">
+            <h2 class="section-title">Participation & Engagement</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Speaker Participation Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="participationChart"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Engagement Components</h3>
+                    <div class="chart-container">
+                        <canvas id="engagementChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speaker Breakdown -->
+        <div class="section">
+            <h2 class="section-title">Detailed Speaker Analysis</h2>
+            <div class="card">
+                <h3 class="card-title">Utterance Distribution</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Alex Alegria</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 42.8%;">42.8%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Farhad</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 14.4%; background: linear-gradient(90deg, var(--pastel-blue), var(--pastel-green));">14.4%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">G (Giannandrea)</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 12.5%; background: linear-gradient(90deg, var(--pastel-green), var(--pastel-yellow));">12.5%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Sudheer</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 11.5%; background: linear-gradient(90deg, var(--pastel-orange), var(--pastel-pink));">11.5%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Chris</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 7.7%; background: linear-gradient(90deg, var(--pastel-pink), var(--pastel-purple));">7.7%</div>
+                        </div>
+                    </div>
+                    <div class="speaker-bar">
+                        <div class="speaker-name">Anastasia</div>
+                        <div class="speaker-progress">
+                            <div class="speaker-fill" style="width: 7.2%; background: linear-gradient(90deg, var(--pastel-purple), var(--pastel-blue));">7.2%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inclusivity Metrics -->
+        <div class="section">
+            <h2 class="section-title">Inclusivity Metrics</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="card-title">Pronoun Usage</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Collective (we, us, our)</span>
+                            <span class="metric-value">347</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Individual (I, me, you, my)</span>
+                            <span class="metric-value">423</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Ratio</span>
+                            <span class="metric-value">0.82</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟡 <strong>Balanced</strong> - Appropriate mix of collective identity and individual ownership
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Interruptions & Repairs</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Interruptions</span>
+                            <span class="metric-value">8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Rate per 100 utterances</span>
+                            <span class="metric-value">3.8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Repairs</span>
+                            <span class="metric-value">12</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Technical Issues</span>
+                            <span class="metric-value">15</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟢 <strong>Healthy</strong> - Low interruption rate indicates respectful dialogue
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Inclusion Language</h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Acknowledgments</span>
+                            <span class="metric-value">18</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Invitations</span>
+                            <span class="metric-value">16</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Reinforcements</span>
+                            <span class="metric-value">8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Total Instances</span>
+                            <span class="metric-value">42</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        🟢 <strong>High Inclusion</strong> - 20.2 instances per 100 utterances
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Topics -->
+        <div class="section">
+            <h2 class="section-title">Discussion Topics</h2>
+            <div class="card">
+                <h3 class="card-title">Topic Distribution (% of Conversation)</h3>
+                <div class="chart-container">
+                    <canvas id="topicsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div class="section">
+            <h2 class="section-title">Key Takeaways & Decisions</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🔵</span>Decisions Made (4)
+                    </h3>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Adopt Hive/Symbiosis platform after 2-3 day testing period</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: G, Sudheer, Shamla</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Launch circles immediately with preliminary charters</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Alex, All Circle Leads</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Inner Circle roles assigned: Chris (Facilitator), Shamla (Secretary), G (Governance & Metrics), Sudheer (Integration)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Named individuals</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">Continue weekly meetings on Tuesday (changed from Thursday)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Alex</span>
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🟠</span>Priority Action Items (8)
+                    </h3>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Shamla to circulate rolling 6-month cash flow forecast format</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Shamla</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Farhad needs structure answers from Prakash for private equity (2-3 weeks)</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Prakash → Farhad</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Chris to create internal database of entities and needs/wish lists</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Chris</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Anastasia to confirm Restate's 501c3 charter compatibility</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Anastasia</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">Prakash/Sudheer to develop HR and compensation policy</div>
+                        <div class="takeaway-meta">
+                            <span>Owner: Prakash, Sudheer</span>
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consensus Patterns -->
+        <div class="section">
+            <h2 class="section-title">Agreement & Consensus Patterns</h2>
+            <div class="card">
+                <h3 class="card-title">Topics by Consensus Level</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="consensus-item">
+                        <div class="consensus-topic">SME Timing Strategy</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Communications Priority</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">501c3 Structure</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="consensus-percent">100%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Tool Adoption</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Circle Launch</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                    <div class="consensus-item">
+                        <div class="consensus-topic">Meeting Structure</div>
+                        <div class="consensus-bar">
+                            <div class="consensus-fill" style="width: 87.5%;"></div>
+                        </div>
+                        <div class="consensus-percent">87.5%</div>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                        <strong style="color: var(--pastel-green);">✓ Key Insight:</strong> All discussions reached organic consensus through dialogue. No voting required.
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        Initial disagreements (tool adoption) were resolved constructively through respectful discussion and trust in expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Knowledge or Information Gaps -->
+        <div class="section">
+            <h2 class="section-title">Critical Knowledge or Information Gaps</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">🔍</span>Explicit Gaps (6)
+                    </h3>
+                    <div class="gap-card">
+                        <div class="gap-title">SME Value Proposition & Service Offering</div>
+                        <div class="gap-description">"We don't have anything clear as yet in terms of what we want to offer" - Sudheer</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    <div class="gap-card">
+                        <div class="gap-title">Private Equity Structure Details</div>
+                        <div class="gap-description">Awaiting final structure decisions on share classes and instruments from Prakash</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    <div class="gap-card">
+                        <div class="gap-title">HR & Compensation Policy Framework</div>
+                        <div class="gap-description">Need clear policy on hiring, benefits, time value capitalization</div>
+                        <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                    </div>
+                    
+                    <!-- Hidden explicit gaps -->
+                    <div id="moreExplicitGaps" style="display: none;">
+                        <div class="gap-card">
+                            <div class="gap-title">Financial Figures & Projections</div>
+                            <div class="gap-description">"Show me the money" - Need concrete financial data for investors</div>
+                            <span class="gap-severity severity-high">HIGH SEVERITY</span>
+                        </div>
+                        <div class="gap-card">
+                            <div class="gap-title">Internal Ecosystem Database</div>
+                            <div class="gap-description">Incomplete list of entities, resources, and needs across network</div>
+                            <span class="gap-severity severity-medium">MEDIUM SEVERITY</span>
+                        </div>
+                        <div class="gap-card">
+                            <div class="gap-title">Investor Workshop Content</div>
+                            <div class="gap-description">Workshop approach discussed but content not detailed</div>
+                            <span class="gap-severity severity-medium">MEDIUM SEVERITY</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="toggleExplicitGaps()" id="toggleExplicitGapsBtn" class="expand-btn">
+                        Show 3 more gaps ▼
+                    </button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">
+                        <span class="emoji">💡</span>Implied Gaps (4 Critical, 8 Total)
+                    </h3>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Competitive Analysis & Market Positioning</div>
+                        <div class="gap-description">Need to understand competitive landscape and unique differentiation for effective SME pitch</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Risk Assessment & Mitigation</div>
+                        <div class="gap-description">Professional investors expect clear risk framework and audit processes</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    <div class="gap-card" style="border-left-color: var(--warning);">
+                        <div class="gap-title">Success Metrics & KPIs for Circles</div>
+                        <div class="gap-description">Circles launching but no discussion of success measurement</div>
+                        <span class="gap-severity severity-high">CRITICAL</span>
+                    </div>
+                    
+                    <!-- Hidden implied gaps -->
+                    <div id="additionalGaps" style="display: none;">
+                        <div class="gap-card" style="border-left-color: var(--warning);">
+                            <div class="gap-title">Legal & Regulatory Compliance</div>
+                            <div class="gap-description">Operating across multiple jurisdictions (UAE, Switzerland, US, Malta) requires framework</div>
+                            <span class="gap-severity severity-high">CRITICAL</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Technology Infrastructure Requirements & Costs</div>
+                            <div class="gap-description">Adopting Symbiosis but no discussion of hosting, maintenance, scaling costs and budget implications</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Change Management for Tool Adoption</div>
+                            <div class="gap-description">Limited discussion of training, onboarding, support - mentioned not everyone is "tech savvy"</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Stakeholder Analysis & Engagement Strategy</div>
+                            <div class="gap-description">Multiple audiences (SMEs, investors, internal) but no systematic stakeholder mapping or engagement approach</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                        <div class="gap-card" style="border-left-color: var(--info);">
+                            <div class="gap-title">Villa Gaia Impact Measurement & Storytelling</div>
+                            <div class="gap-description">Chris mentioned Villa Gaia "needs to be out there" but no metrics, success stories, or media-ready content discussed</div>
+                            <span class="gap-severity severity-medium">IMPORTANT</span>
+                        </div>
+                    </div>
+                    
+                    <button id="toggleGapsBtn" onclick="toggleAdditionalGaps()" class="expand-btn">
+                        Show 5 more gaps ▼
+                    </button>
+                        color: var(--pastel-blue);
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        font-size: 0.875rem;
+                    ">
+                        Show 4 more gaps ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Knowledge Coverage -->
+        <div class="section">
+            <h2 class="section-title">Knowledge Coverage Assessment</h2>
+            <div class="card">
+                <h3 class="card-title">Topic Knowledge Depth</h3>
+                <div class="chart-container">
+                    <canvas id="knowledgeChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meeting Quality -->
+        <div class="section">
+            <h2 class="section-title">Meeting Quality Assessment</h2>
+            <div class="grid-3">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✅</span>Strengths
+                    </h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Excellent facilitation by Alex</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">High engagement from core group</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Strong decision velocity (4 major)</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Inclusive culture & psychological safety</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Self-aware about knowledge gaps</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Adaptive approach to challenges</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--warning);">
+                    <h3 class="card-title">
+                        <span class="emoji">⚠️</span>Areas for Improvement
+                    </h3>
+                    <ul class="metric-list">
+                        <li class="metric-item warning">
+                            <span class="metric-name">Time management (118 min / 14 items)</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Participation imbalance (43% facilitator)</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Technical issues (15 instances)</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Some topics revisited multiple times</span>
+                        </li>
+                        <li class="metric-item warning">
+                            <span class="metric-name">Action items need clearer deadlines</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--info);">
+                    <h3 class="card-title">
+                        <span class="emoji">🎯</span>Recommendations
+                    </h3>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Rotate facilitator (as decided)</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Use Symbiosis for async pre-discussion</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Circulate materials 24h before</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Implement stricter timeboxing</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Rigorous action tracking system</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Closing Sentiment -->
+        <div class="section">
+            <h2 class="section-title">Closing Sentiment</h2>
+            <div class="card" style="background: linear-gradient(135deg, var(--bg-card) 0%, rgba(168, 230, 207, 0.1) 100%);">
+                <h3 class="card-title">
+                    <span class="emoji">💚</span>Gratitude Circle Themes
+                </h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Tribe" & "Not alone anymore"</span>
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Collective intention"</span>
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Increasing openness"</span>
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Trust"</span>
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Convergence towards action"</span>
+                    <span class="tag consensus" style="font-size: 0.875rem; padding: 0.5rem 1rem;">"Souls" & relationship depth</span>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 12px; text-align: center;">
+                    <p style="font-size: 1.25rem; color: var(--pastel-green); font-weight: 600; margin-bottom: 0.5rem;">
+                        Overall Emotional Tone: Positive and Energized 🟢
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Despite 118-minute duration and complex topics, the meeting ended on a high note with genuine expressions of gratitude, connection, and shared purpose.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 2: DEEPER INSIGHTS -->
+        <div style="margin: 4rem 0 2rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(168, 230, 207, 0.1), rgba(168, 216, 234, 0.1)); border-radius: 16px; border: 2px solid var(--border);">
+            <h1 style="text-align: center; font-size: 2rem; background: linear-gradient(135deg, var(--pastel-green), var(--pastel-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                Part 2: Deeper Qualitative & Quantitative Insights
+            </h1>
+            <p style="text-align: center; color: var(--text-secondary); margin-top: 0.5rem;">
+                Power Dynamics • Relational Health • Conversation Structure
+            </p>
+        </div>
+
+        <!-- Power Dynamics Section -->
+        <div class="section">
+            <h2 class="section-title">⚡ Power Dynamics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Power Language Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="powerLanguageChart"></canvas>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-blue);">Interpretation:</strong> Group uses LOW POWER language (42.8%) more than high power (16.3%), indicating collaborative, consensus-seeking culture aligned with stated governance values.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Speaker Power Profiles</h3>
+                    <div style="margin-top: 1rem;">
+                        <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                <span class="metric-name">Alex (Facilitator)</span>
+                                <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 22% | Low: 31%</span>
+                            </div>
+                            <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                <div style="width: 22%; background: var(--pastel-orange);"></div>
+                                <div style="width: 31%; background: var(--pastel-blue);"></div>
+                                <div style="width: 47%; background: var(--bg-secondary);"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                <span class="metric-name">G (Technology)</span>
+                                <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 19% | Low: 35%</span>
+                            </div>
+                            <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                <div style="width: 19%; background: var(--pastel-orange);"></div>
+                                <div style="width: 35%; background: var(--pastel-blue);"></div>
+                                <div style="width: 46%; background: var(--bg-secondary);"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                            <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                <span class="metric-name">Sudheer (Operations)</span>
+                                <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 8% | Low: 58%</span>
+                            </div>
+                            <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                <div style="width: 8%; background: var(--pastel-orange);"></div>
+                                <div style="width: 58%; background: var(--pastel-blue);"></div>
+                                <div style="width: 34%; background: var(--bg-secondary);"></div>
+                            </div>
+                        </div>
+                        <div id="morePowerProfiles" style="display: none;">
+                            <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                    <span class="metric-name">Chris (Business Dev)</span>
+                                    <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 12% | Low: 48%</span>
+                                </div>
+                                <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                    <div style="width: 12%; background: var(--pastel-orange);"></div>
+                                    <div style="width: 48%; background: var(--pastel-blue);"></div>
+                                    <div style="width: 40%; background: var(--bg-secondary);"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                    <span class="metric-name">Farhad (Finance)</span>
+                                    <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 10% | Low: 52%</span>
+                                </div>
+                                <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                    <div style="width: 10%; background: var(--pastel-orange);"></div>
+                                    <div style="width: 52%; background: var(--pastel-blue);"></div>
+                                    <div style="width: 38%; background: var(--bg-secondary);"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item" style="margin-bottom: 1rem; flex-direction: column; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%; margin-bottom: 0.5rem;">
+                                    <span class="metric-name">Anastasia (Comms)</span>
+                                    <span style="color: var(--text-secondary); font-size: 0.875rem;">High: 15% | Low: 45%</span>
+                                </div>
+                                <div style="display: flex; width: 100%; height: 8px; background: var(--bg-primary); border-radius: 4px; overflow: hidden;">
+                                    <div style="width: 15%; background: var(--pastel-orange);"></div>
+                                    <div style="width: 45%; background: var(--pastel-blue);"></div>
+                                    <div style="width: 40%; background: var(--bg-secondary);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="togglePowerProfiles()" id="togglePowerBtn" class="expand-btn">
+                            Show 3 more speakers ▼
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epistemic Authority & Archetypes -->
+        <div class="section">
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Epistemic Authority (Knowledge Control)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Who the group defers to as experts in specific domains
+                    </p>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                        <div class="takeaway-content"><strong>G</strong> - Technology & Platform (8 instances)</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Group waited for technical opinion, trusted without verification</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>Farhad</strong> - Legal & Finance (6 instances)</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Banking processes and private equity timeline trusted</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-purple);">
+                        <div class="takeaway-content"><strong>Alex</strong> - Governance & Process (5 instances)</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Facilitation authority, agenda setting, charter framework</span>
+                        </div>
+                    </div>
+                    <div id="moreEpistemic" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                            <div class="takeaway-content"><strong>Prakash</strong> - HR & Finance (4 instances)</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Referenced as authority despite minimal presence</span>
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-pink);">
+                            <div class="takeaway-content"><strong>Anastasia</strong> - Communications (3 instances)</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">In-house capacity acknowledged, expertise accepted</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleEpistemic()" id="toggleEpistemicBtn" class="expand-btn">
+                        Show 2 more experts ▼
+                    </button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Dominant Archetypes</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Conversational roles and energy patterns
+                    </p>
+                    <ul class="metric-list">
+                        <li class="metric-item">
+                            <span class="metric-name">Alex: Ruler/Mentor</span>
+                            <span class="metric-value">58%</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Sudheer: Sage/Judge</span>
+                            <span class="metric-value">62%</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">G: Creator/Sage</span>
+                            <span class="metric-value">55%</span>
+                        </li>
+                    </ul>
+                    <div id="moreArchetypes" style="display: none;">
+                        <ul class="metric-list">
+                            <li class="metric-item">
+                                <span class="metric-name">Chris: Hero/Caregiver</span>
+                                <span class="metric-value">50%</span>
+                            </li>
+                            <li class="metric-item">
+                                <span class="metric-name">Farhad: Explorer/Sage</span>
+                                <span class="metric-value">60%</span>
+                            </li>
+                            <li class="metric-item">
+                                <span class="metric-name">Anastasia: Caregiver/Creator</span>
+                                <span class="metric-value">52%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleArchetypes()" id="toggleArchetypesBtn" class="expand-btn">
+                        Show 3 more archetypes ▼
+                    </button>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                        <strong style="color: var(--pastel-green);">Key Pattern:</strong> Heavy Adult/Sage energy (67% rational), minimal Rebel archetype, clear role differentiation reduces conflict
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Relational Health Timeline -->
+        <div class="section">
+            <h2 class="section-title">💚 Relational Health Over Time</h2>
+            <div class="card">
+                <h3 class="card-title">Trust, Alignment, Care & Belonging Timeline</h3>
+                <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                    💡 Hover over a metric in the legend to highlight its timeline
+                </p>
+                <div class="chart-container" style="height: 350px;">
+                    <canvas id="relationalTimeline"></canvas>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <div style="flex: 1; min-width: 140px; padding: 1rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+                            <div style="color: var(--text-secondary); font-size: 0.75rem; margin-bottom: 0.25rem;">Trust</div>
+                            <div style="color: rgba(168, 216, 234, 1); font-size: 1.5rem; font-weight: 700;">82%</div>
+                        </div>
+                        <div style="flex: 1; min-width: 140px; padding: 1rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+                            <div style="color: var(--text-secondary); font-size: 0.75rem; margin-bottom: 0.25rem;">Alignment</div>
+                            <div style="color: rgba(168, 230, 207, 1); font-size: 1.5rem; font-weight: 700;">84%</div>
+                        </div>
+                        <div style="flex: 1; min-width: 140px; padding: 1rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+                            <div style="color: var(--text-secondary); font-size: 0.75rem; margin-bottom: 0.25rem;">Care</div>
+                            <div style="color: rgba(212, 165, 245, 1); font-size: 1.5rem; font-weight: 700;">86%</div>
+                        </div>
+                        <div style="flex: 1; min-width: 140px; padding: 1rem; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+                            <div style="color: var(--text-secondary); font-size: 0.75rem; margin-bottom: 0.25rem;">Belonging</div>
+                            <div style="color: rgba(255, 179, 217, 1); font-size: 1.5rem; font-weight: 700;">86%</div>
+                        </div>
+                    </div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                        <h4 style="color: var(--pastel-blue); margin-bottom: 0.5rem; font-size: 0.95rem;">Key Insights</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.5;">
+                            <strong>Peaks:</strong> Opening ritual, Closing gratitude, Role assignments<br>
+                            <strong>Dips:</strong> Tool adoption debate (healthy), Complex budget topics<br>
+                            <strong>Pattern:</strong> Strong relational foundation maintained even during disagreement
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emotional & Sentiment Analysis -->
+        <div class="section">
+            <h2 class="section-title">🎭 Emotional Dynamics</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Sentiment Arc Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                        <p style="color: var(--text-primary); font-size: 0.875rem; margin-bottom: 0.5rem;">
+                            <strong>Average Sentiment: +2.9</strong> (Positive)
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            Negativity preceded problem-solving (healthy pattern). Positivity increased after consensus. Strong positive close with gratitude ritual.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Empathy Score</h3>
+                    <div style="text-align: center; padding: 2rem 1rem;">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--pastel-green); margin-bottom: 0.5rem;">
+                            22.6
+                        </div>
+                        <div style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 2rem;">
+                            Instances per 100 utterances
+                        </div>
+                        <div class="kpi-status status-high" style="font-size: 1rem;">HIGH EMPATHY</div>
+                    </div>
+                    <ul class="metric-list" style="margin-top: 1rem;">
+                        <li class="metric-item">
+                            <span class="metric-name">Explicit empathetic statements</span>
+                            <span class="metric-value">12</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Feeling-oriented questions</span>
+                            <span class="metric-value">8</span>
+                        </li>
+                        <li class="metric-item">
+                            <span class="metric-name">Active listening/validation</span>
+                            <span class="metric-value">27</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emotional Triggers -->
+        <div class="section">
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✨</span>Excitement Triggers (5)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content">Symbiosis Platform Demo</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Multiple "Awesome!", enthusiasm about capabilities</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content">Communications Priority</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">"Most important thing", media company vision</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content">501c3 Philanthropic Structure</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Fast path to funding, end-of-year timing</span>
+                        </div>
+                    </div>
+                    <div id="moreExcitement" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content">Circle Launch Agreement</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Forward momentum, action-orientation</span>
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content">Role Clarity</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Everyone getting clear roles, structure emerging</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleExcitement()" id="toggleExcitementBtn" class="expand-btn">
+                        Show 2 more triggers ▼
+                    </button>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--warning);">
+                    <h3 class="card-title">
+                        <span class="emoji">⚠️</span>Concern Triggers (5)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content">SME Value Proposition Clarity</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">"We don't have anything clear", multiple echoing uncertainty</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content">Coordination Complexity</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Multiple organizations, risk of derailing, too many pieces</span>
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content">External Expectations vs. Internal Readiness</div>
+                        <div class="takeaway-meta" style="justify-content: flex-start;">
+                            <span style="font-size: 0.75rem;">Investors waiting, not ready with financial figures</span>
+                        </div>
+                    </div>
+                    <div id="moreConcerns" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                            <div class="takeaway-content">Private Equity Timeline Dependency</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Waiting for structure decisions, banking complexity</span>
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                            <div class="takeaway-content">Budget & Resource Constraints</div>
+                            <div class="takeaway-meta" style="justify-content: flex-start;">
+                                <span style="font-size: 0.75rem;">Compensation unclear, cash flow needs, sustainability</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleConcerns()" id="toggleConcernsBtn" class="expand-btn">
+                        Show 2 more triggers ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakthroughs -->
+        <div class="section">
+            <h2 class="section-title">💡 Breakthrough Moments Timeline</h2>
+            <div class="card">
+                <h3 class="card-title">Cognitive, Emotional, Relational & Behavioral Breakthroughs</h3>
+                <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                    💡 Hover over dots to see breakthrough descriptions • 10 significant transformation moments
+                </p>
+                <div class="chart-container" style="height: 400px;">
+                    <canvas id="breakthroughsTimeline"></canvas>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(168, 230, 207, 0.1), rgba(168, 216, 234, 0.1)); border-radius: 12px; border-left: 4px solid var(--pastel-green);">
+                    <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem;">
+                        Total Breakthroughs: 10 significant moments
+                    </p>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        High breakthrough density indicates active cognitive, emotional, and relational transformation throughout the meeting.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversation Structure -->
+        <div class="section">
+            <h2 class="section-title">🗂️ Conversation Structure & Quality</h2>
+            <div class="card">
+                <h3 class="card-title">Meeting Flow Phases</h3>
+                <div style="margin-top: 1rem;">
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">0-15 min</div>
+                        <div class="consensus-topic">CENTERING</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Coherence exercise, intention, check-in
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 216, 234, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">15-25 min</div>
+                        <div class="consensus-topic">INFORMATION</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Updates, context-setting
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(255, 211, 182, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">25-45 min</div>
+                        <div class="consensus-topic">DIVERGENCE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Debate, multiple perspectives
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">45-70 min</div>
+                        <div class="consensus-topic">CONVERGENCE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Consensus, decisions, alignment
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(212, 165, 245, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">70-90 min</div>
+                        <div class="consensus-topic">STRUCTURE</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Role assignments, operationalizing
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(255, 179, 217, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">90-110 min</div>
+                        <div class="consensus-topic">COMPLEX TOPICS</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            HR policy, investors, budget
+                        </div>
+                    </div>
+                    <div class="consensus-item" style="background: rgba(168, 230, 207, 0.1);">
+                        <div style="min-width: 80px; color: var(--text-secondary); font-size: 0.875rem;">110-118 min</div>
+                        <div class="consensus-topic">INTEGRATION</div>
+                        <div style="flex: 1; margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                            Gratitude, emotional consolidation
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                        <strong style="color: var(--pastel-blue);">Pattern:</strong> Intentional arc from centering → exploration → decision → implementation → integration. V-shaped convergence pattern indicates healthy deliberative process.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Convergence/Divergence & Signal/Noise -->
+        <div class="section">
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Convergence/Divergence Timeline</h3>
+                    <div class="chart-container">
+                        <canvas id="convergenceChart"></canvas>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Healthy V-Pattern:</strong> Start high (ritual) → Dip for divergence (debate) → Rise to convergence (decisions) → Peak at close (integration)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signal vs Noise & Efficiency -->
+        <div class="section">
+            <div class="card">
+                <h3 class="card-title">Signal vs. Noise Analysis</h3>
+                <div class="chart-container">
+                    <canvas id="signalNoiseChart"></canvas>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <div style="display: flex; justify-content: space-around; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green);">85%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Signal</div>
+                        </div>
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-orange);">15%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Noise</div>
+                        </div>
+                        <div style="text-align: center; flex: 1;">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-blue);">92%</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">Efficiency</div>
+                        </div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Very High Quality:</strong> Noise mainly technical issues (8%) and redundant agreements (4%). Most repetition was productive iteration. Signal clusters at 95% during role assignments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch Resolution -->
+        <div class="section">
+            <div class="card" style="border-top: 4px solid var(--info);">
+                <h3 class="card-title">Conversation Branch Analysis</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Conversation forks and their outcomes
+                    </p>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">Tool Adoption Approach</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Test in one circle vs. immediate adoption → Resolved: Quick test then full rollout</div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">SME Outreach Strategy</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Pitch now vs. internal clarity first → Resolved: Internal first, personal outreach continues</div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="takeaway-content" style="margin: 0;">Meeting Structure Cadence</div>
+                            <div style="display: flex; gap: 0.5rem;">
+                                <span class="tag consensus">Relevant</span>
+                                <span class="tag decision">Resolved</span>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Monthly governance vs. weekly tactical → Resolved: Weekly for now, revisit later</div>
+                    </div>
+                    <div id="moreBranches" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Communications Scope</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag consensus">Relevant</span>
+                                    <span class="tag decision">Resolved</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Website/narrative vs. broader media entity → Resolved: Both acknowledged as priorities</div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--text-muted);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Weather & Location Small Talk</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag" style="background: rgba(148, 163, 184, 0.2); color: var(--text-muted);">Divergent</span>
+                                    <span class="tag">N/A</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Malta, Geneva discussions → Social bonding only, no meeting goal relevance</div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <div class="takeaway-content" style="margin: 0;">Villa Gaia Impact Story</div>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <span class="tag consensus">Relevant</span>
+                                    <span class="tag action">Deferred</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary);">Mentioned as proof point → Deferred to business development circle</div>
+                        </div>
+                    </div>
+                    <button onclick="toggleBranches()" id="toggleBranchesBtn" class="expand-btn" style="margin-top: 0.75rem;">
+                        Show 3 more branches ▼
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group Beliefs -->
+        <div class="section">
+            <h2 class="section-title">
+                🧠 Group Beliefs & Worldviews
+                <span class="info-icon">
+                    i
+                    <div class="info-tooltip">
+                        <strong>Logic Used for Identification:</strong>
+                        <div style="margin-top: 0.5rem;">
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">1. Pattern Recognition:</strong> Recurring phrases/themes revealing assumptions<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">2. Action-Belief Correlation:</strong> What actions/decisions reveal about values<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">3. Metaphor Analysis:</strong> "tribe", "journey", "derailing"<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">4. Resistance Points:</strong> Where hesitation occurred<br>
+                            <strong style="color: var(--text-primary); font-size: 0.8rem;">5. Affirmation Patterns:</strong> Strong agreement vs. pushback
+                        </div>
+                    </div>
+                </span>
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Underlying assumptions and worldviews expressed through speech
+            </p>
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✨</span>Encouraging Beliefs (7)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"Work in progress is okay"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Permission to act imperfectly • Embracing emergence and learning
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"We're a tribe / not alone"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Collective identity • Mutual support system • Shared journey
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>"Trust in collective intelligence"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Faith in group decision-making • Distributed wisdom valued
+                        </div>
+                    </div>
+                    <div id="moreEncouraging" style="display: none;">
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Honesty about gaps is strength"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Vulnerability as competence • "We don't know" is acceptable
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Internal clarity before external action"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Foundation before scaling • Substance over appearance
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Human connection precedes business"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Heart-brain coherence ritual • Gratitude circles • Relationships first
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>"Everyone has valuable expertise"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                Deference to domain experts • Distributed authority respected
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleEncouraging()" id="toggleEncouragingBtn" class="expand-btn">
+                        Show 4 more beliefs ▼
+                    </button>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--warning);">
+                    <h3 class="card-title">
+                        <span class="emoji">⚠️</span>Limiting Beliefs (3)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"We need everything figured out"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Perfectionism tendency • Initial resistance to launching circles without complete clarity
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"Coordination equals complexity"</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Anxiety about multiple moving pieces • "Risk of derailing" concerns
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-orange);">
+                        <div class="takeaway-content"><strong>"External validation required"</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            "Show me the money" pressure • Investor expectations creating urgency
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">
+                            <strong style="color: var(--pastel-green);">Note:</strong> Limiting beliefs were acknowledged and actively reframed during the meeting (e.g., "work in progress is okay").
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Power Dynamics - Healthy Behaviors -->
+        <div class="section">
+            <h2 class="section-title">🛡️ Healthy Power Dynamics</h2>
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✅</span>Sympathy Positioning
+                    </h3>
+                    <div style="text-align: center; padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green); margin-bottom: 0.5rem;">
+                            6 Instances
+                        </div>
+                        <div class="kpi-status status-high" style="font-size: 0.9rem;">SUPPORTIVE, NOT CONTROLLING</div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px;">
+                        <ul style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.5; margin: 0; padding-left: 1.25rem;">
+                            <li>Offering to reduce collective burden</li>
+                            <li>Servant leadership positioning</li>
+                            <li>Genuinely taking on tasks</li>
+                            <li>Examples: Alex, Shamla, G, Anastasia, Chris</li>
+                        </ul>
+                        <p style="color: var(--pastel-green); font-size: 0.8rem; margin: 0.5rem 0 0 0; font-weight: 600;">
+                            ✓ No evidence of "rescuing" to establish control
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">✅</span>Humor & Teasing for Superiority
+                    </h3>
+                    <div style="text-align: center; padding: 1.5rem 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--pastel-green); margin-bottom: 0.5rem;">
+                            0 Instances
+                        </div>
+                        <div class="kpi-status status-high" style="font-size: 0.9rem;">NOT DETECTED - WELL DONE!</div>
+                    </div>
+                    <div style="padding: 0.75rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px;">
+                        <ul style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.5; margin: 0; padding-left: 1.25rem;">
+                            <li>✓ Self-deprecating humor only</li>
+                            <li>✓ Light teasing about technical issues</li>
+                            <li>✓ No put-downs or sarcasm</li>
+                            <li>✓ No jokes at others' expense</li>
+                            <li>✓ Humor for bonding, not competing</li>
+                        </ul>
+                        <p style="color: var(--pastel-green); font-size: 0.8rem; margin: 0.5rem 0 0 0; font-weight: 600;">
+                            ✓ High psychological safety and respect
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overall Assessment: Part 2 -->
+        <div class="section">
+            <div class="card" style="background: linear-gradient(135deg, var(--bg-card) 0%, rgba(168, 230, 207, 0.1) 100%); border: 2px solid var(--pastel-green);">
+                <h3 class="card-title" style="font-size: 1.5rem; text-align: center; color: var(--pastel-green);">
+                    📊 Overall Assessment: Part 2
+                </h3>
+                <div class="grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--pastel-blue); margin-bottom: 1rem;">Power & Authority</h4>
+                        <ul style="list-style: none; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.8;">
+                            <li>✓ Collaborative style (42.8% low power language)</li>
+                            <li>✓ Clear expertise domains respected</li>
+                            <li>✓ No superiority-establishing behavior</li>
+                            <li>✓ Distributed power in practice</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--pastel-purple); margin-bottom: 1rem;">Relational Health</h4>
+                        <ul style="list-style: none; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.8;">
+                            <li>✓ Trust: 82% | Alignment: 84%</li>
+                            <li>✓ Care: 86% | Belonging: 86%</li>
+                            <li>✓ High empathy (22.6 per 100)</li>
+                            <li>✓ Positive sentiment (+2.9 average)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 12px;">
+                    <h4 style="color: var(--pastel-green); margin-bottom: 0.5rem;">Conversation Quality</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6;">
+                        <strong>Structure:</strong> Intentional 7-phase arc with clear transitions<br>
+                        <strong>Efficiency:</strong> 85% signal-to-noise ratio, 92% minimal redundancy<br>
+                        <strong>Breakthrough Density:</strong> 10 significant moments across cognitive, emotional, relational, and behavioral dimensions<br>
+                        <strong>Pattern:</strong> Healthy V-shaped convergence (divergence → debate → consensus)<br>
+                        <strong>Overall:</strong> Highly functional, emotionally intelligent group with strong relational foundation and efficient decision-making processes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 3: COMPARATIVE & PATTERN ANALYSIS -->
+        <div class="section" style="margin-top: 3rem; border-top: 3px solid var(--pastel-purple); padding-top: 2rem;">
+            <h1 style="text-align: center; color: var(--pastel-purple); font-size: 2rem; margin-bottom: 1rem;">
+                📊 PART 3: Comparative & Pattern Analysis
+            </h1>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                Longitudinal analysis across 3 meetings (Oct 23, 27, 30) • Evolution tracking • Cultural shifts
+            </p>
+        </div>
+
+        <!-- Longitudinal Topic Progression -->
+        <div class="section">
+            <h2 class="section-title">📈 Longitudinal Topic Progression</h2>
+            <div class="card">
+                <h3 class="card-title">Meeting Evolution: Oct 23 → Oct 27 → Oct 30</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="flex: 1; padding: 1rem; background: rgba(168, 216, 234, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-blue);">
+                            <h4 style="color: var(--pastel-blue); margin-bottom: 0.5rem; font-size: 0.9rem;">Meeting 1 (Oct 23)</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+                                <strong>Focus:</strong> Private Equity structure, legal framework<br>
+                                <strong>Tone:</strong> Technical, clarification-heavy<br>
+                                <strong>Duration:</strong> 40 minutes
+                            </p>
+                        </div>
+                        <div style="flex: 1; padding: 1rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                            <h4 style="color: var(--pastel-green); margin-bottom: 0.5rem; font-size: 0.9rem;">Meeting 2 (Oct 27)</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+                                <strong>Focus:</strong> Continued PE structure refinement<br>
+                                <strong>Tone:</strong> Collaborative problem-solving<br>
+                                <strong>Duration:</strong> 40 minutes
+                            </p>
+                        </div>
+                        <div style="flex: 1; padding: 1rem; background: rgba(212, 165, 245, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-purple);">
+                            <h4 style="color: var(--pastel-purple); margin-bottom: 0.5rem; font-size: 0.9rem;">Meeting 3 (Oct 30)</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.8rem; margin: 0;">
+                                <strong>Focus:</strong> Operational execution, circles, governance<br>
+                                <strong>Tone:</strong> Action-oriented, strategic<br>
+                                <strong>Duration:</strong> 118 minutes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 style="color: var(--pastel-blue); margin: 1.5rem 0 1rem 0;">Recurring Topics Analysis</h4>
+                <div class="grid-2">
+                    <div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>Governance Structure</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> All 3 meetings<br>
+                                <strong>Progression:</strong> Legal framework (M1-2) → Operational roles & circles (M3)<br>
+                                <strong>Status:</strong> ✓ Building productively
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>Founder Voting Rights</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> M1-2 (Private Equity context)<br>
+                                <strong>Progression:</strong> Theory → Mechanism design → Implementation<br>
+                                <strong>Status:</strong> ✓ Resolved in M2
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                            <div class="takeaway-content"><strong>SME Outreach Strategy</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> M2-3<br>
+                                <strong>Progression:</strong> Germans need proof (M2) → Pilot with 3-15 SMEs (M3)<br>
+                                <strong>Status:</strong> ✓ Strategy crystallizing
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="takeaway-card" style="border-left-color: var(--warning);">
+                            <div class="takeaway-content"><strong>Tool/Platform Selection</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> Only M3<br>
+                                <strong>Issue:</strong> Symbiosis vs. interim tool debate<br>
+                                <strong>Status:</strong> ⚠️ Resolved but watch for adoption friction
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--warning);">
+                            <div class="takeaway-content"><strong>Clarity of Offering to SMEs</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> Only M3<br>
+                                <strong>Issue:</strong> "We don't have anything clear as yet"<br>
+                                <strong>Status:</strong> ⚠️ Deferred to circles - needs follow-up
+                            </div>
+                        </div>
+                        <div class="takeaway-card" style="border-left-color: var(--info);">
+                            <div class="takeaway-content"><strong>Compensation & HR Policy</strong></div>
+                            <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                                <strong>Recurrence:</strong> Only M3<br>
+                                <strong>Status:</strong> New topic - input gathering phase
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                    <h4 style="color: var(--pastel-green); margin-bottom: 0.5rem;">Knowledge Gap Closure Progress</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; margin: 0;">
+                        <strong>Closed:</strong> Private equity structure, founder rights mechanism, voting vs. economic power separation<br>
+                        <strong>Narrowing:</strong> SME strategy (from abstract to pilot approach), governance (from concept to roles)<br>
+                        <strong>Emerging:</strong> Value proposition clarity, compensation framework, tool adoption process
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pattern Evolution Table -->
+        <div class="section">
+            <h2 class="section-title">🔄 Cultural & Behavioral Pattern Evolution</h2>
+            <div class="card">
+                <h3 class="card-title">Summary Evolution Table</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                        <thead>
+                            <tr style="background: var(--bg-secondary);">
+                                <th style="padding: 0.75rem; text-align: left; color: var(--pastel-blue); border-bottom: 2px solid var(--border);">Pattern/Metric</th>
+                                <th style="padding: 0.75rem; text-align: center; border-bottom: 2px solid var(--border);">Oct 23 (M1)</th>
+                                <th style="padding: 0.75rem; text-align: center; border-bottom: 2px solid var(--border);">Oct 27 (M2)</th>
+                                <th style="padding: 0.75rem; text-align: center; border-bottom: 2px solid var(--border);">Oct 30 (M3)</th>
+                                <th style="padding: 0.75rem; text-align: left; color: var(--pastel-green); border-bottom: 2px solid var(--border);">Change Commentary</th>
+                            </tr>
+                        </thead>
+                        <tbody style="color: var(--text-secondary);">
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Formality Level</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Formal</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Formal</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Balanced</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Heart-brain ritual adds warmth; structure maintained</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Conflict Motifs</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Low</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Low</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Medium</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Healthy debate emerged (tool adoption); resolved constructively</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Decision Speed</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Slow</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Medium</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Fast</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Shifted to "work in progress is okay" mindset</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>"Tribe" Metaphor</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Absent</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Absent</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Dominant</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">New collective identity language; "not alone anymore"</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Hero Archetype</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Rare</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Rare</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Present</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Chris: "Determined", action-oriented energy increased</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Sage Archetype</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Dominant</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Dominant</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Balanced</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Shifted from pure analysis to action + wisdom</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Empathy Expression</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Low</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Medium</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">High</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">22.6 per 100 utterances; ritual effect visible</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Ritual Practice</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">None</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">None</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Strong</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Opening coherence + closing gratitude; cultural shift</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);"><strong>Perfectionism</strong></td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Medium</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Medium</td>
+                                <td style="padding: 0.75rem; text-align: center; border-bottom: 1px solid var(--border);">Low</td>
+                                <td style="padding: 0.75rem; border-bottom: 1px solid var(--border);">Embraced "work in progress" philosophy openly</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem;"><strong>Vulnerability</strong></td>
+                                <td style="padding: 0.75rem; text-align: center;">Low</td>
+                                <td style="padding: 0.75rem; text-align: center;">Low</td>
+                                <td style="padding: 0.75rem; text-align: center;">High</td>
+                                <td style="padding: 0.75rem;">"We don't have anything clear" openly admitted; safe space</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 12px;">
+                    <h4 style="color: var(--pastel-purple); margin-bottom: 0.75rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span>Key Trajectories Detected</span>
+                        <span class="toggle-trajectories" onclick="toggleTrajectories()">
+                            <span id="trajectoriesLabel">Show Details</span>
+                            <span class="toggle-arrow" id="trajectoriesArrow">▼</span>
+                        </span>
+                    </h4>
+                    <div id="trajectoriesContent" class="trajectories-content">
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; margin-top: 0.75rem;">
+                            <strong>1. From Technical to Transformational:</strong> M1-2 focused on legal mechanics; M3 integrated consciousness, ritual, and culture<br>
+                            <strong>2. Trust Deepening:</strong> M1-2 were transactional; M3 showed emotional bonding ("tribe", "not alone")<br>
+                            <strong>3. Action Orientation Surge:</strong> Analysis paralysis breaking; "determined", "action", "needs to be done" language<br>
+                            <strong>4. Psychological Safety Increase:</strong> More vulnerability, honest gap admission, permission to be imperfect<br>
+                            <strong>5. Identity Crystallization:</strong> "We're a tribe" marks shift from project to movement mindset
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergent & Fading Patterns -->
+        <div class="section">
+            <h2 class="section-title">🌱 Emergent, Fading & Persistent Patterns</h2>
+            <div class="grid-2">
+                <div class="card" style="border-top: 4px solid var(--success);">
+                    <h3 class="card-title">
+                        <span class="emoji">🌱</span>Emergent Patterns (New in M3)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>Ritual as Cultural Anchor</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Heart-brain coherence + gratitude closing → Group bonding mechanism
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>Collective Identity Language</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            "Tribe", "not alone", "collective intelligence" → Shift from project to movement
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>Permission for Imperfection</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            "Work in progress is okay" → Cultural reframe enabling faster action
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-green);">
+                        <div class="takeaway-content"><strong>Operational Maturity</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Circles, roles, charters → Structure solidifying from theory to practice
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--info);">
+                    <h3 class="card-title">
+                        <span class="emoji">📌</span>Persistent Patterns (All Meetings)
+                    </h3>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                        <div class="takeaway-content"><strong>Founder-Centric Governance</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Consistent focus on steward voting rights across all structures
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                        <div class="takeaway-content"><strong>Multi-Entity Complexity</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Holding, PE, Asset Mgmt, Community Bank → Ongoing coordination challenge
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                        <div class="takeaway-content"><strong>Collaborative Problem-Solving</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            Consistent pattern of collective thinking, no dominance
+                        </div>
+                    </div>
+                    <div class="takeaway-card" style="border-left-color: var(--pastel-blue);">
+                        <div class="takeaway-content"><strong>Tension Between Speed & Thoroughness</strong></div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                            "Show me the money" vs. "Internal clarity first" → Ongoing navigation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 4: SUGGESTIONS & RECOMMENDATIONS -->
+        <div class="section" style="margin-top: 3rem; border-top: 3px solid var(--pastel-green); padding-top: 2rem;">
+            <h1 style="text-align: center; color: var(--pastel-green); font-size: 2rem; margin-bottom: 1rem;">
+                💡 PART 4: Suggestions & Recommendations
+            </h1>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">
+                Actionable recommendations based on agenda vs. actual discussion, gaps identified, and longitudinal patterns
+            </p>
+        </div>
+
+        <!-- 1. Recommended Actions & Items Missed -->
+        <div class="section">
+            <h2 class="section-title">📋 Recommended Actions & Items Missed in Conversation</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Based on agenda intentions vs. actual discussion, identifying gaps the group is aware of and those being overlooked
+            </p>
+            
+            <div class="grid-2">
+                <div class="card" style="border-top: 3px solid var(--danger);">
+                    <h3 class="card-title">🚨 Critical Gaps Being Overlooked</h3>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(248, 113, 113, 0.2);">!</div>
+                            <div class="recommendation-title">Investor Expectations vs. Current Readiness</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>What's Being Missed:</strong> The group discussed fundraising and "show me the money" pressure, but didn't acknowledge the significant gap between investor expectations and current deliverables.<br><br>
+                            <strong>Action Needed:</strong> Before any investor meetings, conduct honest "Are we ready?" assessment covering: financial projections (3 scenarios), risk framework, competitive analysis, exit strategy, and SME value proposition. Create explicit "Investor Readiness Checklist" with pass/fail criteria.<br><br>
+                            <strong>Owner:</strong> Finance + Governance circles, Review in 2 weeks<br>
+                            <strong>Why Critical:</strong> Going to investors prematurely damages credibility and wastes relationship capital.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(248, 113, 113, 0.2);">!</div>
+                            <div class="recommendation-title">Newcomer Integration & Cultural Transmission</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>What's Being Missed:</strong> Circles are launching with new members (Angelo, Nika mentioned) but no discussion of how they'll understand the deep context, history, and culture that current members share.<br><br>
+                            <strong>Action Needed:</strong> Create comprehensive onboarding kit within 1 week: (1) Origin story & mission doc, (2) Key decisions timeline, (3) Cultural principles & rituals explanation, (4) Symbiosis platform guide, (5) "Who to ask about what" directory.<br><br>
+                            <strong>Owner:</strong> G (governance) + Communications circle<br>
+                            <strong>Why Critical:</strong> Strong implicit knowledge creates unintentional exclusion. "Tribe" language risks becoming cliquish without intentional inclusion practices.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(248, 113, 113, 0.2);">!</div>
+                            <div class="recommendation-title">Success Metrics for Launched Initiatives</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>What's Being Missed:</strong> Circles launching, SME pilot starting, communications beginning - but no discussion of "how will we know if this is working?"<br><br>
+                            <strong>Action Needed:</strong> Each circle to define 2-3 measurable success indicators within charter. Examples: Circle health (meeting frequency, decision velocity), SME pilot (engagement rate, feedback scores), Communications (reach, sentiment, inquiries generated).<br><br>
+                            <strong>Owner:</strong> Each circle lead, Review at next governance meeting<br>
+                            <strong>Why Critical:</strong> Without metrics, can't distinguish productive experimentation from aimless activity.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--warning);">
+                    <h3 class="card-title">⚠️ Known Gaps Requiring Attention</h3>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(251, 191, 36, 0.2);">→</div>
+                            <div class="recommendation-title">Compensation Framework (Acknowledged)</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Status:</strong> Group is aware this is a blocker. Prakash assigned.<br><br>
+                            <strong>Recommendation:</strong> Accelerate urgently. People are taking on major roles (Anastasia: communications, Alex: charters, Shamla: finance) without knowing compensation structure. This creates anxiety and potential resentment.<br><br>
+                            <strong>Action:</strong> Launch survey within 48 hours → Close in 3 days → Prakash presents draft at next meeting → Decide or refine → Document and communicate
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(251, 191, 36, 0.2);">→</div>
+                            <div class="recommendation-title">Villa Gaia Impact Story (Deferred)</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Status:</strong> Chris mentioned "Villa Gaia needs to be out there" but it was deferred to business dev circle.<br><br>
+                            <strong>Why This Matters:</strong> €2.3M economic impact + 150 people engaged in 10 months is powerful proof point for fundraising and SME recruitment.<br><br>
+                            <strong>Action:</strong> Communications circle to create 3-page impact story with visual timeline within 2 weeks. Include: economic impact metrics, participant testimonials, systems change examples, media-ready photos.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(251, 191, 36, 0.2);">→</div>
+                            <div class="recommendation-title">Multi-Entity Legal & Regulatory Coordination</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Context:</strong> Operating across UAE, Switzerland, US, Malta but no discussion of legal/regulatory compliance framework.<br><br>
+                            <strong>Action:</strong> Andrea to create 1-page "Legal Risk Map" showing: (1) Which entities in which jurisdictions, (2) Key compliance requirements, (3) Coordination points, (4) Red flags to watch. Review in governance meeting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem; border-top: 3px solid var(--success);">
+                <h3 class="card-title">✨ Opportunities for Greater Harmony & Effectiveness</h3>
+                <div class="grid-2">
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">💚</div>
+                            <div class="recommendation-title">Ritualize Meeting Opening & Closing</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>What Worked:</strong> Heart-brain coherence opening and gratitude closing created powerful emotional bookends in Oct 30.<br><br>
+                            <strong>Recommendation:</strong> Make these standard practice for all governance meetings. Rotate facilitators to distribute ownership. Keep authentic - make participation voluntary.<br><br>
+                            <strong>Why:</strong> Rituals anchor shared consciousness and signal "we're entering special space together." Prevents jumping straight into transactional mode.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">⏰</div>
+                            <div class="recommendation-title">Add Time Awareness Practices</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Pattern Observed:</strong> Meeting ran 118 minutes without apparent time checks. Risk of decision fatigue in later agenda items.<br><br>
+                            <strong>Recommendation:</strong> Set expected end time at start. Facilitator does time checks at 60min and 90min: "We have X items left and Y minutes. Continue or defer?" Respects energy and prevents rushed decisions.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">🎯</div>
+                            <div class="recommendation-title">Create Weekly Integration Touchpoint</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Context:</strong> Sudhir appointed integration lead but no regular sync cadence defined.<br><br>
+                            <strong>Recommendation:</strong> 30-minute weekly integration sync where circle leads share: (1) Progress highlights, (2) Blockers/dependencies, (3) Help needed. Brief round-robin format. Sudhir to schedule and facilitate.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">📊</div>
+                            <div class="recommendation-title">Make Tensions Explicit & Regular</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Pattern:</strong> Healthy disagreement emerging (tool adoption debate resolved constructively). Group can now handle tension without relationship damage.<br><br>
+                            <strong>Recommendation:</strong> Add "Tensions to Surface" as standing agenda item. Normalizes raising concerns early before they become conflicts. Frame as: "What's creating friction for you that we should address?"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Proposals for Voting/Surveying on Divergence Topics -->
+        <div class="section">
+            <h2 class="section-title">📊 Proposed Surveys to Resolve Divergence & Gather Input</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Where topics caused divergence or require broader input, structured surveys can clarify preferences and build consensus
+            </p>
+
+            <div class="grid-2">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">📋</div>
+                        <div class="recommendation-title">Compensation Philosophy Survey</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Gather input before Prakash creates framework. Prevent unilateral decision on sensitive topic.<br><br>
+                        <strong>Timing:</strong> Send within 48 hours, close in 3 days, synthesize for next meeting<br><br>
+                        <strong>Survey Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-blue);">Section 1: Geographic Equity</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Should compensation consider cost of living differences? (Yes/No/Unsure)</li>
+                                <li>If yes, how? (Market rate by location / Base + location adjustment / Other)</li>
+                                <li>What feels fair to you? (Open text)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 2: Time Value Recognition</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Should past contributed time be valued retroactively? (Yes/No/Partially)</li>
+                                <li>If yes, how? (Equity grant / Recognition bonus / Vesting schedule / Other)</li>
+                                <li>How do we handle different contribution levels? (Open text)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 3: Cash vs. Equity Mix</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Preferred ratio for your role? (Scale: 100% cash → 50/50 → 100% equity)</li>
+                                <li>Should ratio vary by role type? (Core team / Advisors / Contributors)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 4: Experience & Seniority</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Should experience/seniority affect compensation? (Yes/No/Depends)</li>
+                                <li>How should it be determined? (Years of experience / Impact level / Skill rarity / Other)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 5: Fairness Check</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What would feel unfair or demotivating? (Open text)</li>
+                                <li>What principles matter most to you? (Open text)</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Prakash uses input to create draft framework. Present at next meeting for refinement → Decision.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">🗺️</div>
+                        <div class="recommendation-title">Internal Network Mapping Survey</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Chris requested understanding of existing entities and resources across the network. Build internal ecosystem database.<br><br>
+                        <strong>Timing:</strong> Send within 1 week, ongoing (update quarterly)<br><br>
+                        <strong>Survey Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-blue);">Section 1: Your Connections</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What organizations/companies are you involved with? (Name, role, location)</li>
+                                <li>What stage are they at? (Startup / Growth / Established)</li>
+                                <li>What sectors? (Finance / Tech / Impact / Other)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 2: Resources Available</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What capabilities do these entities have? (Legal / Finance / Tech / Marketing / Other)</li>
+                                <li>What resources could they potentially share? (Office space / Tools / Expertise / Networks)</li>
+                                <li>Are there synergy opportunities with Better World? (Open text)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.75rem;">Section 3: Needs & Offers</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What support do you/your entities need from Better World network?</li>
+                                <li>What support can you/your entities provide to others?</li>
+                                <li>Who in the network should you connect with? (Open text)</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Create visual network map showing entities, capabilities, synergy opportunities. Update quarterly.
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-card" style="margin-top: 1rem;">
+                <div class="recommendation-header">
+                    <div class="recommendation-icon" style="background: rgba(212, 165, 245, 0.2);">🎯</div>
+                    <div class="recommendation-title">Tool Adoption Experience Check-In (Post-Launch)</div>
+                </div>
+                <div class="recommendation-body">
+                    <strong>Purpose:</strong> Tool adoption had initial divergence (Sudheer's concerns). After 2 weeks of Symbiosis use, assess actual experience.<br><br>
+                    <strong>Timing:</strong> 2 weeks after Symbiosis rollout<br><br>
+                    <strong>Survey Structure:</strong>
+                    <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                        <ul style="padding-left: 1.25rem; font-size: 0.85rem;">
+                            <li>How often are you using Symbiosis? (Daily / Few times/week / Rarely / Not at all)</li>
+                            <li>What's working well? (Open text)</li>
+                            <li>What's frustrating or unclear? (Open text)</li>
+                            <li>Do you need additional training/support? (Yes/No - if yes, what kind?)</li>
+                            <li>On scale 1-10, how much is it helping coordination?</li>
+                            <li>Would you recommend continuing with this tool? (Yes/No/Need more time)</li>
+                        </ul>
+                    </div>
+                    <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Address friction points early. Validate or adjust tool decision based on real usage data, not assumptions.
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Workshop/Survey Follow-ups -->
+        <div class="section">
+            <h2 class="section-title">🎓 Workshop Proposals to Close Gaps & Advance Goals</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Structured workshops to gather missing perspectives, generate insights, and build shared understanding
+            </p>
+
+            <div class="grid-2">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">🎯</div>
+                        <div class="recommendation-title">SME Value Proposition Workshop</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Gap Addressed:</strong> "We don't have anything clear as yet in terms of what we want to offer" - Sudheer<br><br>
+                        <strong>Format:</strong> 2-hour virtual workshop, Business Dev circle + SME pilot participants<br><br>
+                        <strong>Workshop Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-green);">Part 1: SME Pain Points (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Each pilot SME shares: What keeps you up at night? What would make your business thrive?</li>
+                                <li>Group clusters themes on virtual whiteboard</li>
+                            </ul>
+                            <strong style="color: var(--pastel-green); display: block; margin-top: 0.5rem;">Part 2: Offering Brainstorm (40min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>For each pain point cluster: What could Better World offer?</li>
+                                <li>Generate 3-5 service offerings (e.g., finance access, peer learning, tool ecosystem, business strategy support)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-green); display: block; margin-top: 0.5rem;">Part 3: Value Proposition Crafting (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Group refines top 3 offerings into clear value propositions</li>
+                                <li>Test with "Would you pay for this?" and "Why us vs. alternatives?"</li>
+                            </ul>
+                            <strong style="color: var(--pastel-green); display: block; margin-top: 0.5rem;">Part 4: Pilot Design (20min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What would "pilot version" of each offering look like?</li>
+                                <li>Timeline and success metrics</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Clear 1-page value proposition doc. Ready to test with 3-15 pilot SMEs. Basis for external communications.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">📊</div>
+                        <div class="recommendation-title">Investor Workshop Simulation</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Gap Addressed:</strong> Multiple high-severity gaps in investor readiness (financials, risk framework, competitive positioning)<br><br>
+                        <strong>Format:</strong> 90-minute workshop, Finance + Governance circles<br><br>
+                        <strong>Workshop Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-blue);">Part 1: Investor Persona Exercise (20min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Split into groups: PE investor / Family office / Impact fund</li>
+                                <li>Each group lists: "What do I need to see to write a check?"</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.5rem;">Part 2: Current State Assessment (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>For each investor requirement: Do we have this? (Yes/Partial/No)</li>
+                                <li>Identify top 10 gaps</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.5rem;">Part 3: Pitch Practice (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Farhad delivers 5-min pitch to group playing investor roles</li>
+                                <li>Investors ask hard questions. Note what we can't answer.</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-top: 0.5rem;">Part 4: Readiness Roadmap (10min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Prioritize top 5 gaps to close before investor meetings</li>
+                                <li>Assign owners and 2-week deadlines</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Investor Readiness Checklist with clear owners and deadlines. Prevents premature investor meetings.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(212, 165, 245, 0.2);">💬</div>
+                        <div class="recommendation-title">Cultural Principles Co-Creation Session</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Context:</strong> "Tribe" language emerged. Trust deepened. Rituals integrated. Culture crystallizing - perfect time to codify.<br><br>
+                        <strong>Format:</strong> 90-minute workshop, all core team members<br><br>
+                        <strong>Workshop Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-purple);">Part 1: Values Harvest (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Each person shares: What do you value most about working with this group?</li>
+                                <li>Extract values from stories (e.g., "work in progress is okay" → value = learning over perfection)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-purple); display: block; margin-top: 0.5rem;">Part 2: Working Norms (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What behaviors make our collaboration work well?</li>
+                                <li>What would damage trust or belonging?</li>
+                                <li>Draft 5-7 working agreements (e.g., "We welcome constructive disagreement")</li>
+                            </ul>
+                            <strong style="color: var(--pastel-purple); display: block; margin-top: 0.5rem;">Part 3: Identity & Rituals (20min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>What makes us "us"? (Refine "tribe" concept)</li>
+                                <li>Which rituals anchor our culture? (Heart coherence, gratitude rounds, etc.)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-purple); display: block; margin-top: 0.5rem;">Part 4: Onboarding Design (10min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>How do we share this with newcomers without being preachy?</li>
+                                <li>Who shares origin story? Who explains rituals?</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> 2-page Cultural Principles doc. Include in onboarding. Reference when making decisions. Protect culture as group scales.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(255, 211, 182, 0.2);">🔄</div>
+                        <div class="recommendation-title">Retrospective: First 3 Meetings</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Reflect on meeting series evolution and extract learnings to improve future meetings<br><br>
+                        <strong>Format:</strong> 60-minute session, all participants<br><br>
+                        <strong>Workshop Structure:</strong>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-orange);">Part 1: Pattern Recognition (20min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Share dashboard insights. What patterns surprise you?</li>
+                                <li>What's getting better? (Trust, action orientation, etc.)</li>
+                                <li>What's concerning? (Meeting length, etc.)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-orange); display: block; margin-top: 0.5rem;">Part 2: Keep/Drop/Try (30min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>KEEP: What's working well? (Rituals, facilitation style, etc.)</li>
+                                <li>DROP: What's not serving us? (Going over time, etc.)</li>
+                                <li>TRY: What should we experiment with? (Timeboxing, async prep, etc.)</li>
+                            </ul>
+                            <strong style="color: var(--pastel-orange); display: block; margin-top: 0.5rem;">Part 3: Commit (10min)</strong>
+                            <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.85rem;">
+                                <li>Pick 2-3 experiments to try in next meeting</li>
+                                <li>Assign facilitator for next meeting</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Continuous improvement culture. Use data (dashboard) to inform decisions about process.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Connection Suggestions -->
+        <div class="section">
+            <h2 class="section-title">🤝 Suggested 1-on-1 Connections for Synthesis & Collaboration</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Strategic pairings to generate insights, resolve tensions, and advance specific work streams
+            </p>
+
+            <div class="grid-2">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">💬</div>
+                        <div class="recommendation-title">Anastasia ↔ Chris: Villa Gaia Impact Story</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Chris has Villa Gaia context and vision. Anastasia leads communications. Together they can craft compelling impact story.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>What's the narrative arc? (Origin → impact → future)</li>
+                            <li>Which metrics tell the story best? (€2.3M impact, 150 people, etc.)</li>
+                            <li>What testimonials/photos do we have or need?</li>
+                            <li>How does Villa Gaia connect to Better World mission?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> 3-page impact story + visual timeline, ready for all external materials
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">💬</div>
+                        <div class="recommendation-title">Alex ↔ Prakash: SME Compensation Model</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Alex leading SME pilot. Prakash designing compensation framework. SMEs will ask about equity/compensation - need aligned story.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>What can we offer SMEs? (Equity stake? Revenue share? Fee for service?)</li>
+                            <li>What's the ask from them? (Time? Resources? Data?)</li>
+                            <li>How do we position value exchange?</li>
+                            <li>What questions should we anticipate?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Clear SME value proposition including financial/equity terms, ready for pilot conversations
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(212, 165, 245, 0.2);">💬</div>
+                        <div class="recommendation-title">Sudhir ↔ G: Integration Systems Design</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Sudhir is integration lead. G is building Symbiosis platform and dashboards. Need to align on tools and information flows.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>What integration challenges do you foresee?</li>
+                            <li>What information needs to flow between circles?</li>
+                            <li>What dashboard/reports would help integration?</li>
+                            <li>How do we surface dependencies early?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Integration dashboard design + weekly sync format that makes coordination effortless
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(255, 211, 182, 0.2);">💬</div>
+                        <div class="recommendation-title">Farhad ↔ Andrea: Investor Legal FAQs</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Farhad will pitch investors. Andrea has legal expertise. Anticipate and prep for tough legal questions.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>What legal questions will investors ask? (Multi-jurisdiction setup, compliance, risk, etc.)</li>
+                            <li>What's our crisp answer to each?</li>
+                            <li>Where do we have gaps in legal framework?</li>
+                            <li>What legal docs need to be ready for due diligence?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> 1-page Legal FAQ doc + prioritized list of legal work needed before fundraising
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">💬</div>
+                        <div class="recommendation-title">Shamla ↔ Farhad: Financial Scenario Modeling</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Shamla creating budget and forecast. Farhad pitching to investors. Need 3-scenario financial model.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>Conservative / Base / Growth scenarios - what assumptions for each?</li>
+                            <li>What revenue streams in each scenario?</li>
+                            <li>Burn rate and runway in each scenario?</li>
+                            <li>When do we need next funding round?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> 3-scenario financial model, investor-ready, with clear assumptions documented
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">💬</div>
+                        <div class="recommendation-title">G ↔ Angelo/Nika: Newcomer Onboarding Co-Design</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Purpose:</strong> Angelo and Nika are new circle members. G is governance steward. Co-design onboarding based on their actual experience.<br><br>
+                        <strong>Focus Areas:</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.875rem;">
+                            <li>What was confusing when you joined?</li>
+                            <li>What context did you wish you had?</li>
+                            <li>What helped you feel included?</li>
+                            <li>If you were designing onboarding, what would you include?</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Outcome:</strong> Onboarding kit designed with newcomer perspective, not just "what we think they need"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Group Reminders -->
+        <div class="section">
+            <h2 class="section-title">🎯 Group Reminders: Mission, Values & Rituals</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Core anchors to revisit regularly, especially as the group scales and new members join
+            </p>
+
+            <div class="card" style="border-top: 3px solid var(--pastel-purple);">
+                <div class="grid-2">
+                    <div>
+                        <h3 class="card-title">🌟 Mission Reminder</h3>
+                        <div style="padding: 1rem; background: rgba(212, 165, 245, 0.1); border-radius: 8px; border-left: 3px solid var(--pastel-purple);">
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                                Building <strong style="color: var(--pastel-purple);">Better Systems for a Better World</strong><br><br>
+                                Not just better businesses, but systems that regenerate rather than extract. Financial structures that distribute power rather than concentrate it. Communities that celebrate vulnerability and authentic collaboration.<br><br>
+                                <em style="color: var(--text-muted);">When decisions feel complex, return to this: Does this choice build better systems?</em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="card-title">💚 Core Values That Emerged</h3>
+                        <div style="padding: 1rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 3px solid var(--pastel-green);">
+                            <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; margin: 0; padding-left: 1.25rem;">
+                                <li><strong>"Work in progress is okay"</strong> - Learning over perfection, action over analysis paralysis</li>
+                                <li><strong>"We're a tribe"</strong> - Collective identity, mutual support, no one works alone</li>
+                                <li><strong>"Trust in expertise"</strong> - Respect domain knowledge, distribute leadership</li>
+                                <li><strong>"Slow to go fast"</strong> - Internal clarity before external execution</li>
+                                <li><strong>"Allow what's emerging"</strong> - Trust the process, embrace emergence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h3 class="card-title">🕊️ Rituals to Maintain</h3>
+                    <div class="grid-2">
+                        <div style="padding: 1rem; background: rgba(168, 216, 234, 0.1); border-radius: 8px;">
+                            <h4 style="color: var(--pastel-blue); font-size: 0.95rem; margin-bottom: 0.5rem;">Meeting Openings</h4>
+                            <ul style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin: 0; padding-left: 1.25rem;">
+                                <li>Heart-brain coherence practice (2-3 minutes)</li>
+                                <li>Intention setting: "Why are we here today?"</li>
+                                <li>Rotate facilitators to distribute ownership</li>
+                                <li>Keep it authentic - participation is voluntary</li>
+                            </ul>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(255, 211, 182, 0.1); border-radius: 8px;">
+                            <h4 style="color: var(--pastel-orange); font-size: 0.95rem; margin-bottom: 0.5rem;">Meeting Closings</h4>
+                            <ul style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin: 0; padding-left: 1.25rem;">
+                                <li>Gratitude round: What are you grateful for?</li>
+                                <li>Powerful for emotional bonding</li>
+                                <li>Creates space for vulnerability</li>
+                                <li>Don't rush this - let it breathe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(168, 230, 207, 0.1); border-radius: 8px; border-left: 4px solid var(--pastel-green);">
+                    <h4 style="color: var(--pastel-green); margin-bottom: 0.5rem;">Cultural Risk to Monitor</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; margin: 0;">
+                        Strong identity ("tribe") is powerful but can exclude. As you scale, actively work to include newcomers in the culture. Share origin stories. Explain rituals. Ask new members: "What do you notice about how we work together?" Use their fresh perspective to keep culture authentic, not performative.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Strategies for Improving Collaboration -->
+        <div class="section">
+            <h2 class="section-title">🔧 Strategies for Improving Collaboration Quality</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Based on observed patterns: reducing redundancy, increasing relevant engagement, improving meeting efficiency
+            </p>
+
+            <div class="grid-2">
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">📝</div>
+                        <div class="recommendation-title">Pre-Meeting Async Context Sharing</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Pattern Observed:</strong> Meeting ran 118 minutes, some time spent on status updates that could have been shared async.<br><br>
+                        <strong>Strategy:</strong> 24 hours before governance meetings, each circle posts 3-sentence update in Symbiosis: (1) Progress highlight, (2) Current blocker, (3) Help needed. Meeting time reserved for discussion and decisions, not status reporting.<br><br>
+                        <strong>Expected Impact:</strong> Reduce meeting time by 20-30 minutes. Increase time for strategic discussion.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">⏰</div>
+                        <div class="recommendation-title">Timebox Critical Decisions</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Pattern Observed:</strong> Some discussions resolved quickly (tool adoption: 15min), others wandered. No explicit time management.<br><br>
+                        <strong>Strategy:</strong> At meeting start, assign time budgets to each agenda item. Facilitator gives 5-minute and 2-minute warnings. At time limit, group decides: "Continue 10 more minutes or defer to next meeting?"<br><br>
+                        <strong>Expected Impact:</strong> Respects everyone's time. Prevents decision fatigue. Forces prioritization.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(212, 165, 245, 0.2);">🎯</div>
+                        <div class="recommendation-title">Consent-Based Decision Making (Refined)</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Pattern Observed:</strong> All decisions reached organic consensus without voting. This is excellent but may not scale.<br><br>
+                        <strong>Strategy:</strong> Continue consensus approach, but add explicit check: After discussion, ask "Any objections that would block moving forward?" Not "Do you all agree?" (that's consensus) but "Can you live with this?" (that's consent). Faster than full consensus, prevents tyranny of holdouts.<br><br>
+                        <strong>Expected Impact:</strong> Maintain collaborative spirit while enabling faster decisions as group grows.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(255, 211, 182, 0.2);">🔄</div>
+                        <div class="recommendation-title">Explicit Parking Lot for Tangents</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Pattern Observed:</strong> 85% signal-to-noise ratio is excellent, but 15% noise (redundancy, tangents) could be reduced.<br><br>
+                        <strong>Strategy:</strong> Visible "parking lot" (virtual doc or whiteboard). When valuable but off-topic ideas arise, facilitator says "Great point - parking lot?" Capture idea to revisit later. Acknowledges contribution without derailing conversation.<br><br>
+                        <strong>Expected Impact:</strong> Increase signal-to-noise to 90%+. People feel heard without hijacking discussion.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">👥</div>
+                        <div class="recommendation-title">Active Balancing of Voices</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Pattern Observed:</strong> 72% inclusion score is good but can improve. Some voices naturally dominate (not maliciously - just personality differences).<br><br>
+                        <strong>Strategy:</strong> Facilitator tracks who has spoken. After 2-3 people have weighed in, ask "Who haven't we heard from yet?" or "X, what's your take?" Make it normal to explicitly invite quieter voices.<br><br>
+                        <strong>Expected Impact:</strong> Increase inclusion score to 85%+. Surface diverse perspectives that might otherwise be missed.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">📊</div>
+                        <div class="recommendation-title">Decision Log & Action Tracker</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Gap:</strong> Decisions made but no systematic tracking of what was decided and who owns what.<br><br>
+                        <strong>Strategy:</strong> Last 5 minutes of every meeting: Review decisions made and actions assigned. Post in Symbiosis immediately. Start next meeting reviewing action status from previous meeting.<br><br>
+                        <strong>Expected Impact:</strong> Clear accountability. Nothing falls through cracks. Build trust through follow-through.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Highest-Leverage Systems Change Opportunities -->
+        <div class="section">
+            <h2 class="section-title">🚀 Highest-Leverage Systems Change Opportunities</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                Strategic interventions that would dramatically improve information flow, coordination, and organizational effectiveness
+            </p>
+
+            <div class="card" style="border-top: 3px solid var(--pastel-green);">
+                <h3 class="card-title">Top 3 Systems Change Opportunities</h3>
+                
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2); font-size: 1.5rem;">1</div>
+                        <div class="recommendation-title">Real-Time Organizational Dashboard (Highest Leverage)</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Current State:</strong> Information scattered across circles. No central visibility into org health, progress, or blockers. Status updates consume meeting time.<br><br>
+                        <strong>Proposed System:</strong> Live dashboard in Symbiosis showing:<br>
+                        <div style="margin-top: 0.5rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <ul style="padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+                                <li><strong>Circle Health:</strong> Activity level (green/yellow/red), open actions, blockers flagged</li>
+                                <li><strong>Financial Runway:</strong> Burn rate, months of runway, budget vs. actual</li>
+                                <li><strong>SME Pipeline:</strong> Number in pilot, engagement scores, conversion funnel</li>
+                                <li><strong>Key Milestones:</strong> Upcoming deadlines, who's responsible, on track?</li>
+                                <li><strong>Decision Log:</strong> Recent decisions, owners, status</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Impact:</strong>
+                        <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.6;">
+                            <li>Eliminate 30+ minutes of status reporting per meeting</li>
+                            <li>Surface blockers before they become crises</li>
+                            <li>Enable async coordination across circles</li>
+                            <li>Create transparency that builds trust</li>
+                            <li>Provide real-time data for strategic decisions</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Owner:</strong> G + Sudhir (integration lead). Build MVP in 2 weeks, iterate based on feedback.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2); font-size: 1.5rem;">2</div>
+                        <div class="recommendation-title">Dependency Mapping & Early Warning System</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Current State:</strong> Circles launching independently. Dependencies discovered late (e.g., SME pitch needs compensation framework, communications needs Villa Gaia story).<br><br>
+                        <strong>Proposed System:</strong> Quarterly dependency mapping workshop + automated flagging:<br>
+                        <div style="margin-top: 0.5rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <strong style="color: var(--pastel-blue); display: block; margin-bottom: 0.5rem;">Dependency Mapping Workshop (Every Quarter):</strong>
+                            <ul style="padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.6; margin: 0 0 0.75rem 0;">
+                                <li>Each circle shares: "To succeed in next quarter, we need X from Y circle"</li>
+                                <li>Create visual dependency map showing interconnections</li>
+                                <li>Identify critical path and potential bottlenecks</li>
+                                <li>Schedule proactive 1-on-1s between dependent circles</li>
+                            </ul>
+                            <strong style="color: var(--pastel-blue); display: block; margin-bottom: 0.5rem;">Automated Early Warning:</strong>
+                            <ul style="padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+                                <li>In Symbiosis: When circle marks action as "blocked", system alerts dependent circles</li>
+                                <li>Weekly digest: "Upcoming dependencies for your circle"</li>
+                                <li>Dashboard shows: Which dependencies are at risk?</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Impact:</strong>
+                        <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.6;">
+                            <li>Prevent cascade failures (one blocker doesn't stop everything)</li>
+                            <li>Enable proactive coordination vs. reactive crisis management</li>
+                            <li>Surface integration challenges early when they're easier to solve</li>
+                            <li>Reduce "we're waiting on X" frustration</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Owner:</strong> Sudhir (integration lead) + G (technical). First mapping workshop in 2 weeks.
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-header">
+                        <div class="recommendation-icon" style="background: rgba(212, 165, 245, 0.2); font-size: 1.5rem;">3</div>
+                        <div class="recommendation-title">Knowledge Base & Internal Wiki</div>
+                    </div>
+                    <div class="recommendation-body">
+                        <strong>Current State:</strong> Deep context in people's heads. New members have to ask same questions repeatedly. "We discussed this in M2" but where is the record?<br><br>
+                        <strong>Proposed System:</strong> Structured knowledge base in Symbiosis with clear information architecture:<br>
+                        <div style="margin-top: 0.5rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <ul style="padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.6; margin: 0;">
+                                <li><strong>Foundation:</strong> Mission, vision, values, cultural principles, origin story</li>
+                                <li><strong>Structure:</strong> Entity map, governance model, circle purposes & charters, role descriptions</li>
+                                <li><strong>Decisions:</strong> Decision log with context (why we decided, who was involved, date)</li>
+                                <li><strong>Policies:</strong> Compensation framework, consultant guidelines, onboarding process, conflict resolution</li>
+                                <li><strong>Resources:</strong> Templates, guides (Symbiosis guide, charter template), external links</li>
+                                <li><strong>FAQ:</strong> Commonly asked questions with clear answers</li>
+                            </ul>
+                        </div>
+                        <strong style="display: block; margin-top: 0.75rem;">Impact:</strong>
+                        <ul style="margin-top: 0.25rem; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.6;">
+                            <li>New members get context without repeated explanations</li>
+                            <li>Reduce "who owns X?" and "where did we document Y?" questions</li>
+                            <li>Enable async onboarding (new members can self-serve context)</li>
+                            <li>Create organizational memory as people come and go</li>
+                            <li>Foundation for future scale (can onboard 10, 50, 100 people)</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 0.75rem;">Owner:</strong> G (governance steward). Start with essential docs in 1 week. Evolve based on what people actually need.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem; border-top: 3px solid var(--info);">
+                <h3 class="card-title">Additional High-Impact Opportunities</h3>
+                <div class="grid-2">
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 216, 234, 0.2);">📢</div>
+                            <div class="recommendation-title">Regular "All Hands" Communication Rhythm</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Gap:</strong> As circles work independently, risk of silos and misalignment.<br><br>
+                            <strong>System:</strong> Monthly 30-minute all-hands (async recording OK) where leadership shares: (1) Strategic context ("Here's why we're doing what we're doing"), (2) Progress celebration, (3) Challenges being navigated, (4) How everyone can contribute.<br><br>
+                            <strong>Impact:</strong> Everyone understands how their work fits into bigger picture. Prevents "working in the dark" feeling.
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="recommendation-header">
+                            <div class="recommendation-icon" style="background: rgba(168, 230, 207, 0.2);">🔄</div>
+                            <div class="recommendation-title">Retrospective Cadence for Continuous Learning</div>
+                        </div>
+                        <div class="recommendation-body">
+                            <strong>Gap:</strong> No systematic process for learning from what's working and what's not.<br><br>
+                            <strong>System:</strong> Quarterly retrospective where group reflects on: (1) What's working? Keep doing it. (2) What's not working? Stop or change it. (3) What should we try? Experiments for next quarter.<br><br>
+                            <strong>Impact:</strong> Continuous improvement culture. Prevent calcification. Use data (dashboards, metrics) to inform decisions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
