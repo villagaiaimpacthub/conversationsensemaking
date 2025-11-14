@@ -332,3 +332,13 @@
             chartInstances.breakthroughsChart = breakthroughsChart;
             }
         } // End of initializeChartsPart2 function
+
+        // Main function that initializes all charts (calls both parts)
+        function initializeCharts() {
+            if (typeof initializeChartsPart1 === 'function') {
+                initializeChartsPart1();
+            }
+            if (typeof initializeChartsPart2 === 'function') {
+                initializeChartsPart2();
+            }
+        }

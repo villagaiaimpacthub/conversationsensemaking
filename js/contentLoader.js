@@ -93,13 +93,27 @@ function initializeTabContent(tabId) {
     // Wait a bit for DOM to be ready
     setTimeout(() => {
         console.log('Initializing charts for tab:', tabId);
+        
+        // Check if Chart.js is loaded
+        if (typeof Chart === 'undefined') {
+            console.error('Chart.js is not loaded!');
+            return;
+        }
+        
+        // Check if canvas elements exist
+        const canvasElements = document.querySelectorAll('canvas');
+        console.log('Found', canvasElements.length, 'canvas elements in DOM');
+        canvasElements.forEach(canvas => {
+            console.log('  - Canvas ID:', canvas.id || '(no id)');
+        });
+        
         if (typeof initializeCharts === 'function') {
             console.log('Calling initializeCharts()');
             initializeCharts();
         } else {
             console.error('initializeCharts function not found!');
         }
-    }, 200);
+    }, 300);
 }
 
 /**

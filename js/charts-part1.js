@@ -1,14 +1,4 @@
-﻿element.style.display = 'block';
-                button.textContent = 'Show less ▲';
-                button.style.background = 'rgba(168, 216, 234, 0.1)';
-            } else {
-                element.style.display = 'none';
-                button.textContent = 'Show 4 more beliefs ▼';
-                button.style.background = 'var(--bg-secondary)';
-            }
-        }
-
-        // Chart instances storage (global so both part1 and part2 can access it)
+﻿        // Chart instances storage (global so both part1 and part2 can access it)
         if (typeof window.chartInstances === 'undefined') {
             window.chartInstances = {};
         }
@@ -21,6 +11,13 @@
 
         // Function to initialize charts in part 1 (called after content loads)
         function initializeChartsPart1() {
+            // Get analysis data
+            const analysis = window.analysisData;
+            if (!analysis) {
+                console.warn('No analysis data available. Charts will use default/empty data.');
+                return;
+            }
+            
             // Participation Donut Chart
             const participationEl = document.getElementById('participationChart');
             if (participationEl) {
@@ -29,51 +26,60 @@
                     chartInstances.participationChart.destroy();
                 }
                 
+                // Get participation data from analysis
+                const participationData = analysis.participation.distribution;
+                const labels = participationData.map(p => p.name);
+                const data = participationData.map(p => p.percentage);
+                
+                // Generate colors for each speaker
+                const colors = [
+                    'rgba(212, 165, 245, 0.8)',
+                    'rgba(168, 216, 234, 0.8)',
+                    'rgba(168, 230, 207, 0.8)',
+                    'rgba(255, 211, 182, 0.8)',
+                    'rgba(255, 179, 217, 0.8)',
+                    'rgba(168, 230, 207, 0.6)',
+                    'rgba(148, 163, 184, 0.4)'
+                ];
+                const backgroundColor = labels.map((_, i) => colors[i % colors.length]);
+                
                 const participationCtx = participationEl.getContext('2d');
                 const participationChart = new Chart(participationCtx, {
                     type: 'doughnut',
                     data: {
-                        labels: ['Alex Alegria', 'Farhad', 'G (Giannandrea)', 'Sudheer', 'Chris', 'Anastasia', 'Others'],
+                        labels: labels,
                         datasets: [{
-                    data: [42.8, 14.4, 12.5, 11.5, 7.7, 7.2, 3.9],
-                    backgroundColor: [
-                        'rgba(212, 165, 245, 0.8)',
-                        'rgba(168, 216, 234, 0.8)',
-                        'rgba(168, 230, 207, 0.8)',
-                        'rgba(255, 211, 182, 0.8)',
-                        'rgba(255, 179, 217, 0.8)',
-                        'rgba(168, 230, 207, 0.6)',
-                        'rgba(148, 163, 184, 0.4)'
-                    ],
-                    borderWidth: 2,
-                    borderColor: '#252d3d'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            padding: 15,
-                            usePointStyle: true,
-                            font: {
-                                size: 11
-                            }
-                        }
+                            data: data,
+                            backgroundColor: backgroundColor,
+                            borderWidth: 2,
+                            borderColor: '#252d3d'
+                        }]
                     },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.parsed + '%';
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 15,
+                                    usePointStyle: true,
+                                    font: {
+                                        size: 11
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.label + ': ' + context.parsed + '%';
+                                    }
+                                }
                             }
                         }
                     }
-                    }
-                }
-            });
-            chartInstances.participationChart = participationChart;
+                });
+                chartInstances.participationChart = participationChart;
             }
 
             // Engagement Bar Chart
@@ -82,14 +88,25 @@
                 if (chartInstances.engagementChart) {
                     chartInstances.engagementChart.destroy();
                 }
+                
+                // Get engagement data from analysis
+                const engagementData = analysis.engagement;
+                const engagementLabels = ['Feedback\nInstances', 'Question\nFrequency', 'Response\nDynamics', 'Turn-Taking\nBalance'];
+                const engagementScores = [
+                    engagementData.feedbackInstances || 0,
+                    engagementData.questionFrequency || 0,
+                    engagementData.responseDynamics || 0,
+                    engagementData.turnTakingBalance || 0
+                ];
+                
                 const engagementCtx = engagementEl.getContext('2d');
                 const engagementChart = new Chart(engagementCtx, {
                     type: 'bar',
                     data: {
-                        labels: ['Feedback\nInstances', 'Question\nFrequency', 'Response\nDynamics', 'Turn-Taking\nBalance'],
+                        labels: engagementLabels,
                         datasets: [{
-                    label: 'Score',
-                    data: [85, 82, 75, 68],
+                            label: 'Score',
+                            data: engagementScores,
                     backgroundColor: [
                         'rgba(168, 230, 207, 0.8)',
                         'rgba(168, 216, 234, 0.8)',
@@ -99,103 +116,113 @@
                     borderWidth: 0,
                     borderRadius: 8
                 }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 100,
-                        grid: {
-                            color: 'rgba(51, 65, 85, 0.5)'
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100,
+                                grid: {
+                                    color: 'rgba(51, 65, 85, 0.5)'
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return value;
+                                    }
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                }
+                            }
                         },
-                        ticks: {
-                            callback: function(value) {
-                                return value;
-                            }
-                        }
-                    },
-                    x: {
-                        grid: {
-                            display: false
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return 'Score: ' + context.parsed.y + '/100';
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return 'Score: ' + context.parsed.y + '/100';
+                                    }
+                                }
                             }
                         }
                     }
-                    }
-                }
-            });
-            chartInstances.engagementChart = engagementChart;
+                });
+                chartInstances.engagementChart = engagementChart;
             }
 
             // Topics Bar Chart
             const topicsEl = document.getElementById('topicsChart');
             if (topicsEl) {
+                console.log('Initializing topicsChart');
                 if (chartInstances.topicsChart) {
                     chartInstances.topicsChart.destroy();
                 }
+                
+                // Get topics data from analysis
+                const topicsData = analysis.topics.distribution;
+                const topicLabels = topicsData.map(t => t.topic);
+                const topicPercentages = topicsData.map(t => t.percentage);
+                
                 const topicsCtx = topicsEl.getContext('2d');
                 const topicsChart = new Chart(topicsCtx, {
                     type: 'bar',
                     data: {
-                        labels: ['Tool Adoption', 'Circles & Roles', 'SME Strategy', 'Private Equity', 'Communications', 'HR Policy', 'Investors', 'Budget', 'Philanthropy'],
+                        labels: topicLabels,
                         datasets: [{
-                    label: '% of Conversation',
-                    data: [18, 17, 15, 12, 10, 9, 8, 6, 5],
-                    backgroundColor: 'rgba(168, 216, 234, 0.8)',
-                    borderWidth: 0,
-                    borderRadius: 6
-                }]
-            },
-            options: {
-                indexAxis: 'y',
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    x: {
-                        beginAtZero: true,
-                        max: 20,
-                        grid: {
-                            color: 'rgba(51, 65, 85, 0.5)'
+                            label: '% of Conversation',
+                            data: topicPercentages,
+                            backgroundColor: 'rgba(168, 216, 234, 0.8)',
+                            borderWidth: 0,
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                max: 20,
+                                grid: {
+                                    color: 'rgba(51, 65, 85, 0.5)'
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '%';
+                                    }
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    display: false
+                                }
+                            }
                         },
-                        ticks: {
-                            callback: function(value) {
-                                return value + '%';
-                            }
-                        }
-                    },
-                    y: {
-                        grid: {
-                            display: false
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.parsed.x + '% of conversation';
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.parsed.x + '% of conversation';
+                                    }
+                                }
                             }
                         }
                     }
-                    }
-                }
-            });
-            chartInstances.topicsChart = topicsChart;
+                });
+                chartInstances.topicsChart = topicsChart;
+                console.log('topicsChart initialized successfully');
+            } else {
+                console.warn('topicsChart element not found in DOM');
             }
 
             // Knowledge Coverage Chart
@@ -204,14 +231,24 @@
                 if (chartInstances.knowledgeChart) {
                     chartInstances.knowledgeChart.destroy();
                 }
+                
+                // Get knowledge coverage data from analysis
+                const knowledgeCoverage = analysis.knowledgeGaps?.byCoverage || [];
+                const knowledgeLabels = knowledgeCoverage.length > 0 
+                    ? knowledgeCoverage.map(k => k.topic) 
+                    : ['No data available'];
+                const knowledgeScores = knowledgeCoverage.length > 0 
+                    ? knowledgeCoverage.map(k => k.coverageScore) 
+                    : [0];
+                
                 const knowledgeCtx = knowledgeEl.getContext('2d');
                 const knowledgeChart = new Chart(knowledgeCtx, {
                     type: 'bar',
                     data: {
-                        labels: ['Technology/\nPlatform', 'Governance/\nStructure', 'Communications', 'Budget/\nFinance', 'Private\nEquity', 'Investor\nRelations', 'HR/\nCompensation', 'SME Value\nProp'],
+                        labels: knowledgeLabels,
                         datasets: [{
                     label: 'Coverage Score',
-                    data: [88, 85, 62, 60, 58, 55, 38, 35],
+                    data: knowledgeScores,
                     backgroundColor: function(context) {
                         const value = context.parsed.y;
                         if (value >= 80) return 'rgba(168, 230, 207, 0.8)';
@@ -268,13 +305,20 @@
                 if (chartInstances.powerLanguageChart) {
                     chartInstances.powerLanguageChart.destroy();
                 }
+                
+                // Get power dynamics data from analysis
+                const powerData = analysis.powerDynamics?.overall || { lowPower: 0, neutral: 0, highPower: 0 };
                 const powerLanguageCtx = powerLanguageEl.getContext('2d');
                 const powerLanguageChart = new Chart(powerLanguageCtx, {
                     type: 'pie',
                     data: {
                         labels: ['Low Power (Collaborative)', 'Neutral', 'High Power (Directive)'],
                         datasets: [{
-                    data: [42.8, 40.9, 16.3],
+                    data: [
+                        powerData.lowPower || 0,
+                        powerData.neutral || 0,
+                        powerData.highPower || 0
+                    ],
                     backgroundColor: [
                         'rgba(168, 216, 234, 0.8)',
                         'rgba(148, 163, 184, 0.6)',
@@ -317,15 +361,34 @@
                 if (chartInstances.relationalChart) {
                     chartInstances.relationalChart.destroy();
                 }
+                
+                // Get relational timeline data from analysis
+                const relationalTimeline = analysis.relational?.timeline || [];
+                const timeLabels = relationalTimeline.length > 0 
+                    ? relationalTimeline.map(item => item.timeblock || 'N/A') 
+                    : ['No data'];
+                const trustData = relationalTimeline.length > 0 
+                    ? relationalTimeline.map(item => item.trust || 3) 
+                    : [3];
+                const alignmentData = relationalTimeline.length > 0 
+                    ? relationalTimeline.map(item => item.alignment || 3) 
+                    : [3];
+                const careData = relationalTimeline.length > 0 
+                    ? relationalTimeline.map(item => item.care || 3) 
+                    : [3];
+                const belongingData = relationalTimeline.length > 0 
+                    ? relationalTimeline.map(item => item.belonging || 3) 
+                    : [3];
+                
                 const relationalCtx = relationalEl.getContext('2d');
                 const relationalChart = new Chart(relationalCtx, {
                     type: 'line',
                     data: {
-                        labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '90-100', '100-110', '110-118'],
+                        labels: timeLabels,
                         datasets: [
                     {
                         label: 'Trust',
-                        data: [5, 4, 3, 4, 4, 4, 5, 4, 3, 4, 4, 5],
+                        data: trustData,
                         borderColor: 'rgba(168, 216, 234, 0.8)',
                         backgroundColor: 'rgba(168, 216, 234, 0.2)',
                         tension: 0.4,
@@ -333,7 +396,7 @@
                     },
                     {
                         label: 'Alignment',
-                        data: [5, 3, 2, 4, 5, 5, 5, 4, 3, 5, 4, 5],
+                        data: alignmentData,
                         borderColor: 'rgba(168, 230, 207, 0.8)',
                         backgroundColor: 'rgba(168, 230, 207, 0.2)',
                         tension: 0.4,
@@ -341,7 +404,7 @@
                     },
                     {
                         label: 'Care',
-                        data: [4, 4, 5, 4, 5, 4, 4, 4, 4, 4, 4, 5],
+                        data: careData,
                         borderColor: 'rgba(212, 165, 245, 0.8)',
                         backgroundColor: 'rgba(212, 165, 245, 0.2)',
                         tension: 0.4,
@@ -349,7 +412,7 @@
                     },
                     {
                         label: 'Belonging',
-                        data: [5, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 5],
+                        data: belongingData,
                         borderColor: 'rgba(255, 179, 217, 0.8)',
                         backgroundColor: 'rgba(255, 179, 217, 0.2)',
                         tension: 0.4,
@@ -454,13 +517,3 @@
             chartInstances.relationalChart = relationalChart;
             }
         } // End of initializeChartsPart1 function
-
-        // Main function that initializes all charts (calls both parts)
-        function initializeCharts() {
-            if (typeof initializeChartsPart1 === 'function') {
-                initializeChartsPart1();
-            }
-            if (typeof initializeChartsPart2 === 'function') {
-                initializeChartsPart2();
-            }
-        }

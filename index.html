@@ -9,12 +9,49 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <!-- Header -->
-        <div class="dashboard-header">
-            <h1>Better World Meeting Analysis Dashboard</h1>
-            <p class="subtitle">Comprehensive Analysis: Oct 23 - Oct 30, 2025 | 3 Meetings | Complete Series View</p>
-            <p class="subtitle" style="margin-top: 0.5rem; color: var(--text-muted);">Latest Meeting: Oct 30, 2025 • Duration: 118 minutes • 8 Speakers • 14 Agenda Items</p>
+        <!-- Upload Area (shown initially) -->
+        <div id="uploadArea" class="upload-area">
+            <div class="upload-content">
+                <h2>Upload Meeting Transcript</h2>
+                <p class="upload-description">Upload a Word document (.docx) containing a meeting transcript to analyze meeting dynamics, participation, engagement, and insights.</p>
+                
+                <div id="dropZone" class="drop-zone">
+                    <div class="drop-zone-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drag and drop your transcript file here</p>
+                        <p class="upload-or">or</p>
+                        <button id="uploadButton" class="upload-button">Choose File</button>
+                        <input type="file" id="transcriptFile" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" style="display: none;">
+                    </div>
+                </div>
+                
+                <div id="uploadStatus" class="upload-status" style="display: none;"></div>
+                
+                <div class="upload-info">
+                    <h3>Supported Format:</h3>
+                    <p>Word documents (.docx) containing meeting transcripts</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-secondary);">
+                        The transcript should include speaker names and their dialogue.
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <!-- Dashboard Content (hidden initially) -->
+        <div id="dashboardContent" style="display: none;">
+            <!-- Header -->
+            <div class="dashboard-header">
+                <h1>Better World Meeting Analysis Dashboard</h1>
+                <p class="subtitle">Upload a transcript to begin analysis</p>
+                <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button onclick="downloadAnalysis()" id="downloadBtn" class="download-button" style="padding: 0.5rem 1rem; background: var(--pastel-green); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; display: none; font-weight: 600;">📥 Download Analysis</button>
+                    <button onclick="showUploadArea()" class="re-upload-button" style="padding: 0.5rem 1rem; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; font-weight: 600;">Upload New Transcript</button>
+                </div>
+            </div>
 
         <!-- Tab Navigation -->
         <div class="nav-tabs">
@@ -56,18 +93,14 @@
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>Dashboard generated using Part 1 & Part 2 Analysis Frameworks</p>
-            <p style="margin-top: 0.5rem;">Analysis based on meeting transcript with full speaker differentiation and provided agenda</p>
+            <!-- Footer -->
+            <div class="footer">
+                <p>Dashboard generated using Part 1 & Part 2 Analysis Frameworks</p>
+                <p style="margin-top: 0.5rem;">Analysis based on meeting transcript with full speaker differentiation and provided agenda</p>
+            </div>
         </div>
     </div>
 
-    <!-- Load scripts in order: contentLoader -> toggles -> charts (parts) -> main -->
-    <script src="js/contentLoader.js"></script>
-    <script src="js/toggles.js"></script>
-    <script src="js/charts-part1.js"></script>
-    <script src="js/charts-part2.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

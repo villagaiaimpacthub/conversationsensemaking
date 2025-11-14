@@ -148,3 +148,12 @@
             const button = document.getElementById('toggleEncouragingBtn');
             
             if (element.style.display === 'none') {
+                element.style.display = 'block';
+                button.textContent = 'Show less ▲';
+                button.style.background = 'rgba(168, 216, 234, 0.1)';
+            } else {
+                element.style.display = 'none';
+                button.textContent = 'Show 4 more beliefs ▼';
+                button.style.background = 'var(--bg-secondary)';
+            }
+        }
