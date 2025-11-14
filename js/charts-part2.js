@@ -342,3 +342,6 @@
                 initializeChartsPart2();
             }
         }
+        
+        // Export to window so it's accessible globally
+        window.initializeCharts = initializeCharts;
