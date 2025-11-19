@@ -355,7 +355,6 @@ Identify distinct topics discussed in meeting.
 **Disagreement** (-50 points each):
 - "but" (when disagreeing)
 - "however"
-- "I'm not sure"
 - "I disagree"
 - "I don't think"
 - "that won't work"
@@ -367,6 +366,7 @@ Identify distinct topics discussed in meeting.
 - "maybe"
 - "we should think about"
 - "need to consider"
+- "I'm not sure"
 - "not sure"
 - "have questions"
 - "unclear"

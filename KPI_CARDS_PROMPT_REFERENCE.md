@@ -201,7 +201,6 @@ AGREEMENT INDICATORS:
 DISAGREEMENT INDICATORS (50 points deduction each):
 - "but"
 - "however"
-- "I'm not sure"
 - "I disagree"
 - "I don't think"
 - "that won't work"
@@ -213,6 +212,7 @@ HESITATION INDICATORS (25 points deduction each):
 - "maybe"
 - "we should think about"
 - "need to consider"
+- "I'm not sure"
 - "not sure"
 - "have questions"
 - "unclear"
