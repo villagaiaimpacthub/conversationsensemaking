@@ -8,9 +8,8 @@ Analyze the provided meeting transcript and return a JSON object containing all 
 
 ## Expected JSON Structure
 
-Return a JSON object with the following structure:
+Return a JSON object with the following structure (IMPORTANT: Return only the JSON, no markdown formatting):
 
-```json
 {
   "basicMetrics": {
     "totalSpeakers": <number>,
@@ -155,7 +154,6 @@ Return a JSON object with the following structure:
     }
   ]
 }
-```
 
 ## Analysis Guidelines - Calculation Methodology
 
@@ -294,7 +292,7 @@ Result: 0-100 (sum of all 4 components)
 
 #### RETURN IN JSON
 Return detailed breakdown with all components:
-```json
+
 "inclusion": {
   "score": <number 0-100>,
   "pronounBalance": {
@@ -320,7 +318,6 @@ Return detailed breakdown with all components:
     "points": <number 0-20>
   }
 }
-```
 
 **VERIFICATION**: Confirm `score = pronounBalance.points + interruptionRate.points + inclusionLanguage.points + speakingEquity.points`
 
@@ -392,7 +389,7 @@ If no topics: overall_consensus = 50
 
 #### RETURN IN JSON
 Return per-topic breakdown + overall:
-```json
+
 "consensus": {
   "overallScore": <number 0-100>,
   "topics": [
@@ -408,7 +405,6 @@ Return per-topic breakdown + overall:
     }
   ]
 }
-```
 
 ### Topic Analysis
 - Identify main topics discussed

@@ -160,16 +160,11 @@ function updateDashboardWithAnalysis(analysis) {
         loadTabContent('meeting-analysis', 'meeting-analysis.html');
     }
     
-    // Update charts with new data (will be called after content loads)
+    // Update content sections AFTER content loads (contentLoader has a 300ms delay)
+    // Wait a bit longer to ensure all DOM elements are ready
     setTimeout(() => {
-        if (typeof initializeCharts === 'function') {
-            // Charts will read from window.analysisData
-            initializeCharts();
-        }
-    }, 500);
-    
-    // Update content sections
-    updateContentSections(analysis);
+        updateContentSections(analysis);
+    }, 350);
 }
 
 /**

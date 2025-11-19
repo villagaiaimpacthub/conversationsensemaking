@@ -1,0 +1,1349 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 19,
+    "speakers": [
+      "Nathalie Nebelius (Cordinata AB)",
+      "Alex Alegria (metalucks.com)",
+      "Prakash Gabra",
+      "ish",
+      "manuele",
+      "Team Metaluck",
+      "Alexander Keehnen",
+      "Olga Duka",
+      "Iris Lubitch",
+      "Ali Reyazat",
+      "Charles Neil",
+      "Sudheer",
+      "Christopher Herghelegiu",
+      "Nikolai Hobruecker-Thompson",
+      "Elliott Bayev",
+      "Nika Trifonova",
+      "Yannik Weber",
+      "Julia Becker (juliabecker.co)",
+      "John Stokes (Real Ventures)",
+      "Chaelin Song (Fvtura)",
+      "Andrew Alan"
+    ],
+    "totalUtterances": 139,
+    "totalWords": 7096,
+    "estimatedDuration": 88.7,
+    "averageWordsPerUtterance": 51.05
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Sudheer",
+        "utterances": 20,
+        "words": 2011,
+        "percentage": 28.34
+      },
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 18,
+        "words": 1419,
+        "percentage": 20
+      },
+      {
+        "name": "Nathalie Nebelius (Cordinata AB)",
+        "utterances": 32,
+        "words": 1059,
+        "percentage": 14.92
+      },
+      {
+        "name": "manuele",
+        "utterances": 4,
+        "words": 834,
+        "percentage": 11.75
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 3,
+        "words": 490,
+        "percentage": 6.91
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 4,
+        "words": 427,
+        "percentage": 6.02
+      },
+      {
+        "name": "ish",
+        "utterances": 5,
+        "words": 218,
+        "percentage": 3.07
+      },
+      {
+        "name": "John Stokes (Real Ventures)",
+        "utterances": 2,
+        "words": 194,
+        "percentage": 2.73
+      },
+      {
+        "name": "Olga Duka",
+        "utterances": 2,
+        "words": 193,
+        "percentage": 2.72
+      },
+      {
+        "name": "Charles Neil",
+        "utterances": 2,
+        "words": 107,
+        "percentage": 1.51
+      },
+      {
+        "name": "Julia Becker (juliabecker.co)",
+        "utterances": 1,
+        "words": 70,
+        "percentage": 0.99
+      },
+      {
+        "name": "Chaelin Song (Fvtura)",
+        "utterances": 2,
+        "words": 65,
+        "percentage": 0.92
+      },
+      {
+        "name": "Alexander Keehnen",
+        "utterances": 1,
+        "words": 64,
+        "percentage": 0.9
+      },
+      {
+        "name": "Iris Lubitch",
+        "utterances": 2,
+        "words": 63,
+        "percentage": 0.89
+      },
+      {
+        "name": "Nikolai Hobruecker-Thompson",
+        "utterances": 1,
+        "words": 26,
+        "percentage": 0.37
+      },
+      {
+        "name": "Andrew Alan",
+        "utterances": 1,
+        "words": 17,
+        "percentage": 0.24
+      },
+      {
+        "name": "Ali Reyazat",
+        "utterances": 1,
+        "words": 15,
+        "percentage": 0.21
+      },
+      {
+        "name": "Yannik Weber",
+        "utterances": 1,
+        "words": 10,
+        "percentage": 0.14
+      },
+      {
+        "name": "Prakash Gabra",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.11
+      },
+      {
+        "name": "Nika Trifonova",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.11
+      },
+      {
+        "name": "Elliott Bayev",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.11
+      }
+    ],
+    "totalWords": 7096
+  },
+  "engagement": {
+    "questionFrequency": 17.27,
+    "feedbackInstances": 10.07,
+    "responseDynamics": 66.67,
+    "turnTakingBalance": 20,
+    "overallEngagement": 28.5
+  },
+  "inclusion": {
+    "score": 57,
+    "pronounData": {
+      "collective": 122,
+      "individual": 218
+    },
+    "pronounRatio": 0.56,
+    "interruptionRate": 0.72,
+    "inclusionLanguage": {
+      "acknowledgments": 10,
+      "invitations": 14,
+      "reinforcements": 13,
+      "total": 37
+    }
+  },
+  "consensus": {
+    "overallScore": 75,
+    "topics": [
+      {
+        "topic": "Meeting Opening & Coherence Meditation",
+        "consensus": 90,
+        "indicators": {
+          "strongAgreement": 2,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Vision, Mission, and Purpose Review",
+        "consensus": 85,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 1,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Check-in Round: How are you arriving today?",
+        "consensus": 95,
+        "indicators": {
+          "strongAgreement": 3,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "The Creed and its Importance",
+        "consensus": 80,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Journey So Far: Anchor Circle Updates (Weeks 1-4)",
+        "consensus": 60,
+        "indicators": {
+          "strongAgreement": 2,
+          "moderateAgreement": 1,
+          "disagreement": 1,
+          "hesitation": 2
+        }
+      },
+      {
+        "topic": "Discussion on Uncertainty, Communication, and Governance",
+        "consensus": 55,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 1,
+          "disagreement": 2,
+          "hesitation": 3
+        }
+      },
+      {
+        "topic": "Compensation Framework and Collective Contribution",
+        "consensus": 50,
+        "indicators": {
+          "strongAgreement": 0,
+          "moderateAgreement": 1,
+          "disagreement": 1,
+          "hesitation": 2
+        }
+      },
+      {
+        "topic": "Regeneration Definition and Implementation",
+        "consensus": 65,
+        "indicators": {
+          "strongAgreement": 0,
+          "moderateAgreement": 1,
+          "disagreement": 0,
+          "hesitation": 1
+        }
+      },
+      {
+        "topic": "Symbiosis Platform Usage and Future Communication",
+        "consensus": 75,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Upcoming Calls and End-of-Year Reflection",
+        "consensus": 80,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      }
+    ]
+  },
+  "topics": {
+    "distribution": [
+      {
+        "topic": "Anchor Circle Updates & Progress",
+        "count": 35,
+        "percentage": 25.18
+      },
+      {
+        "topic": "Governance & Holacracy Principles",
+        "count": 25,
+        "percentage": 17.99
+      },
+      {
+        "topic": "Vision, Mission, Purpose & Creed",
+        "count": 20,
+        "percentage": 14.39
+      },
+      {
+        "topic": "Uncertainty & Collaboration",
+        "count": 15,
+        "percentage": 10.79
+      },
+      {
+        "topic": "Communication & Symbiosis Platform",
+        "count": 12,
+        "percentage": 8.63
+      },
+      {
+        "topic": "Compensation & Contribution",
+        "count": 10,
+        "percentage": 7.19
+      },
+      {
+        "topic": "Meeting Check-in & Personal Feelings",
+        "count": 8,
+        "percentage": 5.76
+      },
+      {
+        "topic": "Workload Distribution & Support",
+        "count": 7,
+        "percentage": 5.04
+      },
+      {
+        "topic": "Regeneration Definition",
+        "count": 4,
+        "percentage": 2.88
+      },
+      {
+        "topic": "Upcoming Calls & Closing",
+        "count": 3,
+        "percentage": 2.16
+      }
+    ],
+    "totalMentions": 139
+  },
+  "knowledgeGaps": {
+    "explicit": [
+      {
+        "speaker": "Sudheer",
+        "text": "But it's still not fully, fully clear, right?",
+        "severity": "high"
+      },
+      {
+        "speaker": "manuele",
+        "text": "However, I still have to understand. Then what does it conflict in terms of operational efficiency from the next weeks?",
+        "severity": "medium"
+      },
+      {
+        "speaker": "manuele",
+        "text": "And I am a bit in the dark now because I don't know how to approach either in my usual way of managing things.",
+        "severity": "medium"
+      },
+      {
+        "speaker": "John Stokes (Real Ventures)",
+        "text": "I have been thinking and engaged in regeneration for some time, and I'm still not always sure what it is and what it isn't.",
+        "severity": "high"
+      }
+    ],
+    "byCoverage": [
+      {
+        "topic": "Strategic Vision",
+        "coverageScore": 85
+      },
+      {
+        "topic": "Operations & Processes",
+        "coverageScore": 65
+      },
+      {
+        "topic": "Financial Planning",
+        "coverageScore": 70
+      },
+      {
+        "topic": "Technology & Tools",
+        "coverageScore": 75
+      },
+      {
+        "topic": "Market & Competition",
+        "coverageScore": 40
+      },
+      {
+        "topic": "Team & Culture",
+        "coverageScore": 80
+      },
+      {
+        "topic": "Legal & Compliance",
+        "coverageScore": 60
+      },
+      {
+        "topic": "Customer/Stakeholder Needs",
+        "coverageScore": 30
+      }
+    ],
+    "totalGaps": 4
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 10.07,
+      "lowPower": 46.04,
+      "neutral": 43.88
+    },
+    "bySpeaker": [
+      {
+        "speaker": "Nathalie Nebelius (Cordinata AB)",
+        "highPower": 9.38,
+        "lowPower": 46.88,
+        "neutral": 43.75
+      },
+      {
+        "speaker": "Alex Alegria (metalucks.com)",
+        "highPower": 11.11,
+        "lowPower": 44.44,
+        "neutral": 44.44
+      },
+      {
+        "speaker": "Prakash Gabra",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "ish",
+        "highPower": 0,
+        "lowPower": 40,
+        "neutral": 60
+      },
+      {
+        "speaker": "manuele",
+        "highPower": 25,
+        "lowPower": 50,
+        "neutral": 25
+      },
+      {
+        "speaker": "Team Metaluck",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Alexander Keehnen",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Olga Duka",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Iris Lubitch",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Ali Reyazat",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Charles Neil",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Sudheer",
+        "highPower": 15,
+        "lowPower": 40,
+        "neutral": 45
+      },
+      {
+        "speaker": "Christopher Herghelegiu",
+        "highPower": 0,
+        "lowPower": 66.67,
+        "neutral": 33.33
+      },
+      {
+        "speaker": "Nikolai Hobruecker-Thompson",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Elliott Bayev",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Nika Trifonova",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Yannik Weber",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Julia Becker (juliabecker.co)",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "John Stokes (Real Ventures)",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Chaelin Song (Fvtura)",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Andrew Alan",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      }
+    ]
+  },
+  "relational": {
+    "timeline": [
+      {
+        "timeblock": "0-10 min",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "10-20 min",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "20-30 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "30-40 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "40-50 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "50-60 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "60-70 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "70-80 min",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "80-90 min",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      }
+    ],
+    "averages": {
+      "trust": 3,
+      "alignment": 3,
+      "care": 3,
+      "belonging": 3
+    }
+  },
+  "sentiment": {
+    "timeline": [
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "average": 3.29
+  },
+  "breakthroughs": [
+    {
+      "index": 12,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We know that collaboration is the true architecture of evolution, where unity becomes strength, and diversity becomes harmony.",
+      "type": "cognitive"
+    },
+    {
+      "index": 13,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We choose love as our compass, and integrity as our plan.",
+      "type": "emotional"
+    },
+    {
+      "index": 14,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We honor coherence, weaving finance, technology, and governance into service of life itself.",
+      "type": "cognitive"
+    },
+    {
+      "index": 15,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We uphold well-being as our prime directive, the measure of prosperity, and the essence of all enterprise.",
+      "type": "cognitive"
+    },
+    {
+      "index": 16,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We embody courage, walking boldly through uncertainty, guided by vision and conviction.",
+      "type": "emotional"
+    },
+    {
+      "index": 17,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "the of the world begins within. We declare our task to be that of planetary regeneration.",
+      "type": "cognitive"
+    },
+    {
+      "index": 20,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "So the purpose is our intention, is our collective intention, is why we got here all together.",
+      "type": "relational"
+    },
+    {
+      "index": 22,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "a regenerative planetary civilization, where human purpose, finance, and technology unite in service to life itself.",
+      "type": "cognitive"
+    },
+    {
+      "index": 23,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "By catalyzing humanity transition to regenerative civilization, by building integrated financial, digital, physical, and cultural infrastructure, that enables coherent and collective action at a planetary scale.",
+      "type": "cognitive"
+    },
+    {
+      "index": 25,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And I hope this vision, this purpose. know. it this purpose. is inspiring enough for us collectively to take this action forward.",
+      "type": "emotional"
+    },
+    {
+      "index": 44,
+      "speaker": "Sudheer",
+      "text": "So, week one, straight up. We came back from Tuscany in the first meeting that we had. The vision, mission, and the creed that Shyamana just beautifully read out were kind of formally adopted as the underlying basis for Better World.",
+      "type": "behavioral"
+    },
+    {
+      "index": 45,
+      "speaker": "Sudheer",
+      "text": "The core values also were finalized. Since we still are to put in place a more robust governance framework, for now we agreed to essentially follow holacracy principles to be adopted as an interim governance framework.",
+      "type": "behavioral"
+    },
+    {
+      "index": 46,
+      "speaker": "Sudheer",
+      "text": "Based on that, I think there was a brief discussion on this even at the gathering as well. A provisional anchor circle was formed, and I want to highlight the word provisional.",
+      "type": "behavioral"
+    },
+    {
+      "index": 48,
+      "speaker": "Sudheer",
+      "text": "Leads were nominated, some of this was discussed at the gathering as well, and then talk of plans for the next two years and one year and so on and so forth, what we thought might be useful was essentially for each of the circles that were identified to agree on a purpose, some of the broad roles, and this is still work in progress by the way, but at least the intention was to kind of agree on the purpose, roles, what the authority is, and focus on a 100-day plan because there's just so much that we need to get done.",
+      "type": "behavioral"
+    },
+    {
+      "index": 50,
+      "speaker": "Sudheer",
+      "text": "As a part of the discussions, there was also a discussion on the corporate structure, and Farhad brought to the table that we should update the corporate structure, what Alex had presented at the gathering, to also create another separate legal entity that we are calling as Better World Private Equity Limited.",
+      "type": "cognitive"
+    },
+    {
+      "index": 51,
+      "speaker": "Sudheer",
+      "text": "This will be essentially the vehicle that will raise the initial capital. capital. So it would be in the range of £15 million, again, UK-based, which will invest into Better World Holding, asset management, and so on and so forth.",
+      "type": "cognitive"
+    },
+    {
+      "index": 53,
+      "speaker": "Sudheer",
+      "text": "A lot of work to be done, but at least the structure was kind of broadly agreed, that we should have a separate legal entity, because it doesn't make sense to raise capital directly in Better World Holding.",
+      "type": "cognitive"
+    },
+    {
+      "index": 55,
+      "speaker": "Sudheer",
+      "text": "Week two, some of the concerns and the tensions that came up were looked at specifically to see how, while we still work through all these things internally, we do also need to get the ball rolling outside, because unless and until we start engaging outside, in some form or shape, you really can't have methods for course correction, and again, this is an entrepreneurial journey for all of us, so there was discussions around the strategic communication plan, the fact that, I mean, we need to get the communication plan sorted, both internal, external, and external, you have a combination of all the mundane, regulatory, fund-based communication that required, plus of course, the whole, the brand, the narrative arc, the storytelling arc, to bring in the heart into what we're doing.",
+      "type": "cognitive"
+    },
+    {
+      "index": 56,
+      "speaker": "Sudheer",
+      "text": "BD, because Ismail had reached out to some of the SMEs in UAE, in the GCC, they had come back with a whole lot of questions, so we realized that, I mean, there needs to be some kind of a basis for business and development strategies to be aligned, including better defining the value proposition, SMEs, going to and Having a method to be able to answer questions that SMEs may have, and so on and so forth.",
+      "type": "cognitive"
+    },
+    {
+      "index": 58,
+      "speaker": "Sudheer",
+      "text": "And then since there were also a number of technology solutions that we already have between Spals, Hive, Simeosis, SmartE, and so on and so forth, the point came up that there should be an approach towards integrating some of these solutions and, of course, looking at the capabilities that TechBricks has to see if we can work more cohesively in lot of coherence.",
+      "type": "cognitive"
+    },
+    {
+      "index": 60,
+      "speaker": "Sudheer",
+      "text": "But then the Anchor Circle said that we'd rather start using what we've built.",
+      "type": "behavioral"
+    },
+    {
+      "index": 62,
+      "speaker": "Sudheer",
+      "text": "Okay, I'll keep going, right? So I think the preference of the Anchor Circle was we should start using our own tools and products for project management and collaboration, despite the fact that they're still working in progress.",
+      "type": "behavioral"
+    },
+    {
+      "index": 64,
+      "speaker": "Sudheer",
+      "text": "And we've also agreed that it's super critical to get the circle charters agreed ASAP by mid-November.",
+      "type": "behavioral"
+    },
+    {
+      "index": 66,
+      "speaker": "Sudheer",
+      "text": "Then week three, which was 10 days ago, the... But... But... But... But... One of the takeaways from week two was to test out symbiosis to see if we can use it.",
+      "type": "behavioral"
+    },
+    {
+      "index": 67,
+      "speaker": "Sudheer",
+      "text": "So there was a smaller group that broke out to basically review symbiosis. We also had Selvajia from TechBricks join that meeting to review the product.",
+      "type": "behavioral"
+    },
+    {
+      "index": 68,
+      "speaker": "Sudheer",
+      "text": "And we agreed that while the product is in an alpha stage, we can at least still start using some parts of it.",
+      "type": "behavioral"
+    },
+    {
+      "index": 70,
+      "speaker": "Sudheer",
+      "text": "And within operations, legal, of course, is super critical that I had a number of conversations with Iris, who graciously agreed to lead the legal sub-circle, where we put together, again, a 100-day plan and what the legal circle would be doing.",
+      "type": "behavioral"
+    },
+    {
+      "index": 72,
+      "speaker": "Sudheer",
+      "text": "So the purpose was defined, and so on, we can share that. So that legal sub-circle charter was adopted and approved by the anchor circle, with IRS agreeing to take the lead on this.",
+      "type": "behavioral"
+    },
+    {
+      "index": 74,
+      "speaker": "Sudheer",
+      "text": "And then we put together a guidance document because we saw that there was a lot of parallel initiatives that were happening.",
+      "type": "cognitive"
+    },
+    {
+      "index": 75,
+      "speaker": "Sudheer",
+      "text": "And also, for better world, MBS, what we call as a minimum viable system. There was a bit of a discussion in terms of how well integrated should that be in terms of, since the way I look at this was basically, I mean, normally an M&A transaction is hard enough when you're trying to acquire a company because, and the biggest reason why normal acquisitions in the regular corporate world don't work is because there is issues around culture and integration and so on and so forth.",
+      "type": "cognitive"
+    },
+    {
+      "index": 76,
+      "speaker": "Sudheer",
+      "text": "So here, we are trying to bring in six, seven entities already and create new ones, all working in isolation so far.",
+      "type": "cognitive"
+    },
+    {
+      "index": 77,
+      "speaker": "Sudheer",
+      "text": "inification. So So, the discussion that came was, what should be the approach, what should the approach be for the level of integration for the various entities as a part of the MBS to form that sacred center that can then weave the whole web.",
+      "type": "cognitive"
+    },
+    {
+      "index": 79,
+      "speaker": "Sudheer",
+      "text": "And then there was also a discussion on ReState Foundation's integration and their funding needs.",
+      "type": "cognitive"
+    },
+    {
+      "index": 80,
+      "speaker": "Sudheer",
+      "text": "And finally, last week, we had our first meeting in Symbiosis, so that was great.",
+      "type": "behavioral"
+    },
+    {
+      "index": 81,
+      "speaker": "Sudheer",
+      "text": "We also voted on the purpose through Symbiosis, so I think it worked, even though people struggled a bit to understand how to use it.",
+      "type": "behavioral"
+    },
+    {
+      "index": 83,
+      "speaker": "Sudheer",
+      "text": "So, the Circle Leads updated that the charters and the roles were still under discussion, and they were still preparing them, and I think the invitation was we need to really get this done ASAP, and also, of course, things like asset management and so on, to also see ways to review it and work with TechBricks and some of the other members in the process of trying to at least finalize this charter.",
+      "type": "behavioral"
+    },
+    {
+      "index": 85,
+      "speaker": "Sudheer",
+      "text": "And then finally, there was also a need identified to have a dedicated three to four hour MVS integration and coherence call, which I proposed as the operation circle around, like I mentioned, what is the core integration framework plan for all the various entities, better world private equities, holdings, asset management, Vila Gaya, Futura, Smarties, even though Smarties is not necessarily a core product, but it's done by Ali and Farad, but still, since there are synergies out there to leverage what they've done already so far, and TechBricks, World Impact Forum, and so on and so forth.",
+      "type": "cognitive"
+    },
+    {
+      "index": 87,
+      "speaker": "Sudheer",
+      "text": "And finally, communication, there was a lot of frustration.",
+      "type": "emotional"
+    },
+    {
+      "index": 88,
+      "speaker": "Sudheer",
+      "text": "I think many, many people are working on many things individually, but it's kind of getting clear right now, at least the WhatsApp group has been created.",
+      "type": "cognitive"
+    },
+    {
+      "index": 89,
+      "speaker": "Sudheer",
+      "text": "We have to move to, I know, to Simiosis, but the idea is to really get the ball rolling on this too.",
+      "type": "behavioral"
+    },
+    {
+      "index": 90,
+      "speaker": "Sudheer",
+      "text": "Like I said, internal, external, external will a combination of regulatory, basic compliance, communication requirements, along with, of course, the entire thing around the storytelling arc for ecosystem entities and so on, coupled with the immediate to-do things like website, email IDs, just so many operational things that need to get sorted like ASAP, right?",
+      "type": "cognitive"
+    },
+    {
+      "index": 91,
+      "speaker": "Sudheer",
+      "text": "So, I'm hoping that this tool needs to be done. So, the idea was to really hone in on these three aspects to just bring about a bit more coherence as soon as possible.",
+      "type": "cognitive"
+    },
+    {
+      "index": 94,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "I know when you kick off a new project, you have certain expectations in mind of how things should move.",
+      "type": "cognitive"
+    },
+    {
+      "index": 96,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And there's enough, and it's a beautiful tension, and that is between, I mean, first of all, when you're launching an ecosystem, I mean, it is an ecosystem.",
+      "type": "cognitive"
+    },
+    {
+      "index": 97,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "So, the tension to bring these parts together, which they were already operating with their own And if trying to bring them together, this is where I would say the tire hit the road, and we can talk about collaboration in theory for days and years, but what we are doing is collaboration in action.",
+      "type": "cognitive"
+    },
+    {
+      "index": 98,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And it takes courage, it takes love, it takes reminding us what is this all about, why we came together.",
+      "type": "emotional"
+    },
+    {
+      "index": 100,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "and we have two choices to play with uncertainty. either we celebrate it with knowing that there is magic will unfold at some point of time and have the courage to walk through that uncertainty or we can embrace it with with concern and this is a choice that we make personally and we can make this choice but also we can make the other choice and this is for me here an invitation to embrace uncertainty and and for us collectively and I the responsibility for a better communication, starting with myself, and a clear communication.",
+      "type": "emotional"
+    },
+    {
+      "index": 102,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "But we only know something, and that something is that we have a very strong connection of why we started this.",
+      "type": "relational"
+    },
+    {
+      "index": 103,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And we know that we will face challenges and uncertainties, and we have to figure it out, including how to work together and how we align internally.",
+      "type": "cognitive"
+    },
+    {
+      "index": 104,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "It's especially when you try to distribute power. It's easy when... In a startup, they launch a company, and one guy is named a founder, and then you keep running, and then you get this guy and the other guy, and so on, you know, that's easy.",
+      "type": "cognitive"
+    },
+    {
+      "index": 106,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "But it's part of the learning that we need to go through it, and I really appreciate you coming forward and putting it here.",
+      "type": "relational"
+    },
+    {
+      "index": 107,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "I don't Provide more these opinions and decisions because we want to move ahead.",
+      "type": "behavioral"
+    },
+    {
+      "index": 108,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And maybe, who knows, but as we move on, maybe we will lean into becoming, you know, for the next six months, making decisions, not sitting within somebody's authority, but so that we can get things running until we steward it to the time where we can say, now it's ready for election, hey guys, you can elect who's going to be on the anchor circle, who's going to be on the other circles, and so on.",
+      "type": "cognitive"
+    },
+    {
+      "index": 109,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "And that's exactly what it is here. The anchor circle has the roles, which will be nominated by others, will nominate who's going to be there, and we will have an election, and with consent, we're working on that.",
+      "type": "cognitive"
+    },
+    {
+      "index": 110,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "I'm working personally on that, you know, and at the end, I think this will bring a lot more clarity into this.",
+      "type": "cognitive"
+    },
+    {
+      "index": 112,
+      "speaker": "Sudheer",
+      "text": "I'll it very short, yeah. On the compensation part, right? I mean, the thing is, like I said before as well, when I first came and saw how things were working so far, to be honest, I was quite uncomfortable.",
+      "type": "emotional"
+    },
+    {
+      "index": 113,
+      "speaker": "Sudheer",
+      "text": "didn't make sense for me at all, right, in the way things were so far, because, and this is, again, my personal views of this, nothing has been discussed, where I would look at it in a very simple way, that time being spent has to be valued.",
+      "type": "cognitive"
+    },
+    {
+      "index": 114,
+      "speaker": "Sudheer",
+      "text": "How you value it, there can be multiple frameworks, whether it's for a role, whether it's for the person, where they are, and so on and so forth, needs to be valued.",
+      "type": "cognitive"
+    },
+    {
+      "index": 115,
+      "speaker": "Sudheer",
+      "text": "And there needs to be some framework in place for that, independent of what each one's choices and what they want to take or not to take.",
+      "type": "cognitive"
+    },
+    {
+      "index": 116,
+      "speaker": "Sudheer",
+      "text": "Once you value it, then the next thing would be, of course, if someone is... Absolutely align with the cause so much, they don't need the money.",
+      "type": "cognitive"
+    },
+    {
+      "index": 117,
+      "speaker": "Sudheer",
+      "text": "mean, the thing is that there should be pathways for financial abundance for all. That's the fundamental thing, including us through this.",
+      "type": "cognitive"
+    },
+    {
+      "index": 118,
+      "speaker": "Sudheer",
+      "text": "And we need to work out what those pathways are, number one. And number two, after that, there are two things that can be variables.",
+      "type": "cognitive"
+    },
+    {
+      "index": 119,
+      "speaker": "Sudheer",
+      "text": "One variable can be what are the resources that we have currently that we can afford? How much can we, from a practical standpoint, defer it out?",
+      "type": "cognitive"
+    },
+    {
+      "index": 120,
+      "speaker": "Sudheer",
+      "text": "Because this is the only thing that we can do to get the ball rolling. And how much can we upfront?",
+      "type": "cognitive"
+    },
+    {
+      "index": 121,
+      "speaker": "Sudheer",
+      "text": "And we need to work out modalities for that, to fit it within the cash flow budget, so to say, to get the ball rolling and have a model that can be self-sustaining, like you said, Manit.",
+      "type": "cognitive"
+    },
+    {
+      "index": 122,
+      "speaker": "Sudheer",
+      "text": "And then the other thing would be is, after iterating for what is upfront and what is deferred basis, the resources available, individuals themselves can choose whether they want that or not.",
+      "type": "cognitive"
+    },
+    {
+      "index": 123,
+      "speaker": "Sudheer",
+      "text": "If they feel that they align with the cause so much, then they'd rather pull it back for the collective purpose.",
+      "type": "emotional"
+    },
+    {
+      "index": 124,
+      "speaker": "Sudheer",
+      "text": "Beautiful, right? Nothing like it, right? But at the same time, attribution should be there, the first step. One can choose to say, I don't I this money because I'm very abundant within. I just sit in a cave and meditate, so I don't need the money.",
+      "type": "emotional"
+    },
+    {
+      "index": 125,
+      "speaker": "Sudheer",
+      "text": "So I'm just happy to basically put it for a collective purpose, so to say, whatever that might be. So I think we just need to work with that framework ASAP.",
+      "type": "cognitive"
+    },
+    {
+      "index": 126,
+      "speaker": "Sudheer",
+      "text": "And then also for the past work that has been done, figure out some framework to kind of take care of that.",
+      "type": "cognitive"
+    },
+    {
+      "index": 128,
+      "speaker": "John Stokes (Real Ventures)",
+      "text": "I know that we're almost out of time. And I just wanted to say that, building on what's been said, the word regeneration is everywhere in the mission, the vision, et cetera, et cetera.",
+      "type": "cognitive"
+    },
+    {
+      "index": 129,
+      "speaker": "John Stokes (Real Ventures)",
+      "text": "I have been thinking and engaged in regeneration for some time, and I'm still not always sure what it is and what it isn't.",
+      "type": "cognitive"
+    },
+    {
+      "index": 130,
+      "speaker": "John Stokes (Real Ventures)",
+      "text": "And it seems, for example, the decision that Manuela was pointing out, part of the rationale was, let's not use an extractive product.",
+      "type": "cognitive"
+    },
+    {
+      "index": 131,
+      "speaker": "John Stokes (Real Ventures)",
+      "text": "Let's use something that's more regenerative. I really think understanding what... Regenerative is having a common understanding of what it is and what it isn't, understanding that we are not going to be regenerative on day one, and we need to go through horizon two transformation, and that we are making decisions sometimes which are horizon two minus, sometimes horizon two plus, and that those decisions can be made explicitly and intentionally.",
+      "type": "cognitive"
+    },
+    {
+      "index": 132,
+      "speaker": "John Stokes (Real Ventures)",
+      "text": "Regenerative, finally, having, trying to understand what is the, who is the, and I don't mean necessarily an individual person, but who is the guide, the holding the feet to the fire from a regenerative point of view?",
+      "type": "cognitive"
+    },
+    {
+      "index": 134,
+      "speaker": "Olga Duka",
+      "text": "I wanted to make a quick callback to a few thoughts shared by Chris and Sadir and Alex and Mano and you.",
+      "type": "relational"
+    },
+    {
+      "index": 135,
+      "speaker": "Olga Duka",
+      "text": "I think as long as we have transparent, safe space and ability to understand why we're here all together, conflicts of interest shouldn't scare us at all.",
+      "type": "emotional"
+    },
+    {
+      "index": 136,
+      "speaker": "Olga Duka",
+      "text": "They are all solvable, as long as we can just communicate. But I wanted to maybe highlight something else more.",
+      "type": "cognitive"
+    },
+    {
+      "index": 137,
+      "speaker": "Olga Duka",
+      "text": "It's not just expectations on the possible outcomes and pathways, how it can be done, should be done, how to rely on all of those things and so on.",
+      "type": "cognitive"
+    },
+    {
+      "index": 138,
+      "speaker": "Olga Duka",
+      "text": "It's more of the complexity itself, so many multi-faceted pieces. won't include完全 LL, to everything do So I'm think I Bearing, don't most of It's coming together. It's like collective cubic, cubic, which we are putting together.",
+      "type": "cognitive"
+    }
+  ],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post creed/values deck to Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Schedule 3–4h MVS integration & tech infrastructure alignment call w/ relevant leads",
+      "type": "action"
+    },
+    {
+      "speaker": "Christopher Herghelegiu",
+      "text": "Post Anchor Circle updates to Symbiosis after each meeting",
+      "type": "action"
+    },
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post questions/discussion points in Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Send bi-weekly Anchor Circle updates to ecosystem",
+      "type": "action"
+    }
+  ],
+  "decisions": [
+    {
+      "speaker": "Sudheer",
+      "text": "The vision, mission, and the creed that Shyamana just beautifully read out were kind of formally adopted as the underlying basis for Better World.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "for now we agreed to essentially follow holacracy principles to be adopted as an interim governance framework.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "A provisional anchor circle was formed",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Farhad brought to the table that we should update the corporate structure, what Alex had presented at the gathering, to also create another separate legal entity that we are calling as Better World Private Equity Limited.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "the structure was kind of broadly agreed, that we should have a separate legal entity, because it doesn't make sense to raise capital directly in Better World Holding.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "the Anchor Circle said that we'd rather start using what we've built.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "we've also agreed that it's super critical to get the circle charters agreed ASAP by mid-November.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "we agreed that while the product is in an alpha stage, we can at least still start using some parts of it.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "So that legal sub-circle charter was adopted and approved by the anchor circle, with IRS agreeing to take the lead on this.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "we had our first meeting in Symbiosis, so that was great. We also voted on the purpose through Symbiosis",
+      "type": "decision"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "high",
+      "text": "Define clear roles and responsibilities for each circle ASAP to enable broader participation and workload distribution, as suggested by Charles and Nathalie."
+    },
+    {
+      "type": "engagement",
+      "priority": "medium",
+      "text": "Encourage more active questioning and follow-up to improve response dynamics and overall engagement, especially in discussions about operational challenges."
+    },
+    {
+      "type": "knowledge",
+      "priority": "high",
+      "text": "Address the explicit knowledge gap regarding the definition and practical implementation of 'regeneration' to ensure a common understanding across the ecosystem, as highlighted by John."
+    },
+    {
+      "type": "communication",
+      "priority": "high",
+      "text": "Utilize Symbiosis as the primary platform for all questions, discussions, and updates to enhance transparency and streamline communication, as recommended by Shamla and Chris."
+    },
+    {
+      "type": "governance",
+      "priority": "high",
+      "text": "Finalize the governance structure, including the lead for the governance circle and the representative links from other circles to the Anchor Circle, to improve internal alignment and decision-making processes, as detailed by Alex."
+    },
+    {
+      "type": "operational_efficiency",
+      "priority": "medium",
+      "text": "Prioritize the dedicated MVS integration and tech infrastructure alignment call to resolve overlapping functionalities and optimize resource allocation across different entities, as proposed by Sudheer."
+    },
+    {
+      "type": "culture",
+      "priority": "high",
+      "text": "Foster a culture that embraces uncertainty and encourages a 'what can I give' mindset, while also establishing a transparent compensation framework to value contributions, as discussed by Alex and Sudheer."
+    },
+    {
+      "type": "process",
+      "priority": "medium",
+      "text": "Adopt a more realistic approach to planning and milestones, acknowledging the 'humongous endeavor' and complexity, allowing for a 'move slow to achieve more' strategy, as suggested by Olga."
+    }
+  ]
+}
