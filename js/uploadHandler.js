@@ -274,11 +274,67 @@ function updateKPICards(analysis) {
 }
 
 /**
+ * Update Utterance Distribution with dynamic speaker data
+ */
+function updateUtteranceDistribution(analysis) {
+    if (!analysis || !analysis.participation) return;
+
+    const container = document.getElementById('utteranceDistribution');
+    if (!container) return;
+
+    const distribution = analysis.participation.distribution || [];
+    
+    // Sort by percentage descending (already should be, but ensure it)
+    const sorted = [...distribution].sort((a, b) => b.percentage - a.percentage);
+
+    // Color palette for gradients
+    const colors = [
+        { start: 'rgba(168, 216, 234, 0.8)', end: 'rgba(168, 230, 207, 0.8)' },
+        { start: 'rgba(168, 230, 207, 0.8)', end: 'rgba(212, 165, 245, 0.8)' },
+        { start: 'rgba(212, 165, 245, 0.8)', end: 'rgba(255, 211, 182, 0.8)' },
+        { start: 'rgba(255, 211, 182, 0.8)', end: 'rgba(255, 179, 217, 0.8)' },
+        { start: 'rgba(255, 179, 217, 0.8)', end: 'rgba(148, 163, 184, 0.6)' },
+        { start: 'rgba(148, 163, 184, 0.6)', end: 'rgba(168, 216, 234, 0.8)' }
+    ];
+
+    // Generate HTML for each speaker with aligned layout
+    let html = '';
+    sorted.forEach((speaker, index) => {
+        const color = colors[index % colors.length];
+        const gradient = `linear-gradient(90deg, ${color.start}, ${color.end})`;
+        const percentage = Math.round(speaker.percentage * 10) / 10; // Round to 1 decimal
+        
+        html += `
+            <div style="display: flex; align-items: center; margin-bottom: 0.75rem; gap: 1rem;">
+                <div style="width: 200px; flex-shrink: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.95rem; color: var(--text-primary);">
+                    ${speaker.name}
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; gap: 0.5rem;">
+                    <div style="flex: 1; height: 28px; background: var(--bg-secondary); border-radius: 4px; overflow: hidden;">
+                        <div style="height: 100%; width: ${percentage}%; background: ${gradient}; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; font-size: 0.85rem; font-weight: 600; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                            ${percentage > 5 ? percentage + '%' : ''}
+                        </div>
+                    </div>
+                    <div style="width: 40px; text-align: right; font-size: 0.9rem; color: var(--text-secondary); font-weight: 600;">
+                        ${percentage}%
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+    console.log('✅ Utterance Distribution updated with', sorted.length, 'speakers');
+}
+
+/**
  * Update content sections with analysis data
  */
 function updateContentSections(analysis) {
     // Update KPI cards
     updateKPICards(analysis);
+    // Update Utterance Distribution
+    updateUtteranceDistribution(analysis);
     console.log('✅ Updating content sections with analysis:', analysis);
 }
 

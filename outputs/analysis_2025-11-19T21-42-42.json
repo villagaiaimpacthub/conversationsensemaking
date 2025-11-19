@@ -1,0 +1,304 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 19,
+    "speakers": [
+      "Nathalie Nebelius (Cordinata AB)",
+      "Alex Alegria (metalucks.com)",
+      "Prakash Gabra",
+      "ish",
+      "manuele",
+      "Team Metaluck",
+      "Alexander Keehnen",
+      "Olga Duka",
+      "Iris Lubitch",
+      "Ali Reyazat",
+      "Charles Neil",
+      "Sudheer",
+      "Christopher Herghelegiu",
+      "Nikolai Hobruecker-Thompson",
+      "Elliott Bayev",
+      "Nika Trifonova",
+      "Yannik Weber",
+      "Julia Becker (juliabecker.co)",
+      "John Stokes (Real Ventures)"
+    ],
+    "totalUtterances": 204,
+    "totalWords": 7780,
+    "estimatedDuration": 97.25,
+    "averageWordsPerUtterance": 38.14
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 28,
+        "words": 1406,
+        "percentage": 18.07
+      },
+      {
+        "name": "Nathalie Nebelius (Cordinata AB)",
+        "utterances": 38,
+        "words": 1391,
+        "percentage": 17.88
+      },
+      {
+        "name": "Sudheer",
+        "utterances": 14,
+        "words": 1373,
+        "percentage": 17.65
+      },
+      {
+        "name": "manuele",
+        "utterances": 4,
+        "words": 1056,
+        "percentage": 13.57
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 5,
+        "words": 605,
+        "percentage": 7.78
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 3,
+        "words": 418,
+        "percentage": 5.37
+      },
+      {
+        "name": "ish",
+        "utterances": 5,
+        "words": 286,
+        "percentage": 3.68
+      },
+      {
+        "name": "Olga Duka",
+        "utterances": 2,
+        "words": 269,
+        "percentage": 3.46
+      },
+      {
+        "name": "John Stokes (Real Ventures)",
+        "utterances": 2,
+        "words": 213,
+        "percentage": 2.74
+      },
+      {
+        "name": "Iris Lubitch",
+        "utterances": 2,
+        "words": 169,
+        "percentage": 2.17
+      },
+      {
+        "name": "Charles Neil",
+        "utterances": 2,
+        "words": 120,
+        "percentage": 1.54
+      },
+      {
+        "name": "Chaelin Song (Fvtura)",
+        "utterances": 3,
+        "words": 110,
+        "percentage": 1.41
+      },
+      {
+        "name": "Alexander Keehnen",
+        "utterances": 1,
+        "words": 94,
+        "percentage": 1.21
+      },
+      {
+        "name": "Julia Becker (juliabecker.co)",
+        "utterances": 1,
+        "words": 65,
+        "percentage": 0.84
+      },
+      {
+        "name": "Yannik Weber",
+        "utterances": 1,
+        "words": 14,
+        "percentage": 0.18
+      },
+      {
+        "name": "Prakash Gabra",
+        "utterances": 1,
+        "words": 9,
+        "percentage": 0.12
+      },
+      {
+        "name": "Ali Reyazat",
+        "utterances": 1,
+        "words": 9,
+        "percentage": 0.12
+      },
+      {
+        "name": "Nikolai Hobruecker-Thompson",
+        "utterances": 1,
+        "words": 18,
+        "percentage": 0.23
+      },
+      {
+        "name": "Elliott Bayev",
+        "utterances": 1,
+        "words": 13,
+        "percentage": 0.17
+      },
+      {
+        "name": "Nika Trifonova",
+        "utterances": 1,
+        "words": 12,
+        "percentage": 0.15
+      },
+      {
+        "name": "Andrew Alan",
+        "utterances": 1,
+        "words": 13,
+        "percentage": 0.17
+      }
+    ],
+    "totalWords": 7780
+  },
+  "engagement": {
+    "questionFrequency": 10.78,
+    "feedbackInstances": 11.27,
+    "responseDynamics": 50,
+    "turnTakingBalance": 50,
+    "overallEngagement": 30.51
+  },
+  "inclusion": {
+    "score": 50,
+    "pronounRatio": 0.5,
+    "pronounData": {
+      "collective": 50,
+      "individual": 100
+    },
+    "interruptions": 0,
+    "interruptionRate": 0,
+    "inclusionLanguage": {
+      "acknowledgments": 10,
+      "invitations": 5,
+      "reinforcements": 15,
+      "total": 30
+    }
+  },
+  "consensus": {
+    "overallScore": 50,
+    "topics": []
+  },
+  "topics": {
+    "distribution": [],
+    "totalMentions": 0
+  },
+  "knowledgeGaps": {
+    "explicit": [],
+    "byCoverage": [],
+    "totalGaps": 0
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 0,
+      "lowPower": 0,
+      "neutral": 0
+    },
+    "bySpeaker": []
+  },
+  "relational": {
+    "timeline": [],
+    "averages": {
+      "trust": 3,
+      "alignment": 3,
+      "care": 3,
+      "belonging": 3
+    }
+  },
+  "sentiment": {
+    "timeline": [],
+    "average": 3
+  },
+  "breakthroughs": [],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post creed/values deck to Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Schedule 3–4h MVS integration & tech infrastructure alignment call w/ relevant leads",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Post Anchor Circle updates to Symbiosis after each meeting",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Post questions/discussion points in Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Send bi-weekly Anchor Circle updates to ecosystem",
+      "type": "action"
+    }
+  ],
+  "decisions": [],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "medium",
+      "text": "Encourage more balanced participation by actively inviting quieter speakers to share their thoughts, especially during check-in rounds or open discussions."
+    },
+    {
+      "type": "engagement",
+      "priority": "medium",
+      "text": "Implement a structured Q&A segment or dedicated discussion time for each major topic to ensure questions are addressed and foster more dynamic responses."
+    },
+    {
+      "type": "inclusion",
+      "priority": "high",
+      "text": "Focus on increasing the use of collective pronouns and inclusive language to foster a stronger sense of 'we' and shared ownership. Training or prompts could be beneficial."
+    },
+    {
+      "type": "inclusion",
+      "priority": "medium",
+      "text": "Monitor for interruptions, especially during critical discussions, and establish a norm for respectful turn-taking to ensure all voices are heard."
+    },
+    {
+      "type": "knowledge",
+      "priority": "high",
+      "text": "Prioritize the implementation of the knowledge coverage assessment to identify and address critical information gaps across key domains, ensuring comprehensive understanding before major decisions."
+    },
+    {
+      "type": "consensus",
+      "priority": "medium",
+      "text": "For key decisions, explicitly solicit agreement or disagreement from all participants to ensure a clear consensus score, rather than assuming silence implies consent."
+    },
+    {
+      "type": "communication",
+      "priority": "high",
+      "text": "Expedite the full adoption and integration of Symbiosis for all internal communications, project management, and document sharing to reduce fragmentation and improve transparency."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Finalize and disseminate circle charters, including purpose, roles, responsibilities, and KPIs, within the next two weeks to clarify structure and enable more effective workload distribution."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Schedule and conduct the proposed 3-4 hour MVS integration and tech infrastructure alignment call as soon as possible to resolve overlapping functionalities and optimize resource allocation."
+    },
+    {
+      "type": "culture",
+      "priority": "medium",
+      "text": "Continue to reinforce the values and creed at the start of meetings, and encourage open discussion about how these values translate into daily actions and decision-making, especially regarding 'regenerative' principles."
+    },
+    {
+      "type": "culture",
+      "priority": "medium",
+      "text": "Address the 'what can I get from this' mindset by clearly outlining compensation frameworks and pathways for financial abundance, while also emphasizing the collective 'what can I give' approach."
+    }
+  ]
+}
