@@ -186,12 +186,100 @@ function updateHeader(metrics) {
 }
 
 /**
+ * Determine status class and text based on score
+ */
+function getStatusForScore(score, type = 'general') {
+    if (type === 'percentage') {
+        if (score >= 80) return { class: 'status-high', text: 'Excellent' };
+        if (score >= 60) return { class: 'status-medium', text: 'Good' };
+        return { class: 'status-low', text: 'Needs Work' };
+    }
+    // For 0-100 scores
+    if (score >= 75) return { class: 'status-high', text: 'High' };
+    if (score >= 50) return { class: 'status-medium', text: 'Moderate' };
+    return { class: 'status-low', text: 'Low' };
+}
+
+/**
+ * Update KPI cards with data from analysis
+ */
+function updateKPICards(analysis) {
+    if (!analysis) return;
+
+    const basics = analysis.basicMetrics || {};
+    const engagement = analysis.engagement || {};
+    const inclusion = analysis.inclusion || {};
+    const consensus = analysis.consensus || {};
+    const decisions = analysis.decisions || [];
+    const actions = analysis.actions || [];
+    const gaps = analysis.knowledgeGaps || {};
+
+    // Total Speakers
+    const speakers = basics.totalSpeakers || 0;
+    document.getElementById('kpi-speakers').textContent = speakers;
+    document.getElementById('kpi-speakers-status').textContent = speakers > 0 ? 'Active' : 'N/A';
+    document.getElementById('kpi-speakers-status').className = 'kpi-status status-high';
+
+    // Engagement Score
+    const engScore = engagement.overallEngagement || 0;
+    const engStatus = getStatusForScore(engScore);
+    document.getElementById('kpi-engagement').innerHTML = 
+        `<span>${Math.round(engScore)}</span><span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span>`;
+    document.getElementById('kpi-engagement-status').textContent = engStatus.text;
+    document.getElementById('kpi-engagement-status').className = `kpi-status ${engStatus.class}`;
+
+    // Inclusion Score
+    const inclScore = inclusion.score || 0;
+    const inclStatus = getStatusForScore(inclScore);
+    document.getElementById('kpi-inclusion').innerHTML = 
+        `<span>${Math.round(inclScore)}</span><span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span>`;
+    document.getElementById('kpi-inclusion-status').textContent = inclStatus.text;
+    document.getElementById('kpi-inclusion-status').className = `kpi-status ${inclStatus.class}`;
+
+    // Consensus Score
+    const consScore = consensus.overallScore || 0;
+    const consStatus = getStatusForScore(consScore);
+    document.getElementById('kpi-consensus').innerHTML = 
+        `<span>${Math.round(consScore)}</span><span style="font-size: 1.5rem; color: var(--text-secondary);">/100</span>`;
+    document.getElementById('kpi-consensus-status').textContent = consStatus.text;
+    document.getElementById('kpi-consensus-status').className = `kpi-status ${consStatus.class}`;
+
+    // Agenda Coverage (placeholder - requires agenda input)
+    const agendaCoverage = 0; // TODO: Implement agenda coverage calculation
+    document.getElementById('kpi-agenda').innerHTML = 
+        `<span>${agendaCoverage}</span><span style="font-size: 1.5rem; color: var(--text-secondary);">%</span>`;
+    document.getElementById('kpi-agenda-status').textContent = agendaCoverage > 0 ? 'N/A' : 'Requires Agenda';
+    document.getElementById('kpi-agenda-status').className = `kpi-status status-low`;
+
+    // Decisions Made
+    const decCount = decisions.length || 0;
+    document.getElementById('kpi-decisions').textContent = decCount;
+    document.getElementById('kpi-decisions-status').textContent = decCount > 0 ? 'Productive' : 'None Recorded';
+    document.getElementById('kpi-decisions-status').className = decCount > 0 ? 'kpi-status status-high' : 'kpi-status status-low';
+
+    // Action Items
+    const actCount = actions.length || 0;
+    document.getElementById('kpi-actions').textContent = actCount;
+    document.getElementById('kpi-actions-status').textContent = actCount > 0 ? 'Clear Ownership' : 'None Assigned';
+    document.getElementById('kpi-actions-status').className = actCount > 0 ? 'kpi-status status-high' : 'kpi-status status-low';
+
+    // Knowledge Gaps
+    const gapCount = (gaps.explicit || []).length + (gaps.totalGaps || 0);
+    const gapStatus = gapCount > 5 ? 'Explicit' : (gapCount > 2 ? 'Moderate' : 'Minimal');
+    document.getElementById('kpi-gaps').textContent = gapCount;
+    document.getElementById('kpi-gaps-status').textContent = gapStatus;
+    document.getElementById('kpi-gaps-status').className = gapCount > 5 ? 'kpi-status status-medium' : 'kpi-status status-low';
+
+    console.log('✅ KPI cards updated with analysis data');
+}
+
+/**
  * Update content sections with analysis data
  */
 function updateContentSections(analysis) {
-    // This will be called after content loads
-    // For now, we'll update via the chart data
-    console.log('Updating content sections with analysis:', analysis);
+    // Update KPI cards
+    updateKPICards(analysis);
+    console.log('✅ Updating content sections with analysis:', analysis);
 }
 
 // File input change handler

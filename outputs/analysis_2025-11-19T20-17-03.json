@@ -1,0 +1,605 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 8,
+    "speakers": [
+      "Alex Alegria (metalucks.com)",
+      "iPhone",
+      "Giannandrea G (Fvtura)",
+      "Anastasia Kalinina",
+      "Chris iphone",
+      "Team Metaluck",
+      "Christopher Herghelegiu",
+      "Sudheer"
+    ],
+    "totalUtterances": 150,
+    "totalWords": 7965,
+    "estimatedDuration": 53.1,
+    "averageWordsPerUtterance": 53.1
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 47,
+        "words": 2043,
+        "percentage": 25.65
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 14,
+        "words": 1599,
+        "percentage": 20.08
+      },
+      {
+        "name": "Sudheer",
+        "utterances": 10,
+        "words": 1222,
+        "percentage": 15.34
+      },
+      {
+        "name": "Giannandrea G (Fvtura)",
+        "utterances": 20,
+        "words": 1137,
+        "percentage": 14.28
+      },
+      {
+        "name": "iPhone",
+        "utterances": 29,
+        "words": 927,
+        "percentage": 11.64
+      },
+      {
+        "name": "Anastasia Kalinina",
+        "utterances": 13,
+        "words": 732,
+        "percentage": 9.19
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 16,
+        "words": 297,
+        "percentage": 3.73
+      },
+      {
+        "name": "Chris iphone",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.1
+      }
+    ],
+    "totalWords": 7965
+  },
+  "engagement": {
+    "questionFrequency": 10.67,
+    "feedbackInstances": 12.67,
+    "responseDynamics": 66.67,
+    "turnTakingBalance": 75,
+    "overallEngagement": 43.67
+  },
+  "inclusion": {
+    "score": 67,
+    "pronounRatio": 0.77,
+    "pronounData": {
+      "collective": 178,
+      "individual": 230
+    },
+    "interruptions": 2,
+    "interruptionRate": 1.33,
+    "inclusionLanguage": {
+      "acknowledgments": 10,
+      "invitations": 3,
+      "reinforcements": 6,
+      "total": 19
+    }
+  },
+  "consensus": {
+    "overallScore": 75,
+    "topics": [
+      {
+        "topic": "Meeting check-in",
+        "consensus": 90
+      },
+      {
+        "topic": "Circle leads and OKRs",
+        "consensus": 80
+      },
+      {
+        "topic": "Better World Private Equity structure",
+        "consensus": 70
+      },
+      {
+        "topic": "Alpha version of Symbiosis platform",
+        "consensus": 75
+      },
+      {
+        "topic": "Budget and cash forecast",
+        "consensus": 85
+      },
+      {
+        "topic": "Investment destination",
+        "consensus": 60
+      },
+      {
+        "topic": "SME pitch and outreach strategy",
+        "consensus": 65
+      },
+      {
+        "topic": "Website and media narrative",
+        "consensus": 90
+      },
+      {
+        "topic": "Roles of the inner circle",
+        "consensus": 95
+      },
+      {
+        "topic": "Meeting frequency and structure",
+        "consensus": 80
+      },
+      {
+        "topic": "Investor outreach and workshops",
+        "consensus": 70
+      },
+      {
+        "topic": "Launching the circles",
+        "consensus": 90
+      },
+      {
+        "topic": "HR policy and compensation",
+        "consensus": 60
+      },
+      {
+        "topic": "Philanthropic giving and 501(c)(3)",
+        "consensus": 95
+      }
+    ]
+  },
+  "topics": {
+    "distribution": [
+      {
+        "topic": "SME pitch and outreach strategy",
+        "count": 23,
+        "percentage": 15.33
+      },
+      {
+        "topic": "Roles of the inner circle",
+        "count": 15,
+        "percentage": 10
+      },
+      {
+        "topic": "Alpha version of Symbiosis platform",
+        "count": 14,
+        "percentage": 9.33
+      },
+      {
+        "topic": "Philanthropic giving and 501(c)(3)",
+        "count": 13,
+        "percentage": 8.67
+      },
+      {
+        "topic": "Investor outreach and workshops",
+        "count": 12,
+        "percentage": 8
+      },
+      {
+        "topic": "HR policy and compensation",
+        "count": 10,
+        "percentage": 6.67
+      },
+      {
+        "topic": "Meeting check-in and intention setting",
+        "count": 9,
+        "percentage": 6
+      },
+      {
+        "topic": "Better World Private Equity structure",
+        "count": 8,
+        "percentage": 5.33
+      },
+      {
+        "topic": "Meeting frequency and structure",
+        "count": 7,
+        "percentage": 4.67
+      },
+      {
+        "topic": "Website and media narrative",
+        "count": 6,
+        "percentage": 4
+      },
+      {
+        "topic": "Launching the circles",
+        "count": 6,
+        "percentage": 4
+      },
+      {
+        "topic": "Budget and cash forecast",
+        "count": 4,
+        "percentage": 2.67
+      },
+      {
+        "topic": "Circle leads and OKRs",
+        "count": 3,
+        "percentage": 2
+      },
+      {
+        "topic": "Investment destination",
+        "count": 2,
+        "percentage": 1.33
+      },
+      {
+        "topic": "General greetings and small talk",
+        "count": 18,
+        "percentage": 12
+      }
+    ],
+    "totalMentions": 150
+  },
+  "knowledgeGaps": {
+    "explicit": [
+      {
+        "speaker": "iPhone",
+        "text": "I don't know exactly what symbiosis is doing, you know, I just trust on G and what, actually, I'm sure that it's, you know, this, this is the system he, working on that and it can, personally. I don't know the detail of the system.",
+        "severity": "medium"
+      },
+      {
+        "speaker": "iPhone",
+        "text": "And some of that, at least for myself, probably, I don't know yet. It's not very clear. And we haven't decided and we don't have the minimum viable system as.",
+        "severity": "high"
+      }
+    ],
+    "byCoverage": [
+      {
+        "topic": "Strategic Vision",
+        "coverageScore": 85
+      },
+      {
+        "topic": "Operations & Processes",
+        "coverageScore": 78
+      },
+      {
+        "topic": "Financial Planning",
+        "coverageScore": 65
+      },
+      {
+        "topic": "Technology & Tools",
+        "coverageScore": 92
+      },
+      {
+        "topic": "Market & Competition",
+        "coverageScore": 45
+      },
+      {
+        "topic": "Team & Culture",
+        "coverageScore": 88
+      },
+      {
+        "topic": "Legal & Compliance",
+        "coverageScore": 40
+      },
+      {
+        "topic": "Customer/Stakeholder Needs",
+        "coverageScore": 60
+      }
+    ],
+    "totalGaps": 2
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 16.3,
+      "lowPower": 42.8,
+      "neutral": 40.9
+    },
+    "bySpeaker": [
+      {
+        "speaker": "Alex Alegria (metalucks.com)",
+        "highPower": 22,
+        "lowPower": 31,
+        "neutral": 47
+      },
+      {
+        "speaker": "iPhone",
+        "highPower": 19,
+        "lowPower": 35,
+        "neutral": 46
+      },
+      {
+        "speaker": "Giannandrea G (Fvtura)",
+        "highPower": 8,
+        "lowPower": 58,
+        "neutral": 34
+      },
+      {
+        "speaker": "Anastasia Kalinina",
+        "highPower": 15,
+        "lowPower": 40,
+        "neutral": 45
+      },
+      {
+        "speaker": "Chris iphone",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "Team Metaluck",
+        "highPower": 10,
+        "lowPower": 25,
+        "neutral": 65
+      },
+      {
+        "speaker": "Christopher Herghelegiu",
+        "highPower": 25,
+        "lowPower": 30,
+        "neutral": 45
+      },
+      {
+        "speaker": "Sudheer",
+        "highPower": 18,
+        "lowPower": 45,
+        "neutral": 37
+      }
+    ]
+  },
+  "relational": {
+    "timeline": [
+      {
+        "timeblock": "0-10",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "10-20",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "20-30",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "30-40",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "40-50",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "50-60",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "60-70",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "70-80",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "80-90",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "90-100",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "100-110",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "110-120",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      }
+    ],
+    "averages": {
+      "trust": 4,
+      "alignment": 4,
+      "care": 4,
+      "belonging": 4
+    }
+  },
+  "sentiment": {
+    "timeline": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "average": 4
+  },
+  "breakthroughs": [
+    {
+      "index": 14,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We declare our task to be led of planetary continuation.",
+      "type": "cognitive"
+    },
+    {
+      "index": 16,
+      "speaker": "Christopher Herghelegiu",
+      "text": "Good morning, everybody. If there is one feeling I have this morning, it's determined.",
+      "type": "emotional"
+    },
+    {
+      "index": 67,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay. All right. So we have a clock rolling out. It was. And you will be in charge of the training of the people and you may actually want to assign somebody other than you that is actually dedicated to answer any question about the inner circle and how they actually use it so that, you know, kind of becomes a lot friendlier here so you can train a VA or whatever that is. on that and become, I needed that to use of you on the implementation.",
+      "type": "behavioral"
+    },
+    {
+      "index": 103,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay. And if I just have a moment. All right. Awesome. Who's going to be the next facilitator for this meeting? Or if want to contribute to my life, you can raise your hand. Chris? Okay, awesome. So Chris will proceed to the next meeting and every meeting we decide who's going to be. next one. For the next one. Awesome.",
+      "type": "relational"
+    }
+  ],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Shamla will circulate the cash flow forecast format by end of the meeting.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Sudheer to be in charge of training for Symbiosis implementation and assign someone to answer questions.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Business development circle and communication circle to work on SME pitch.",
+      "type": "action"
+    },
+    {
+      "speaker": "Christopher Herghelegiu",
+      "text": "Chris to create a document for internal members to fill in their organizations and involvements.",
+      "type": "action"
+    },
+    {
+      "speaker": "Anastasia Kalinina",
+      "text": "Anastasia to start developing visuals, website, comms, and branding.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Chris to facilitate the next meeting.",
+      "type": "action"
+    },
+    {
+      "speaker": "Team Metaluck",
+      "text": "Shamla to act as secretary for the meeting, taking notes, sharing agenda, and outcomes.",
+      "type": "action"
+    },
+    {
+      "speaker": "Giannandrea G (Fvtura)",
+      "text": "G to be the governance steward.",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Sudheer to be the integration lead.",
+      "type": "action"
+    },
+    {
+      "speaker": "Giannandrea G (Fvtura)",
+      "text": "G to be the reporting steward.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Alex to share the inner circle charter framework individually.",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Prakash and Sudheer to frame the discussion on HR policy and compensation.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Farhad to receive a mandate with a specified answer regarding private equity structure via email.",
+      "type": "action"
+    },
+    {
+      "speaker": "Anastasia Kalinina",
+      "text": "Anastasia to examine the need for another 501(c)(3) structure in the U.S. and confirm Restate's charter compatibility.",
+      "type": "action"
+    }
+  ],
+  "decisions": [
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to roll out Symbiosis across the board, with Sudheer in charge of training and support.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to keep weekly meetings for now, changing Thursday to Tuesday, and revisit meeting structure later.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to launch the circles next week.",
+      "type": "decision"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "medium",
+      "text": "Encourage more balanced participation by actively inviting less vocal speakers to contribute, especially during discussion points."
+    },
+    {
+      "type": "engagement",
+      "priority": "high",
+      "text": "Implement a clear process for addressing questions and ensuring they receive timely and comprehensive answers to improve response dynamics."
+    },
+    {
+      "type": "knowledge",
+      "priority": "high",
+      "text": "Prioritize addressing the 'minimum viable system' knowledge gap identified by Farhad, as it impacts external communication and investor confidence."
+    },
+    {
+      "type": "inclusion",
+      "priority": "medium",
+      "text": "Monitor interruption patterns, particularly from dominant speakers, and encourage facilitators to manage turn-taking more effectively."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Formalize the roles and responsibilities within the inner circle and clearly communicate them to all members to enhance accountability and efficiency."
+    },
+    {
+      "type": "strategy",
+      "priority": "medium",
+      "text": "Develop a clear strategy for SME outreach that balances initial engagement with the need for a robust internal 'minimum viable system' and clear value proposition."
+    },
+    {
+      "type": "relational",
+      "priority": "low",
+      "text": "Continue to foster the high levels of trust and belonging observed, potentially through dedicated check-ins or team-building activities."
+    }
+  ]
+}
