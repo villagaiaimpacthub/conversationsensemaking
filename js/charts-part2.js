@@ -1,5 +1,5 @@
-﻿        // Chart instances storage (use global from part1)
-        const chartInstances = window.chartInstances || {};
+﻿        // Chart instances storage (use global from part1, don't redeclare)
+        const chartInstances = window.chartInstances;
 
         // Function to initialize charts in part 2
         function initializeChartsPart2() {

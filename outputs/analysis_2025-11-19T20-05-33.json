@@ -1,0 +1,584 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 7,
+    "speakers": [
+      "Alex Alegria (metalucks.com)",
+      "iPhone",
+      "Giannandrea G (Fvtura)",
+      "Anastasia Kalinina",
+      "Chris iphone",
+      "Team Metaluck",
+      "Christopher Herghelegiu"
+    ],
+    "totalUtterances": 142,
+    "totalWords": 10565,
+    "estimatedDuration": 70.43,
+    "averageWordsPerUtterance": 74.4
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 45,
+        "words": 2049,
+        "percentage": 19.39
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 15,
+        "words": 1999,
+        "percentage": 18.92
+      },
+      {
+        "name": "iPhone",
+        "utterances": 32,
+        "words": 1947,
+        "percentage": 18.43
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 13,
+        "words": 1863,
+        "percentage": 17.63
+      },
+      {
+        "name": "Giannandrea G (Fvtura)",
+        "utterances": 20,
+        "words": 1731,
+        "percentage": 16.39
+      },
+      {
+        "name": "Anastasia Kalinina",
+        "utterances": 14,
+        "words": 976,
+        "percentage": 9.24
+      },
+      {
+        "name": "Chris iphone",
+        "utterances": 1,
+        "words": 3,
+        "percentage": 0.03
+      }
+    ],
+    "totalWords": 10565
+  },
+  "engagement": {
+    "questionFrequency": 20,
+    "feedbackInstances": 75,
+    "responseDynamics": 60,
+    "turnTakingBalance": 70,
+    "overallEngagement": 60
+  },
+  "inclusion": {
+    "score": 75,
+    "pronounRatio": 0.8,
+    "pronounData": {
+      "collective": 200,
+      "individual": 250
+    },
+    "interruptions": 5,
+    "interruptionRate": 3.5,
+    "inclusionLanguage": {
+      "acknowledgments": 15,
+      "invitations": 10,
+      "reinforcements": 12,
+      "total": 37
+    }
+  },
+  "consensus": {
+    "overallScore": 75,
+    "topics": [
+      {
+        "topic": "Hive and Symbiosis Adoption",
+        "consensus": 80
+      },
+      {
+        "topic": "SME Pitch Development",
+        "consensus": 70
+      },
+      {
+        "topic": "Internal Database and Outreach",
+        "consensus": 75
+      },
+      {
+        "topic": "Website and Media Narrative",
+        "consensus": 90
+      },
+      {
+        "topic": "Inner Circle Roles",
+        "consensus": 95
+      },
+      {
+        "topic": "Meeting Structure (Weekly vs. Monthly)",
+        "consensus": 60
+      },
+      {
+        "topic": "Investor Outreach and Workshops",
+        "consensus": 85
+      },
+      {
+        "topic": "Launching Circles",
+        "consensus": 90
+      },
+      {
+        "topic": "Hiring and Compensation Policy",
+        "consensus": 65
+      },
+      {
+        "topic": "Philanthropic Giving / 501(c)(3)",
+        "consensus": 90
+      }
+    ]
+  },
+  "topics": {
+    "distribution": [
+      {
+        "topic": "Meeting Start & Check-in",
+        "count": 15,
+        "percentage": 10.56
+      },
+      {
+        "topic": "Hive/Symbiosis Platform",
+        "count": 30,
+        "percentage": 21.13
+      },
+      {
+        "topic": "Private Equity Structure",
+        "count": 15,
+        "percentage": 10.56
+      },
+      {
+        "topic": "Budget & Cash Flow Forecast",
+        "count": 8,
+        "percentage": 5.63
+      },
+      {
+        "topic": "SME Pitch & Outreach",
+        "count": 25,
+        "percentage": 17.61
+      },
+      {
+        "topic": "Internal Database & Resources",
+        "count": 12,
+        "percentage": 8.45
+      },
+      {
+        "topic": "Website & Media Narrative",
+        "count": 10,
+        "percentage": 7.04
+      },
+      {
+        "topic": "Inner Circle Roles & Structure",
+        "count": 10,
+        "percentage": 7.04
+      },
+      {
+        "topic": "Meeting Schedule & Frequency",
+        "count": 7,
+        "percentage": 4.93
+      },
+      {
+        "topic": "Investor Relations & Workshops",
+        "count": 5,
+        "percentage": 3.52
+      },
+      {
+        "topic": "Launching Circles",
+        "count": 5,
+        "percentage": 3.52
+      }
+    ],
+    "totalMentions": 142
+  },
+  "knowledgeGaps": {
+    "explicit": [
+      {
+        "speaker": "iPhone",
+        "text": "I don't know exactly what symbiosis is doing, you know, I just trust on G and what, actually, I'm sure that it's, you know, this, this is the system he, working on that and it can, personally. I don't know the detail of the system.",
+        "severity": "medium"
+      },
+      {
+        "speaker": "iPhone",
+        "text": "And some of that, at least for myself, probably, I don't know yet. It's not very clear. And we haven't decided and we don't have the minimum viable system as.",
+        "severity": "high"
+      },
+      {
+        "speaker": "iPhone",
+        "text": "However, the answers, because I'm waiting for that, basically, that's the ask, that if somebody sent it by email to me, you or Prakash from Finance, and so I don't know who actually should send it to me, or Shamla, actually, with the answers, that I have that as a mandate, and go ahead with the, with the private equity.",
+        "severity": "high"
+      }
+    ],
+    "byCoverage": [
+      {
+        "topic": "Strategic Vision",
+        "coverageScore": 85
+      },
+      {
+        "topic": "Operations & Processes",
+        "coverageScore": 78
+      },
+      {
+        "topic": "Financial Planning",
+        "coverageScore": 65
+      },
+      {
+        "topic": "Technology & Tools",
+        "coverageScore": 92
+      },
+      {
+        "topic": "Market & Competition",
+        "coverageScore": 45
+      },
+      {
+        "topic": "Team & Culture",
+        "coverageScore": 88
+      },
+      {
+        "topic": "Legal & Compliance",
+        "coverageScore": 40
+      },
+      {
+        "topic": "Customer/Stakeholder Needs",
+        "coverageScore": 60
+      }
+    ],
+    "totalGaps": 3
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 15,
+      "lowPower": 35,
+      "neutral": 50
+    },
+    "bySpeaker": [
+      {
+        "speaker": "Alex Alegria (metalucks.com)",
+        "highPower": 20,
+        "lowPower": 30,
+        "neutral": 50
+      },
+      {
+        "speaker": "iPhone",
+        "highPower": 10,
+        "lowPower": 40,
+        "neutral": 50
+      },
+      {
+        "speaker": "Giannandrea G (Fvtura)",
+        "highPower": 15,
+        "lowPower": 35,
+        "neutral": 50
+      },
+      {
+        "speaker": "Anastasia Kalinina",
+        "highPower": 5,
+        "lowPower": 45,
+        "neutral": 50
+      },
+      {
+        "speaker": "Chris iphone",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Team Metaluck",
+        "highPower": 10,
+        "lowPower": 30,
+        "neutral": 60
+      },
+      {
+        "speaker": "Christopher Herghelegiu",
+        "highPower": 20,
+        "lowPower": 30,
+        "neutral": 50
+      }
+    ]
+  },
+  "relational": {
+    "timeline": [
+      {
+        "timeblock": "0-10",
+        "trust": 4,
+        "alignment": 3,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "10-20",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "20-30",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "30-40",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "40-50",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "50-60",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "60-70",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "70-80",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "80-90",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "90-100",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "100-110",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "110-120",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      }
+    ],
+    "averages": {
+      "trust": 4,
+      "alignment": 4,
+      "care": 4,
+      "belonging": 4
+    }
+  },
+  "sentiment": {
+    "timeline": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "average": 3.83
+  },
+  "breakthroughs": [
+    {
+      "index": 1,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "We declare our task to be led of planetary continuation.",
+      "type": "cognitive"
+    },
+    {
+      "index": 2,
+      "speaker": "Christopher Herghelegiu",
+      "text": "If there is one feeling I have this morning, it's determined.",
+      "type": "emotional"
+    },
+    {
+      "index": 3,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay. All right. So we have a clock rolling out. It was. And you will be in charge of the training of the people and you may actually want to assign somebody other than you that is actually dedicated to answer any question about the inner circle and how they actually use it so that, you know, kind of becomes a lot friendlier here so you can train a VA or whatever that is. on that and become, I needed that to use of you on the implementation.",
+      "type": "behavioral"
+    },
+    {
+      "index": 4,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "So I leave this point with no task. I leave it to the business development circle and in collaboration with the communication circle. And that would be part of our number. So that's my conclusion. Let's say at this, it was great to send a complex presentation to actually get the feedback. Because if we didn't send anything, would not have done anything. And also as a learning for like different approach, you know, I feel like this is a trust conversation. But I'll be part of the business development circle under P-suites and, you know, we can discuss that specifically in that circle.",
+      "type": "cognitive"
+    },
+    {
+      "index": 5,
+      "speaker": "Christopher Herghelegiu",
+      "text": "I love your idea of a roving facilitator. mean, think, you know, whether we do it on a bi-week, you know, the bi-meeting idea, think it's a good point. It gives everybody an opportunity to kind of, you know, show their thought process in their leadership ideas. And so, and I think it's important to do that so everybody kind of has a voice heard at one point or another, you know, in their way that they see the overall structure. So I would encourage that if everybody agrees.",
+      "type": "relational"
+    },
+    {
+      "index": 6,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay. And if I just have a moment. All right. Awesome. Who's going to be the next facilitator for this meeting? Or if want to contribute to my life, you can raise your hand. Chris? Okay, awesome. So Chris will proceed to the next meeting and every meeting we decide who's going to be. next one. For the next one. Awesome. All right. We need secretary of the meeting. So we need to appoint a circle to the meeting for taking the notes. If time is severe, shamra. Okay. Makes sense. About here, for reason. So you two will take that all. And then that all means that could be directly some output of the meetings. In place. And then sharing the agenda before. And also the outcomes of the meeting. After it's making sure that everyone has access to it. Okay. Governance steward. So we need the governance steward for the meeting. I would like to take one. And what means governance steward? That actually, we are applying the governance. So how this meeting should be allowed as high decisions are made. Even though we are still at the baseline of the governance itself. Satisfaction. I would like to... All right. Okay. So nice.",
+      "type": "behavioral"
+    },
+    {
+      "index": 7,
+      "speaker": "Giannandrea G (Fvtura)",
+      "text": "Unless someone else wants to do it. But I'm happy to explore the governance so I can work on the technology of the governance as well. Platform and theory. So it will help me in that.",
+      "type": "behavioral"
+    },
+    {
+      "index": 8,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay. and reporting, Stuart. I mean, I'm going to name here, like, gee, I mean, it's, you know, I mean, you are the guy who's working on the metrics. So I'm going to appoint the rules if you choose to accept.",
+      "type": "behavioral"
+    },
+    {
+      "index": 9,
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Okay, great. So let's do that. And it would be a good point to have a chapter, you know, just like. That would be my only suggestion. And again, that was part of even some of that analysis that I'm trying to do is like, what's everybody do? What's that value that, you know, we might uncover for the group? And, you know, but I don't think, you know, we should maybe have a target to try to get some preliminary circles and just move things forward, right? I mean, it's, it's all work in progress, right? So it doesn't have to be perfect today. And it may not be perfect today. It's okay. That's just my suggestion. Okay. I agree with that, Alex. I think we need to start the circles now. I don't think we should delay this anymore with everybody involved and knowing what and how they can contribute towards the building of it. Okay, great. So let's do that. And it would be a good point to have a chapter, you know, just like. I mean, I shared here the charter for the NSOPA and, you know, putting some KPIs and stuff. Even though, I mean, this is like, mean, it's a preliminary, but then it helps giving some container with guidance to the people and say, okay, we know that we have an integration steward. His name is Sudhir. So Sudhir is responsible, you know, to connect everybody. That's it. I mean, so it's a role and somebody's playing it or metrics and that's G, you know, so we don't need to kind of a, so I can share individually if you like some of these charter. I mean, as a framework, not necessarily as a, you know, as a content per se. So everyone, every circle. We decide on these keeping the eyes and changing the roles or whatever, but we'll be just a guide. So I could share it just to, you know, in that sense, consider me your assistant here to help putting the frame and get this going faster. And as Chris said, other guys, they want to jump in and it's like, yeah, they want to help.",
+      "type": "behavioral"
+    },
+    {
+      "index": 10,
+      "speaker": "Christopher Herghelegiu",
+      "text": "And it's, you and I had a brief conversation about setting up possibly a 50C3 non-proc. Profit. And as the universe gives us, I had a conversation with Anastasia, Restate is philanthropic, has the ability to take philanthropic givings. And I think Anastasia is going to confirm, but we're pretty confident that the charter she has is symbiotic to the U.S. And the reason why I think this is really important, as we're working through our financial structure and taking in investment dollars, that is going to take some time. There's no question, right? That has to be done right. But philanthropic giving is not a hard lift. And if people believe in our ideas and believe in our thought process and want to support us, I think it's a great way to maybe get in some of those much-needed dollars, especially as it relates to Villagaya, as it relates. And it could even be in service in kind, like if we need really good attorneys and things like that, people at this point, you know, especially as we come to the end of the tax year, could really donate some of those services and also make them feel part of something bigger. You know, a great way of being connected to something is to give something, right? So, and I think we probably all within our entire ecosystem know a lot of corporations and a lot of people that did really well this year and probably need a tax write-off. So it's not all truistic, but they would love and welcome some form of tax write-off. And it might be a very fast path for us to bring in some dollars to execute on some of the agenda items we want to do. So, I know Anastasia, I think she's going to speak to Deloitte. I think that's who does her auditing for her, just to confirm 100%. But I believe that that charter enables not only Swiss law, but U.S.",
+      "type": "cognitive"
+    },
+    {
+      "index": 11,
+      "speaker": "iPhone",
+      "text": "I am so grateful for our tribe. And I don't feel alone anymore. So I'm extremely grateful for that.",
+      "type": "emotional"
+    },
+    {
+      "index": 12,
+      "speaker": "iPhone",
+      "text": "And I'm grateful for the increasing trust and the capacity to just ease into that so easily. This is beautiful, right? To just allow what is emerging in a beautiful way. Awesome. Yeah, I'm grateful for the collective purpose we have. I'm grateful for the convergence that is going towards action now. And I'm grateful for the idea of the souls.",
+      "type": "emotional"
+    }
+  ],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Shamla will circulate the cash flow forecast format by end of the meeting.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Alex will share the inner circle charter framework individually.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Alex will change the invite to Tuesday at the same time for weekly meetings.",
+      "type": "action"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Alex will connect Farhad with Prakash for the private equity mandate.",
+      "type": "action"
+    },
+    {
+      "speaker": "Christopher Herghelegiu",
+      "text": "Chris will facilitate the next meeting.",
+      "type": "action"
+    },
+    {
+      "speaker": "Team Metaluck",
+      "text": "Shamla will take notes as Secretary of the meeting.",
+      "type": "action"
+    },
+    {
+      "speaker": "Giannandrea G (Fvtura)",
+      "text": "G will act as Governance Steward.",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Sudheer will act as Integration Lead.",
+      "type": "action"
+    },
+    {
+      "speaker": "Giannandrea G (Fvtura)",
+      "text": "G will act as Reporting Steward.",
+      "type": "action"
+    },
+    {
+      "speaker": "Anastasia Kalinina",
+      "text": "Anastasia will examine the need for another structure in the U.S. for philanthropic giving.",
+      "type": "action"
+    }
+  ],
+  "decisions": [
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to roll out Symbiosis across all circles, with Sudheer in charge of training and implementation support.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to keep weekly meetings for now, changing the day to Tuesday.",
+      "type": "decision"
+    },
+    {
+      "speaker": "Alex Alegria (metalucks.com)",
+      "text": "Decision to launch the circles next week.",
+      "type": "decision"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "medium",
+      "text": "Encourage more balanced participation, as a few speakers dominate the conversation. Use tools like round-robin check-ins or designated speaking times."
+    },
+    {
+      "type": "engagement",
+      "priority": "medium",
+      "text": "Increase question frequency and ensure all questions are addressed to boost overall engagement and response dynamics."
+    },
+    {
+      "type": "knowledge",
+      "priority": "high",
+      "text": "Address explicit knowledge gaps regarding the private equity structure and the detailed functionality of Symbiosis before broader rollout."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Formalize the process for defining and communicating policies, especially for hiring and compensation, to ensure clarity and alignment."
+    },
+    {
+      "type": "communication",
+      "priority": "high",
+      "text": "Prioritize the development of a clear SME pitch and a robust internal database of resources and needs to streamline external outreach and internal collaboration."
+    },
+    {
+      "type": "inclusion",
+      "priority": "medium",
+      "text": "Monitor interruption rates and actively promote inclusion language to foster a more equitable and welcoming environment."
+    }
+  ]
+}
