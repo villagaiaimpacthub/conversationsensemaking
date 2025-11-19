@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meeting Analysis Dashboard - October 30, 2025</title>
+    <title>Meeting Analysis Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -45,7 +45,7 @@
         <div id="dashboardContent" style="display: none;">
             <!-- Header -->
             <div class="dashboard-header">
-                <h1>Better World Meeting Analysis Dashboard</h1>
+                <h1>Meeting Analysis Dashboard</h1>
                 <p class="subtitle">Upload a transcript to begin analysis</p>
                 <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
                     <button onclick="downloadAnalysis()" id="downloadBtn" class="download-button" style="padding: 0.5rem 1rem; background: var(--pastel-green); color: var(--text-primary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; display: none; font-weight: 600;">📥 Download Analysis</button>
@@ -55,7 +55,7 @@
 
         <!-- Tab Navigation -->
         <div class="nav-tabs">
-            <button class="tab-button active" onclick="showTab('meeting-analysis')">Oct 30 Deep Dive</button>
+            <button class="tab-button active" onclick="showTab('meeting-analysis')">General Overview</button>
             <button class="tab-button" onclick="showTab('longitudinal')">Longitudinal Analysis</button>
             <button class="tab-button" onclick="showTab('patterns')">Cultural Patterns</button>
             <button class="tab-button" onclick="showTab('actions')">Actions & Outcomes</button>

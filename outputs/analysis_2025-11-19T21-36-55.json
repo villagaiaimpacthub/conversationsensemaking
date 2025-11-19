@@ -1,0 +1,304 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 19,
+    "speakers": [
+      "Nathalie Nebelius (Cordinata AB)",
+      "Alex Alegria (metalucks.com)",
+      "Prakash Gabra",
+      "ish",
+      "manuele",
+      "Team Metaluck",
+      "Alexander Keehnen",
+      "Olga Duka",
+      "Iris Lubitch",
+      "Ali Reyazat",
+      "Charles Neil",
+      "Sudheer",
+      "Christopher Herghelegiu",
+      "Nikolai Hobruecker-Thompson",
+      "Elliott Bayev",
+      "Nika Trifonova",
+      "Yannik Weber",
+      "Julia Becker (juliabecker.co)",
+      "John Stokes (Real Ventures)"
+    ],
+    "totalUtterances": 185,
+    "totalWords": 7761,
+    "estimatedDuration": 97.01,
+    "averageWordsPerUtterance": 41.95
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 27,
+        "words": 1500,
+        "percentage": 19.33
+      },
+      {
+        "name": "Nathalie Nebelius (Cordinata AB)",
+        "utterances": 32,
+        "words": 1406,
+        "percentage": 18.11
+      },
+      {
+        "name": "Sudheer",
+        "utterances": 10,
+        "words": 1346,
+        "percentage": 17.34
+      },
+      {
+        "name": "manuele",
+        "utterances": 4,
+        "words": 1024,
+        "percentage": 13.19
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 5,
+        "words": 737,
+        "percentage": 9.49
+      },
+      {
+        "name": "Olga Duka",
+        "utterances": 3,
+        "words": 372,
+        "percentage": 4.79
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 3,
+        "words": 361,
+        "percentage": 4.65
+      },
+      {
+        "name": "John Stokes (Real Ventures)",
+        "utterances": 2,
+        "words": 204,
+        "percentage": 2.63
+      },
+      {
+        "name": "Iris Lubitch",
+        "utterances": 2,
+        "words": 173,
+        "percentage": 2.23
+      },
+      {
+        "name": "Charles Neil",
+        "utterances": 2,
+        "words": 100,
+        "percentage": 1.29
+      },
+      {
+        "name": "Chaelin Song (Fvtura)",
+        "utterances": 2,
+        "words": 92,
+        "percentage": 1.18
+      },
+      {
+        "name": "Alexander Keehnen",
+        "utterances": 2,
+        "words": 88,
+        "percentage": 1.13
+      },
+      {
+        "name": "ish",
+        "utterances": 3,
+        "words": 86,
+        "percentage": 1.11
+      },
+      {
+        "name": "Julia Becker (juliabecker.co)",
+        "utterances": 1,
+        "words": 65,
+        "percentage": 0.84
+      },
+      {
+        "name": "Ali Reyazat",
+        "utterances": 1,
+        "words": 20,
+        "percentage": 0.26
+      },
+      {
+        "name": "Andrew Alan",
+        "utterances": 1,
+        "words": 17,
+        "percentage": 0.22
+      },
+      {
+        "name": "Yannik Weber",
+        "utterances": 1,
+        "words": 11,
+        "percentage": 0.14
+      },
+      {
+        "name": "Prakash Gabra",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.1
+      },
+      {
+        "name": "Nika Trifonova",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.1
+      },
+      {
+        "name": "Nikolai Hobruecker-Thompson",
+        "utterances": 1,
+        "words": 8,
+        "percentage": 0.1
+      },
+      {
+        "name": "Elliott Bayev",
+        "utterances": 1,
+        "words": 7,
+        "percentage": 0.09
+      }
+    ],
+    "totalWords": 7761
+  },
+  "engagement": {
+    "questionFrequency": 10.27,
+    "feedbackInstances": 10.81,
+    "responseDynamics": 50,
+    "turnTakingBalance": 50,
+    "overallEngagement": 30.27
+  },
+  "inclusion": {
+    "score": 67,
+    "pronounRatio": 0.65,
+    "pronounData": {
+      "collective": 128,
+      "individual": 196
+    },
+    "interruptions": 0,
+    "interruptionRate": 0,
+    "inclusionLanguage": {
+      "acknowledgments": 10,
+      "invitations": 10,
+      "reinforcements": 10,
+      "total": 30
+    }
+  },
+  "consensus": {
+    "overallScore": 50,
+    "topics": []
+  },
+  "topics": {
+    "distribution": [],
+    "totalMentions": 0
+  },
+  "knowledgeGaps": {
+    "explicit": [],
+    "byCoverage": [],
+    "totalGaps": 0
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 0,
+      "lowPower": 0,
+      "neutral": 0
+    },
+    "bySpeaker": []
+  },
+  "relational": {
+    "timeline": [],
+    "averages": {
+      "trust": 3,
+      "alignment": 3,
+      "care": 3,
+      "belonging": 3
+    }
+  },
+  "sentiment": {
+    "timeline": [],
+    "average": 3
+  },
+  "breakthroughs": [],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post creed/values deck to Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Schedule 3–4h MVS integration & tech infrastructure alignment call w/ relevant leads",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Post Anchor Circle updates to Symbiosis after each meeting",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Post questions/discussion points in Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Nathalie Nebelius (Cordinata AB)",
+      "text": "Send bi-weekly Anchor Circle updates to ecosystem",
+      "type": "action"
+    }
+  ],
+  "decisions": [],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "medium",
+      "text": "Encourage more balanced participation, especially from speakers with lower word counts, to foster a more inclusive discussion. Consider using structured check-ins or dedicated speaking slots."
+    },
+    {
+      "type": "engagement",
+      "priority": "medium",
+      "text": "Increase active listening and feedback instances to boost overall engagement. Promote phrases like 'that's a good point' or 'I hear you' to validate contributions."
+    },
+    {
+      "type": "inclusion",
+      "priority": "high",
+      "text": "Focus on increasing the use of collective pronouns ('we', 'us') to foster a stronger sense of shared identity and reduce individual-centric language. The current pronoun ratio indicates a slight lean towards individual focus."
+    },
+    {
+      "type": "inclusion",
+      "priority": "medium",
+      "text": "Promote inclusion language, particularly invitations for others to speak ('what do you think?', 'would you like to add?'), to ensure all voices are heard and valued."
+    },
+    {
+      "type": "consensus",
+      "priority": "medium",
+      "text": "Implement structured methods for reaching consensus on topics, such as clear agreement/disagreement indicators or voting mechanisms, to improve the overall consensus score."
+    },
+    {
+      "type": "communication",
+      "priority": "high",
+      "text": "Ensure all action items and decisions are clearly documented with owners and deadlines in a centralized, accessible platform like Symbiosis to improve accountability and follow-through."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Address the identified need for a dedicated MVS integration and tech infrastructure alignment call to resolve overlapping functionalities and streamline operations."
+    },
+    {
+      "type": "process",
+      "priority": "high",
+      "text": "Expedite the finalization of circle charters, including purpose, roles, and responsibilities, to clarify work streams and enable more efficient workload distribution."
+    },
+    {
+      "type": "transparency",
+      "priority": "high",
+      "text": "Regularly post Anchor Circle updates and discussion points to Symbiosis to enhance transparency and allow the broader ecosystem to contribute and stay informed."
+    },
+    {
+      "type": "culture",
+      "priority": "medium",
+      "text": "Reinforce the 'give first' mentality and address concerns around compensation frameworks transparently to align financial recognition with the collective's values and effort."
+    },
+    {
+      "type": "culture",
+      "priority": "medium",
+      "text": "Deepen the common understanding of 'regeneration' within the group, explicitly defining what it is and isn't, to ensure consistent decision-making and intentional transformation."
+    }
+  ]
+}
