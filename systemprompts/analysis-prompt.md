@@ -169,7 +169,7 @@ This document provides the system prompts. Your calculation methodologies come f
 - Count unique speakers
 - Count total utterances (each speaker turn)
 - Count total words
-- Estimate duration (assume ~150 words per minute)
+- Estimate duration (assume ~80 words per minute for natural speech in meetings)
 - Calculate average words per utterance
 
 ### Participation Analysis
