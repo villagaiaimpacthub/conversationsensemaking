@@ -69,7 +69,7 @@ Output: Engagement Score: 78 (High)
 ---
 
 ## 3️⃣ **Inclusion Score** (0-100)
-### Status: ⚠️ NEEDS PROPER IMPLEMENTATION (Currently basic)
+### Status: ✅ FULLY IMPLEMENTED (4-Component Calculation)
 
 **LLM Instruction:**
 ```
@@ -166,7 +166,7 @@ Output: Inclusion Score = 100 (High)
 ---
 
 ## 4️⃣ **Consensus Score** (0-100)
-### Status: ⚠️ NEEDS PROPER IMPLEMENTATION
+### Status: ✅ FULLY IMPLEMENTED (Per-Topic Analysis)
 
 **LLM Instruction:**
 ```
@@ -479,13 +479,13 @@ THRESHOLDS:
 | KPI Card | JSON Source | Status | Implementation |
 |----------|-------------|--------|-----------------|
 | Total Speakers | `basicMetrics.totalSpeakers` | ✅ | Complete |
-| Engagement Score | `engagement.overallEngagement` | ✅ | Complete |
-| Inclusion Score | `inclusion.score` | ⚠️ | Basic (needs components) |
-| Consensus Score | `consensus.overallScore` | ⚠️ | Basic (needs topic analysis) |
+| Engagement Score | `engagement.overallEngagement` | ✅ | Complete (weighted composite) |
+| Inclusion Score | `inclusion.score` | ✅ | **NEW: 4-component with breakdown** |
+| Consensus Score | `consensus.overallScore` | ✅ | **NEW: Per-topic analysis** |
 | Decisions Made | `decisions.length` | ✅ | Complete |
 | Action Items | `actions.length` | ✅ | Complete |
 | Knowledge Gaps | `knowledgeGaps.totalGaps` | ✅ | Complete |
-| Agenda Coverage | (not yet) | ⚠️ | Not Started |
+| Agenda Coverage | (not yet) | ⚠️ | Not Started (requires agenda input) |
 
 ---
 
