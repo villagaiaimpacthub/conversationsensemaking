@@ -1,4 +1,6 @@
-﻿        // Chart instances storage (use global from part1, don't redeclare)
+﻿// Wrap in IIFE to avoid global scope conflict with charts-part1.js
+(function() {
+        // Chart instances storage (use global from part1, don't redeclare)
         const chartInstances = window.chartInstances;
 
         // Function to initialize charts in part 2
@@ -345,3 +347,4 @@
         
         // Export to window so it's accessible globally
         window.initializeCharts = initializeCharts;
+})(); // Close IIFE
