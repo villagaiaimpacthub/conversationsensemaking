@@ -184,25 +184,231 @@ This document provides the system prompts. Your calculation methodologies come f
 - **Turn-Taking Balance**: Measure how evenly distributed turns are (0-100 where 100 = perfectly balanced)
 - **Overall Engagement**: Average of the above four metrics
 
-### Inclusion Score - SEE calculations_for_metrics.md Section 1.3
+### Inclusion Score - DETAILED 4-COMPONENT CALCULATION
 
-Use the 4-component calculation:
-1. **Pronoun Balance** (25 points) - From section 1.3
-2. **Interruption Rate** (25 points) - From section 1.3
-3. **Inclusion Language** (30 points) - From section 1.3
-4. **Speaking Equity** (20 points) - Using Gini coefficient as specified
+**CRITICAL**: Calculate and return all 4 components with detailed breakdown.
 
-Result: Sum of all components = 0-100 score
+#### Component 1: Pronoun Balance (0-25 points)
+Count and calculate:
+```
+collective_pronouns = count(['we', 'us', 'our', 'ours'])
+individual_pronouns = count(['I', 'me', 'my', 'mine', 'you', 'your', 'yours'])
+pronoun_ratio = collective_pronouns / individual_pronouns (if individual > 0, else 0)
 
-### Consensus Score - SEE calculations_for_metrics.md Section 1.4
+Scoring:
+- 0.7 ≤ ratio ≤ 1.0 → 25 points (optimal balance)
+- 0.5 ≤ ratio < 0.7 OR 1.0 < ratio ≤ 1.3 → 20 points
+- 0.3 ≤ ratio < 0.5 OR 1.3 < ratio ≤ 1.5 → 15 points
+- Otherwise → 10 points
+```
 
-Calculate consensus for each topic:
-- Strong agreement: 100 points
-- Moderate agreement: 75 points
-- Low consensus: 50 points
-- Disagreement: 25 points
+#### Component 2: Interruption Rate (0-25 points)
+Count and calculate:
+```
+interruptions = count(instances where speaker cut off mid-sentence)
+total_utterances = count(all speaker turns)
+interruption_rate = (interruptions / total_utterances) × 100
 
-Average across all topics for overall consensus score (0-100).
+Scoring (lower is better for inclusivity):
+- ≤ 3% → 25 points
+- ≤ 5% → 20 points
+- ≤ 8% → 15 points
+- ≤ 12% → 10 points
+- > 12% → 5 points
+```
+
+#### Component 3: Inclusion Language (0-30 points)
+Count three categories:
+
+**Acknowledgments** (phrases showing validation):
+- "that's a good point"
+- "I hear you"
+- "thank you for sharing"
+- "I appreciate that"
+- "that makes sense"
+- "great idea"
+- "I see what you mean"
+- "good point"
+
+**Invitations** (phrases inviting participation):
+- "what do you think"
+- "your thoughts"
+- "would you like to add"
+- "your perspective"
+- "any input"
+- "does anyone have"
+- "what's your take"
+- "anyone else"
+
+**Reinforcements** (building on ideas):
+- "exactly"
+- "yes and"
+- "building on that"
+- "to add to that"
+- "I agree"
+- "right"
+- "absolutely"
+- "that's a great point"
+
+Calculate:
+```
+total_inclusion = acknowledgments_count + invitations_count + reinforcements_count
+inclusion_rate = (total_inclusion / total_utterances) × 100
+
+Scoring:
+- ≥ 20% → 30 points
+- ≥ 15% → 25 points
+- ≥ 10% → 20 points
+- ≥ 7% → 15 points
+- < 7% → 10 points
+```
+
+#### Component 4: Speaking Equity (0-20 points)
+Calculate Gini coefficient for speaking distribution:
+```
+speaking_percentages = [percentage of words/utterances for each speaker]
+Sort percentages in ascending order
+
+Gini = (2 × sum(i × percentage[i])) / (n × sum(all percentages)) - (n + 1) / n
+
+Where:
+- i = position (1 to n)
+- n = number of speakers
+- Gini range: 0 (perfect equality) to 1 (perfect inequality)
+
+Scoring (lower Gini = more equal = more inclusive):
+- ≤ 0.3 → 20 points
+- ≤ 0.4 → 17 points
+- ≤ 0.5 → 14 points
+- ≤ 0.6 → 10 points
+- > 0.6 → 5 points
+```
+
+#### FINAL CALCULATION
+```
+inclusion_score = pronoun_balance_points + interruption_rate_points 
+                + inclusion_language_points + speaking_equity_points
+
+Result: 0-100 (sum of all 4 components)
+```
+
+#### RETURN IN JSON
+Return detailed breakdown with all components:
+```json
+"inclusion": {
+  "score": <number 0-100>,
+  "pronounBalance": {
+    "collectivePronounCount": <number>,
+    "individualPronounCount": <number>,
+    "ratio": <number>,
+    "points": <number 0-25>
+  },
+  "interruptionRate": {
+    "interruptionCount": <number>,
+    "rate": <number 0-100>,
+    "points": <number 0-25>
+  },
+  "inclusionLanguage": {
+    "acknowledgments": <number>,
+    "invitations": <number>,
+    "reinforcements": <number>,
+    "rate": <number 0-100>,
+    "points": <number 0-30>
+  },
+  "speakingEquity": {
+    "giniCoefficient": <number 0-1>,
+    "points": <number 0-20>
+  }
+}
+```
+
+**VERIFICATION**: Confirm `score = pronounBalance.points + interruptionRate.points + inclusionLanguage.points + speakingEquity.points`
+
+### Consensus Score - DETAILED TOPIC ANALYSIS
+
+**CRITICAL**: Analyze consensus per topic, not just overall.
+
+#### Step 1: Extract All Discussion Topics
+Identify distinct topics discussed in meeting.
+
+#### Step 2: For Each Topic, Count Agreement Indicators
+
+**Strong Agreement** (100 points each):
+- "I agree"
+- "absolutely"
+- "exactly"
+- "yes"
+- "definitely"
+- "that makes sense"
+- "I'm on board"
+- "let's do it"
+- "sounds good"
+
+**Moderate Agreement** (75 points each):
+- "I think so"
+- "probably"
+- "makes sense"
+- "could work"
+- "I'm comfortable with that"
+- "okay"
+
+**Disagreement** (-50 points each):
+- "but" (when disagreeing)
+- "however"
+- "I'm not sure"
+- "I disagree"
+- "I don't think"
+- "that won't work"
+- "concerned about"
+- "worried that"
+- "what about" (raising objection)
+
+**Hesitation** (-25 points each):
+- "maybe"
+- "we should think about"
+- "need to consider"
+- "not sure"
+- "have questions"
+- "unclear"
+
+#### Step 3: Calculate Per-Topic Consensus
+```
+total_points = (strong_agreement × 100) + (moderate_agreement × 75) 
+             - (disagreement × 50) - (hesitation × 25)
+total_responses = strong + moderate + disagreement + hesitation
+
+If total_responses = 0:
+  topic_consensus = 50 (neutral)
+Else:
+  max_possible = total_responses × 100
+  topic_consensus = max(0, min(100, (total_points / max_possible) × 100))
+```
+
+#### Step 4: Calculate Overall Score
+```
+overall_consensus = average(all_topic_consensus_scores)
+If no topics: overall_consensus = 50
+```
+
+#### RETURN IN JSON
+Return per-topic breakdown + overall:
+```json
+"consensus": {
+  "overallScore": <number 0-100>,
+  "topics": [
+    {
+      "topic": "<topic name>",
+      "consensus": <number 0-100>,
+      "indicators": {
+        "strongAgreement": <count>,
+        "moderateAgreement": <count>,
+        "disagreement": <count>,
+        "hesitation": <count>
+      }
+    }
+  ]
+}
+```
 
 ### Topic Analysis
 - Identify main topics discussed
