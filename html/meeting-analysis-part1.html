@@ -80,70 +80,20 @@
             <div class="grid-3">
                 <div class="card">
                     <h3 class="card-title">Pronoun Usage</h3>
-                    <ul class="metric-list">
-                        <li class="metric-item">
-                            <span class="metric-name">Collective (we, us, our)</span>
-                            <span class="metric-value">347</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Individual (I, me, you, my)</span>
-                            <span class="metric-value">423</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Ratio</span>
-                            <span class="metric-value">0.82</span>
-                        </li>
-                    </ul>
-                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
-                        🟡 <strong>Balanced</strong> - Appropriate mix of collective identity and individual ownership
+                    <div id="pronounUsageCard">
+                        <!-- Populated dynamically by JavaScript -->
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Interruptions & Repairs</h3>
-                    <ul class="metric-list">
-                        <li class="metric-item">
-                            <span class="metric-name">Interruptions</span>
-                            <span class="metric-value">8</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Rate per 100 utterances</span>
-                            <span class="metric-value">3.8</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Repairs</span>
-                            <span class="metric-value">12</span>
-                        </li>
-                        <li class="metric-item warning">
-                            <span class="metric-name">Technical Issues</span>
-                            <span class="metric-value">15</span>
-                        </li>
-                    </ul>
-                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
-                        🟢 <strong>Healthy</strong> - Low interruption rate indicates respectful dialogue
+                    <div id="interruptionsCard">
+                        <!-- Populated dynamically by JavaScript -->
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Inclusion Language</h3>
-                    <ul class="metric-list">
-                        <li class="metric-item">
-                            <span class="metric-name">Acknowledgments</span>
-                            <span class="metric-value">18</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Invitations</span>
-                            <span class="metric-value">16</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Reinforcements</span>
-                            <span class="metric-value">8</span>
-                        </li>
-                        <li class="metric-item">
-                            <span class="metric-name">Total Instances</span>
-                            <span class="metric-value">42</span>
-                        </li>
-                    </ul>
-                    <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
-                        🟢 <strong>High Inclusion</strong> - 20.2 instances per 100 utterances
+                    <div id="inclusionLanguageCard">
+                        <!-- Populated dynamically by JavaScript -->
                     </div>
                 </div>
             </div>
@@ -166,75 +116,18 @@
             <div class="grid-2">
                 <div class="card">
                     <h3 class="card-title">
-                        <span class="emoji">🔵</span>Decisions Made (4)
+                        <span class="emoji">🔵</span>Decisions Made (<span id="decisionsCount">0</span>)
                     </h3>
-                    <div class="takeaway-card">
-                        <div class="takeaway-content">Adopt Hive/Symbiosis platform after 2-3 day testing period</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: G, Sudheer, Shamla</span>
-                            <span class="tag decision">DECISION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card">
-                        <div class="takeaway-content">Launch circles immediately with preliminary charters</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Alex, All Circle Leads</span>
-                            <span class="tag decision">DECISION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card">
-                        <div class="takeaway-content">Inner Circle roles assigned: Chris (Facilitator), Shamla (Secretary), G (Governance & Metrics), Sudheer (Integration)</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Named individuals</span>
-                            <span class="tag decision">DECISION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card">
-                        <div class="takeaway-content">Continue weekly meetings on Tuesday (changed from Thursday)</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Alex</span>
-                            <span class="tag decision">DECISION</span>
-                        </div>
+                    <div id="decisionsList">
+                        <!-- Populated dynamically by JavaScript -->
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">
-                        <span class="emoji">🟠</span>Priority Action Items (8)
+                        <span class="emoji">🟠</span>Priority Action Items (<span id="actionsCount">0</span>)
                     </h3>
-                    <div class="takeaway-card action">
-                        <div class="takeaway-content">Shamla to circulate rolling 6-month cash flow forecast format</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Shamla</span>
-                            <span class="tag action">ACTION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card action">
-                        <div class="takeaway-content">Farhad needs structure answers from Prakash for private equity (2-3 weeks)</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Prakash → Farhad</span>
-                            <span class="tag action">ACTION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card action">
-                        <div class="takeaway-content">Chris to create internal database of entities and needs/wish lists</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Chris</span>
-                            <span class="tag action">ACTION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card action">
-                        <div class="takeaway-content">Anastasia to confirm Restate's 501c3 charter compatibility</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Anastasia</span>
-                            <span class="tag action">ACTION</span>
-                        </div>
-                    </div>
-                    <div class="takeaway-card action">
-                        <div class="takeaway-content">Prakash/Sudheer to develop HR and compensation policy</div>
-                        <div class="takeaway-meta">
-                            <span>Owner: Prakash, Sudheer</span>
-                            <span class="tag action">ACTION</span>
-                        </div>
+                    <div id="actionsList">
+                        <!-- Populated dynamically by JavaScript -->
                     </div>
                 </div>
             </div>

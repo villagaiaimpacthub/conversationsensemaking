@@ -269,6 +269,194 @@ function updateKPICards(analysis) {
 }
 
 /**
+ * Update Inclusivity Metrics cards with dynamic data
+ */
+function updateInclusivityMetrics(analysis) {
+    if (!analysis || !analysis.inclusion) {
+        console.log('⚠️ No analysis or inclusion data available for Inclusivity Metrics');
+        return;
+    }
+
+    const inclusion = analysis.inclusion;
+    console.log('📊 Updating Inclusivity Metrics with:', inclusion);
+
+    // Pronoun Usage Card
+    const pronounCard = document.getElementById('pronounUsageCard');
+    if (pronounCard) {
+        // Handle both new and old data formats
+        const pronounRatio = (inclusion.pronounBalance?.ratio || inclusion.pronounRatio || 0).toFixed(2);
+        const pronounPoints = inclusion.pronounBalance?.points || 0;
+        const collectiveCount = inclusion.pronounBalance?.collectivePronounCount || inclusion.pronounData?.collective || 0;
+        const individualCount = inclusion.pronounBalance?.individualPronounCount || inclusion.pronounData?.individual || 0;
+        const pronounStatus = pronounRatio >= 0.7 && pronounRatio <= 1.0 ? '🟢 Balanced' : 
+                             pronounRatio > 1.0 ? '🟡 Collective-focused' : '🟡 Individual-focused';
+        
+        console.log('📊 Pronoun data:', { pronounRatio, pronounPoints, collectiveCount, individualCount });
+        
+        pronounCard.innerHTML = `
+            <ul class="metric-list">
+                <li class="metric-item">
+                    <span class="metric-name">Collective (we, us, our)</span>
+                    <span class="metric-value">${collectiveCount}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Individual (I, me, you, my)</span>
+                    <span class="metric-value">${individualCount}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Ratio</span>
+                    <span class="metric-value">${pronounRatio}</span>
+                </li>
+            </ul>
+            <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                ${pronounStatus} - Appropriate mix of collective identity and individual ownership
+            </div>
+        `;
+    }
+
+    // Interruptions & Repairs Card
+    const interruptionsCard = document.getElementById('interruptionsCard');
+    if (interruptionsCard) {
+        // Handle both new and old data formats
+        const interruptionRate = (inclusion.interruptionRate?.rate || inclusion.interruptionRate || 0).toFixed(1);
+        const interruptionPoints = inclusion.interruptionRate?.points || 0;
+        const interruptionCount = inclusion.interruptionRate?.interruptionCount || inclusion.interruptions || 0;
+        const interruptionStatus = interruptionRate <= 3 ? '🟢 Healthy' : interruptionRate <= 8 ? '🟡 Moderate' : '🔴 High';
+        
+        console.log('📊 Interruption data:', { interruptionRate, interruptionPoints, interruptionCount });
+        
+        interruptionsCard.innerHTML = `
+            <ul class="metric-list">
+                <li class="metric-item">
+                    <span class="metric-name">Interruptions</span>
+                    <span class="metric-value">${interruptionCount}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Rate per 100 utterances</span>
+                    <span class="metric-value">${interruptionRate}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Repairs</span>
+                    <span class="metric-value">-</span>
+                </li>
+            </ul>
+            <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                ${interruptionStatus} - ${interruptionRate <= 3 ? 'Low interruption rate indicates respectful dialogue' : 'Some interruptions detected'}
+            </div>
+        `;
+    }
+
+    // Inclusion Language Card
+    const inclusionLanguageCard = document.getElementById('inclusionLanguageCard');
+    if (inclusionLanguageCard) {
+        const acknowledgments = inclusion.inclusionLanguage?.acknowledgments || 0;
+        const invitations = inclusion.inclusionLanguage?.invitations || 0;
+        const reinforcements = inclusion.inclusionLanguage?.reinforcements || 0;
+        const total = acknowledgments + invitations + reinforcements;
+        
+        // Calculate inclusion rate if not provided by LLM
+        let inclusionRate = inclusion.inclusionLanguage?.rate || 0;
+        if (inclusionRate === 0 && total > 0 && analysis.basicMetrics?.totalUtterances) {
+            inclusionRate = (total / analysis.basicMetrics.totalUtterances) * 100;
+        }
+        inclusionRate = inclusionRate.toFixed(1);
+        
+        const inclusionPoints = inclusion.inclusionLanguage?.points || 0;
+        const inclusionStatus = inclusionRate >= 15 ? '🟢 High Inclusion' : inclusionRate >= 10 ? '🟡 Moderate' : '🔵 Low';
+        
+        inclusionLanguageCard.innerHTML = `
+            <ul class="metric-list">
+                <li class="metric-item">
+                    <span class="metric-name">Acknowledgments</span>
+                    <span class="metric-value">${acknowledgments}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Invitations</span>
+                    <span class="metric-value">${invitations}</span>
+                </li>
+                <li class="metric-item">
+                    <span class="metric-name">Reinforcements</span>
+                    <span class="metric-value">${reinforcements}</span>
+                </li>
+            </ul>
+            <div style="margin-top: 1rem; padding: 0.75rem; background: var(--bg-secondary); border-radius: 8px; color: var(--text-secondary); font-size: 0.875rem;">
+                ${inclusionStatus} - ${inclusionRate} instances per 100 utterances
+            </div>
+        `;
+    }
+
+    console.log('✅ Inclusivity Metrics updated');
+}
+
+/**
+ * Update Decisions and Actions with dynamic data
+ */
+function updateDecisionsAndActions(analysis) {
+    if (!analysis) return;
+
+    const decisions = analysis.decisions || [];
+    const actions = analysis.actions || [];
+
+    // Update Decisions
+    const decisionsCount = document.getElementById('decisionsCount');
+    const decisionsList = document.getElementById('decisionsList');
+    
+    if (decisionsCount) {
+        decisionsCount.textContent = decisions.length;
+    }
+    
+    if (decisionsList) {
+        if (decisions.length === 0) {
+            decisionsList.innerHTML = '<div style="padding: 1rem; color: var(--text-secondary); text-align: center;">No decisions recorded</div>';
+        } else {
+            let html = '';
+            decisions.forEach((decision) => {
+                html += `
+                    <div class="takeaway-card">
+                        <div class="takeaway-content">${decision.text || decision}</div>
+                        <div class="takeaway-meta">
+                            ${decision.speaker ? `<span>Speaker: ${decision.speaker}</span>` : ''}
+                            <span class="tag decision">DECISION</span>
+                        </div>
+                    </div>
+                `;
+            });
+            decisionsList.innerHTML = html;
+        }
+    }
+
+    // Update Actions
+    const actionsCount = document.getElementById('actionsCount');
+    const actionsList = document.getElementById('actionsList');
+    
+    if (actionsCount) {
+        actionsCount.textContent = actions.length;
+    }
+    
+    if (actionsList) {
+        if (actions.length === 0) {
+            actionsList.innerHTML = '<div style="padding: 1rem; color: var(--text-secondary); text-align: center;">No action items recorded</div>';
+        } else {
+            let html = '';
+            actions.forEach((action) => {
+                html += `
+                    <div class="takeaway-card action">
+                        <div class="takeaway-content">${action.text || action}</div>
+                        <div class="takeaway-meta">
+                            ${action.speaker ? `<span>Owner: ${action.speaker}</span>` : ''}
+                            <span class="tag action">ACTION</span>
+                        </div>
+                    </div>
+                `;
+            });
+            actionsList.innerHTML = html;
+        }
+    }
+
+    console.log('✅ Decisions and Actions updated:', decisions.length, 'decisions,', actions.length, 'actions');
+}
+
+/**
  * Update Utterance Distribution with dynamic speaker data
  */
 function updateUtteranceDistribution(analysis) {
@@ -330,6 +518,10 @@ function updateContentSections(analysis) {
     updateKPICards(analysis);
     // Update Utterance Distribution
     updateUtteranceDistribution(analysis);
+    // Update Inclusivity Metrics
+    updateInclusivityMetrics(analysis);
+    // Update Decisions and Actions
+    updateDecisionsAndActions(analysis);
     console.log('✅ Updating content sections with analysis:', analysis);
 }
 

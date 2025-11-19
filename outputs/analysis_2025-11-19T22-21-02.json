@@ -1,0 +1,696 @@
+{
+  "basicMetrics": {
+    "totalSpeakers": 19,
+    "speakers": [
+      "Nathalie Nebelius (Cordinata AB)",
+      "Alex Alegria (metalucks.com)",
+      "Prakash Gabra",
+      "ish",
+      "manuele",
+      "Team Metaluck",
+      "Alexander Keehnen",
+      "Iris Lubitch",
+      "Olga Duka",
+      "Ali Reyazat",
+      "Charles Neil",
+      "Sudheer",
+      "Christopher Herghelegiu",
+      "Nikolai Hobruecker-Thompson",
+      "Elliott Bayev",
+      "Nika Trifonova",
+      "Yannik Weber",
+      "Julia Becker (juliabecker.co)",
+      "John Stokes (Real Ventures)"
+    ],
+    "totalUtterances": 139,
+    "totalWords": 7765,
+    "estimatedDuration": 97,
+    "averageWordsPerUtterance": 55.86
+  },
+  "participation": {
+    "distribution": [
+      {
+        "name": "Alex Alegria (metalucks.com)",
+        "utterances": 20,
+        "words": 1583,
+        "percentage": 20.39
+      },
+      {
+        "name": "Nathalie Nebelius (Cordinata AB)",
+        "utterances": 32,
+        "words": 1289,
+        "percentage": 16.6
+      },
+      {
+        "name": "Sudheer",
+        "utterances": 10,
+        "words": 1286,
+        "percentage": 16.56
+      },
+      {
+        "name": "manuele",
+        "utterances": 6,
+        "words": 1007,
+        "percentage": 12.97
+      },
+      {
+        "name": "Team Metaluck",
+        "utterances": 4,
+        "words": 605,
+        "percentage": 7.79
+      },
+      {
+        "name": "Christopher Herghelegiu",
+        "utterances": 3,
+        "words": 501,
+        "percentage": 6.45
+      },
+      {
+        "name": "ish",
+        "utterances": 5,
+        "words": 269,
+        "percentage": 3.46
+      },
+      {
+        "name": "John Stokes (Real Ventures)",
+        "utterances": 2,
+        "words": 200,
+        "percentage": 2.57
+      },
+      {
+        "name": "Olga Duka",
+        "utterances": 2,
+        "words": 199,
+        "percentage": 2.56
+      },
+      {
+        "name": "Charles Neil",
+        "utterances": 2,
+        "words": 106,
+        "percentage": 1.37
+      },
+      {
+        "name": "Iris Lubitch",
+        "utterances": 2,
+        "words": 105,
+        "percentage": 1.35
+      },
+      {
+        "name": "Alexander Keehnen",
+        "utterances": 2,
+        "words": 99,
+        "percentage": 1.27
+      },
+      {
+        "name": "Julia Becker (juliabecker.co)",
+        "utterances": 1,
+        "words": 73,
+        "percentage": 0.94
+      },
+      {
+        "name": "Chaelin Song (Fvtura)",
+        "utterances": 2,
+        "words": 70,
+        "percentage": 0.9
+      },
+      {
+        "name": "Ali Reyazat",
+        "utterances": 1,
+        "words": 27,
+        "percentage": 0.35
+      },
+      {
+        "name": "Prakash Gabra",
+        "utterances": 1,
+        "words": 11,
+        "percentage": 0.14
+      },
+      {
+        "name": "Yannik Weber",
+        "utterances": 1,
+        "words": 9,
+        "percentage": 0.12
+      },
+      {
+        "name": "Andrew Alan",
+        "utterances": 1,
+        "words": 17,
+        "percentage": 0.22
+      },
+      {
+        "name": "Nikolai Hobruecker-Thompson",
+        "utterances": 1,
+        "words": 16,
+        "percentage": 0.21
+      },
+      {
+        "name": "Elliott Bayev",
+        "utterances": 1,
+        "words": 16,
+        "percentage": 0.21
+      },
+      {
+        "name": "Nika Trifonova",
+        "utterances": 1,
+        "words": 14,
+        "percentage": 0.18
+      }
+    ],
+    "totalWords": 7765
+  },
+  "engagement": {
+    "questionFrequency": 10,
+    "feedbackInstances": 15,
+    "responseDynamics": 50,
+    "turnTakingBalance": 20,
+    "overallEngagement": 23.75
+  },
+  "inclusion": {
+    "score": 40,
+    "pronounRatio": {
+      "collectivePronounCount": 105,
+      "individualPronounCount": 270,
+      "ratio": 0.3888888888888889,
+      "points": 15
+    },
+    "interruptionRate": {
+      "interruptionCount": 1,
+      "rate": 0.7194244604316546,
+      "points": 25
+    },
+    "inclusionLanguage": {
+      "acknowledgments": 10,
+      "invitations": 11,
+      "reinforcements": 10,
+      "rate": 22.302158273381295,
+      "points": 30
+    },
+    "speakingEquity": {
+      "giniCoefficient": 0.708,
+      "points": 5
+    }
+  },
+  "consensus": {
+    "overallScore": 50,
+    "topics": [
+      {
+        "topic": "Better World Purpose, Vision, Mission",
+        "consensus": 87,
+        "indicators": {
+          "strongAgreement": 10,
+          "moderateAgreement": 1,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Meeting Check-in and Arrival",
+        "consensus": 90,
+        "indicators": {
+          "strongAgreement": 15,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Uncertainty and Collaboration",
+        "consensus": 75,
+        "indicators": {
+          "strongAgreement": 5,
+          "moderateAgreement": 2,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Workload Distribution and Support",
+        "consensus": 60,
+        "indicators": {
+          "strongAgreement": 2,
+          "moderateAgreement": 1,
+          "disagreement": 0,
+          "hesitation": 1
+        }
+      },
+      {
+        "topic": "Compensation and Financial Frameworks",
+        "consensus": 50,
+        "indicators": {
+          "strongAgreement": 1,
+          "moderateAgreement": 0,
+          "disagreement": 1,
+          "hesitation": 2
+        }
+      },
+      {
+        "topic": "Regeneration Definition and Implementation",
+        "consensus": 40,
+        "indicators": {
+          "strongAgreement": 0,
+          "moderateAgreement": 0,
+          "disagreement": 1,
+          "hesitation": 1
+        }
+      },
+      {
+        "topic": "Meeting Complexity and Pace",
+        "consensus": 70,
+        "indicators": {
+          "strongAgreement": 3,
+          "moderateAgreement": 1,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      },
+      {
+        "topic": "Symbiosis Platform Usage",
+        "consensus": 80,
+        "indicators": {
+          "strongAgreement": 4,
+          "moderateAgreement": 0,
+          "disagreement": 0,
+          "hesitation": 0
+        }
+      }
+    ]
+  },
+  "topics": {
+    "distribution": [
+      {
+        "topic": "Better World Purpose, Vision, Mission",
+        "count": 15,
+        "percentage": 10.79
+      },
+      {
+        "topic": "Meeting Check-in and Arrival",
+        "count": 25,
+        "percentage": 17.99
+      },
+      {
+        "topic": "Uncertainty and Collaboration",
+        "count": 10,
+        "percentage": 7.19
+      },
+      {
+        "topic": "Workload Distribution and Support",
+        "count": 8,
+        "percentage": 5.76
+      },
+      {
+        "topic": "Compensation and Financial Frameworks",
+        "count": 6,
+        "percentage": 4.32
+      },
+      {
+        "topic": "Regeneration Definition and Implementation",
+        "count": 3,
+        "percentage": 2.16
+      },
+      {
+        "topic": "Meeting Complexity and Pace",
+        "count": 4,
+        "percentage": 2.88
+      },
+      {
+        "topic": "Symbiosis Platform Usage",
+        "count": 7,
+        "percentage": 5.04
+      },
+      {
+        "topic": "Anchor Circle Updates and Governance",
+        "count": 30,
+        "percentage": 21.58
+      },
+      {
+        "topic": "Relational Health and Trust",
+        "count": 5,
+        "percentage": 3.6
+      }
+    ],
+    "totalMentions": 113
+  },
+  "knowledgeGaps": {
+    "explicit": [
+      {
+        "speaker": "Sudheer",
+        "text": "But it's still not fully, fully clear, right?",
+        "severity": "high"
+      },
+      {
+        "speaker": "manuele",
+        "text": "However, I still have to understand. Then what does it conflict in terms of operational efficiency from the next weeks?",
+        "severity": "high"
+      },
+      {
+        "speaker": "manuele",
+        "text": "So, maybe I'm also asking the help for this in this moment.",
+        "severity": "medium"
+      },
+      {
+        "speaker": "John Stokes (Real Ventures)",
+        "text": "I have been thinking and engaged in regeneration for some time, and I'm still not always sure what it is and what it isn't.",
+        "severity": "high"
+      }
+    ],
+    "byCoverage": [
+      {
+        "topic": "Strategic Vision",
+        "coverageScore": 85
+      },
+      {
+        "topic": "Operations & Processes",
+        "coverageScore": 70
+      },
+      {
+        "topic": "Financial Planning",
+        "coverageScore": 60
+      },
+      {
+        "topic": "Technology & Tools",
+        "coverageScore": 80
+      },
+      {
+        "topic": "Market & Competition",
+        "coverageScore": 40
+      },
+      {
+        "topic": "Team & Culture",
+        "coverageScore": 75
+      },
+      {
+        "topic": "Legal & Compliance",
+        "coverageScore": 55
+      },
+      {
+        "topic": "Customer/Stakeholder Needs",
+        "coverageScore": 30
+      }
+    ],
+    "totalGaps": 4
+  },
+  "powerDynamics": {
+    "overall": {
+      "highPower": 15.11,
+      "lowPower": 43.17,
+      "neutral": 41.72
+    },
+    "bySpeaker": [
+      {
+        "speaker": "Nathalie Nebelius (Cordinata AB)",
+        "highPower": 12.5,
+        "lowPower": 46.8,
+        "neutral": 40.6
+      },
+      {
+        "speaker": "Alex Alegria (metalucks.com)",
+        "highPower": 20,
+        "lowPower": 40,
+        "neutral": 40
+      },
+      {
+        "speaker": "Prakash Gabra",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "ish",
+        "highPower": 0,
+        "lowPower": 60,
+        "neutral": 40
+      },
+      {
+        "speaker": "manuele",
+        "highPower": 16.7,
+        "lowPower": 33.3,
+        "neutral": 50
+      },
+      {
+        "speaker": "Team Metaluck",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Alexander Keehnen",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Iris Lubitch",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Olga Duka",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Ali Reyazat",
+        "highPower": 0,
+        "lowPower": 100,
+        "neutral": 0
+      },
+      {
+        "speaker": "Charles Neil",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      },
+      {
+        "speaker": "Sudheer",
+        "highPower": 20,
+        "lowPower": 40,
+        "neutral": 40
+      },
+      {
+        "speaker": "Christopher Herghelegiu",
+        "highPower": 0,
+        "lowPower": 66.7,
+        "neutral": 33.3
+      },
+      {
+        "speaker": "Nikolai Hobruecker-Thompson",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "Elliott Bayev",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "Nika Trifonova",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "Yannik Weber",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "Julia Becker (juliabecker.co)",
+        "highPower": 0,
+        "lowPower": 0,
+        "neutral": 100
+      },
+      {
+        "speaker": "John Stokes (Real Ventures)",
+        "highPower": 0,
+        "lowPower": 50,
+        "neutral": 50
+      }
+    ]
+  },
+  "relational": {
+    "timeline": [
+      {
+        "timeblock": "0-10",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "10-20",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "20-30",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      },
+      {
+        "timeblock": "30-40",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "40-50",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "50-60",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "60-70",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "70-80",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "80-90",
+        "trust": 3,
+        "alignment": 3,
+        "care": 3,
+        "belonging": 3
+      },
+      {
+        "timeblock": "90-100",
+        "trust": 4,
+        "alignment": 4,
+        "care": 4,
+        "belonging": 4
+      }
+    ],
+    "averages": {
+      "trust": 3,
+      "alignment": 3,
+      "care": 3,
+      "belonging": 3
+    }
+  },
+  "sentiment": {
+    "timeline": [
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4
+    ],
+    "average": 3.4
+  },
+  "breakthroughs": [],
+  "actions": [
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post creed/values deck to Symbiosis General Hub",
+      "type": "action"
+    },
+    {
+      "speaker": "Christopher Herghelegiu",
+      "text": "Post Anchor Circle updates to Symbiosis after each meeting",
+      "type": "action"
+    },
+    {
+      "speaker": "Sudheer",
+      "text": "Schedule 3–4h MVS integration & tech infrastructure alignment call w/ relevant leads",
+      "type": "action"
+    },
+    {
+      "speaker": "Team Metaluck",
+      "text": "Send bi-weekly Anchor Circle updates to ecosystem",
+      "type": "action"
+    },
+    {
+      "speaker": "Team Metaluck",
+      "text": "Post questions/discussion points in Symbiosis General Hub",
+      "type": "action"
+    }
+  ],
+  "decisions": [],
+  "recommendations": [
+    {
+      "type": "participation",
+      "priority": "medium",
+      "text": "Encourage more balanced participation by actively inviting quieter speakers to share their thoughts, especially during open discussion segments. The current distribution is heavily skewed towards a few speakers."
+    },
+    {
+      "type": "engagement",
+      "priority": "medium",
+      "text": "Increase question frequency and ensure follow-up on questions to boost overall engagement. Consider dedicated Q&A slots or specific prompts to encourage interaction."
+    },
+    {
+      "type": "inclusion",
+      "priority": "high",
+      "text": "Focus on improving speaking equity by implementing structured turn-taking or using tools to visualize speaking time. The Gini coefficient indicates significant inequality in speaking distribution."
+    },
+    {
+      "type": "inclusion",
+      "priority": "low",
+      "text": "Maintain high levels of inclusion language (acknowledgments, invitations, reinforcements) as this is a strong positive aspect of the meeting."
+    },
+    {
+      "type": "consensus",
+      "priority": "medium",
+      "text": "For topics with lower consensus (e.g., 'Compensation and Financial Frameworks', 'Regeneration Definition and Implementation'), dedicate more time for structured discussion to address disagreements and hesitations, aiming for clearer alignment."
+    },
+    {
+      "type": "knowledge",
+      "priority": "high",
+      "text": "Address explicit knowledge gaps identified, particularly regarding the definition and implementation of 'Regeneration' and operational efficiency. Schedule follow-up discussions or action items to gather the necessary information."
+    },
+    {
+      "type": "knowledge",
+      "priority": "medium",
+      "text": "Improve knowledge coverage in 'Market & Competition' and 'Customer/Stakeholder Needs' domains by dedicating specific agenda items or inviting experts to share insights."
+    },
+    {
+      "type": "powerDynamics",
+      "priority": "medium",
+      "text": "Monitor power language distribution, especially per speaker, to ensure a collaborative environment. While overall low power language is high, some speakers exhibit higher power language, which could be balanced."
+    },
+    {
+      "type": "relational",
+      "priority": "medium",
+      "text": "Maintain and build upon the strong relational health observed at the beginning and end of the meeting. Address the slight dip in trust, alignment, care, and belonging during the detailed updates section by fostering more interactive dialogue."
+    },
+    {
+      "type": "structure",
+      "priority": "high",
+      "text": "Implement the proposed MVS integration and tech infrastructure alignment call as soon as possible to address operational inefficiencies and overlapping functionalities. This is critical for improving clarity and reducing frustration."
+    },
+    {
+      "type": "structure",
+      "priority": "high",
+      "text": "Finalize and communicate Anchor Circle charters, roles, and responsibilities promptly to clarify expectations and enable broader participation in workload distribution."
+    }
+  ]
+}
